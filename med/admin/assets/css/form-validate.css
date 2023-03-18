@@ -1,0 +1,22 @@
+#form_status span.notice {
+  color: yellow;
+}
+
+#form_status .success {
+  color: #fff;
+  text-align: center;
+  background: #2ecc71;
+  border-radius: 3px;
+  padding: 30px 0px;
+}
+
+#form_status .success i {
+  color: #fff;
+  font-size: 45px;
+  margin-bottom: 14px;
+}
+
+#form_status .success h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
