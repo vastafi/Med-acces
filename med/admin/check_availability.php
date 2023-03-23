@@ -8,7 +8,7 @@ if(!empty($_POST["email"])) {
     echo "error : You did not enter a valid email.";
   }
   else {
-    $sql ="SELECT Email FROM tbladmin WHERE email=:email";
+    $sql ="SELECT email FROM tbladmin WHERE email=:email";
     $query= $dbh -> prepare($sql);
     $query-> bindParam(':email', $email, PDO::PARAM_STR);
     $query-> execute();

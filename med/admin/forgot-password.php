@@ -17,7 +17,7 @@ if(isset($_POST['change']))
 
 		$activationcode=md5($email.time());
 
-		$query=mysqli_query($con,"update tbladmin set activationcode='$activationcode' WHERE email='$email' and mobileNumber='$contact' ");
+		$query=mysqli_query($con,"update tbladmin set activationCode='$activationcode' WHERE email='$email' and mobileNumber='$contact' ");
 		if($query)
 
 		{

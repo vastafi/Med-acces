@@ -75,7 +75,7 @@ if(strlen($_SESSION['login'])==0)
       <script >
         swal.fire({
           'title': 'Thank you',
-          'text': 'Updated successfuly',
+          'text': 'Updated successfully',
           'icon': 'success',
           'type': 'success'
         }).then( () => {
@@ -103,9 +103,7 @@ if(strlen($_SESSION['login'])==0)
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">User Profile</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
@@ -146,10 +144,9 @@ if(strlen($_SESSION['login'])==0)
                           data-bs-toggle="modal" data-bs-target="#edit_modal">Edit Detail</a>
                         </div>
                         <div class="ec-vendor-block-detail">
-                          <img class="v-img" src="assets/images/user/4.jpg" alt="vendor image">
+                          <img class="v-img" src="assets/images/user/2.jpg" alt="vendor image">
                           <h5 class="name"><?php echo $row['name'];?></h5>
-                          <p>( Sales Manager )</p>
-                        </div>
+                                 </div>
                         <p>Hello <span><?php echo $row['name'];?>!</span></p>
                         <p>From your account you can easily view and track orders. You can manage and change your account information like address, contact information and history of orders.</p>
                       </div>
@@ -161,18 +158,16 @@ if(strlen($_SESSION['login'])==0)
                             <h6>E-mail address 
                             </h6>
                             <ul>
-                              <li><strong>Email : </strong><?php echo $row['email'];?></li>
-                              <!-- <li><strong>Email 2 : </strong>support2@exapmle.com</li> -->
+                              <li><strong>Email: </strong><?php echo $row['email'];?></li>
                             </ul>
                           </div>
                         </div>
                         <div class="col-md-6 col-sm-12">
                           <div class="ec-vendor-detail-block ec-vendor-block-contact space-bottom-30">
-                            <h6>Contact nubmer
+                            <h6>Contact number
                             </h6>
                             <ul>
-                              <li><strong>Phone Nubmer : </strong><?php echo $row['contactNo'];?></li>
-                              <!--  <li><strong>Phone Nubmer 2 : </strong>(123) 123 456 7890</li> -->
+                              <li><strong>Phone Number: </strong><?php echo $row['contactNo'];?></li>
                             </ul>
                           </div>
                         </div>
@@ -190,7 +185,7 @@ if(strlen($_SESSION['login'])==0)
                             <h6>Shipping Address
                             </h6>
                             <ul>
-                              <li><strong>Office : </strong><?php echo $row['shippingAddress'];?>&nbsp; <?php echo $row['shippingState'];?>&nbsp; <?php echo $row['shippingCity'];?>&nbsp; <?php echo $row['shippingCountry'];?> - <?php echo $row['shippingZipcode'];?>.</li>
+                              <li><strong>Office: </strong><?php echo $row['shippingAddress'];?>&nbsp; <?php echo $row['shippingState'];?>&nbsp; <?php echo $row['shippingCity'];?>&nbsp; <?php echo $row['shippingCountry'];?> - <?php echo $row['shippingZipcode'];?>.</li>
                             </ul>
                           </div>
                         </div>
@@ -249,7 +244,7 @@ if(strlen($_SESSION['login'])==0)
                     <div class="thumb-preview ec-preview">
                       <div class="image-thumb-preview">
                         <img class="image-thumb-preview ec-image-preview v-img"
-                        src="assets/images/user/4.jpg" alt="edit" />
+                        src="assets/images/user/2.jpg" alt="edit" />
                       </div>
                       <button type="submit" class="btn btn-primary ">Update Image</button>
                     </div>

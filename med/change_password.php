@@ -9,12 +9,12 @@ if(isset($_POST['change']))
 {
   $codeactivate=$_SESSION['activatecode'];
   $password=md5($_POST['password']);
-  $query=mysqli_query($con,"SELECT * FROM users WHERE activationcode='$codeactivate'");
+  $query=mysqli_query($con,"SELECT * FROM users WHERE activationCode='$codeactivate'");
   $num=mysqli_fetch_array($query);
   if($num>0)
   {
     $extra="change_password.php";
-    mysqli_query($con,"update users set password='$password' WHERE activationcode='$codeactivate' ");
+    mysqli_query($con,"update users set password='$password' WHERE activationCode='$codeactivate' ");
     $host=$_SERVER['HTTP_HOST'];
     $uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
     header("location:http://$host$uri/$extra");
@@ -95,9 +95,7 @@ if(isset($_POST['change']))
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Change Password</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">

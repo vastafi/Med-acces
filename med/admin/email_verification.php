@@ -6,7 +6,7 @@ include('includes/dbconnection.php');
 if(!empty($_GET['code']) && isset($_GET['code']))
 {
   $code=$_GET['code'];
-  $sql=mysqli_query($con,"SELECT * FROM tbladmin WHERE activationcode='$code'");
+  $sql=mysqli_query($con,"SELECT * FROM tbladmin WHERE activationCode='$code'");
   $num=mysqli_fetch_array($sql);
   if($num>0)
   {

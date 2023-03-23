@@ -31,7 +31,7 @@
               </a>
               <div class="ec-pro-content">
                 <a href="product.php?pid=<?php echo htmlentities($row['id']);?>" class="cart_pro_title"><?php echo $row['productName']; ?></a>
-                <span class="cart-price"><span>$<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span> x <?php echo $_SESSION['cart'][$row['id']]['quantity']; ?></span>
+                <span class="cart-price"><span>MDL <?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span> x <?php echo $_SESSION['cart'][$row['id']]['quantity']; ?></span>
                 <div class="qty-plus-minus">
                   <input class="qty-input" type="text" name="ec_qtybtn" value="1" />
                 </div>
@@ -57,15 +57,15 @@
           <tbody>
             <tr>
               <td class="text-left">Sub-Total :</td>
-              <td class="text-right">$ &nbsp; <?php echo htmlentities(number_format($totalprice, 0, '.', ','));?></td>
+              <td class="text-right">MDL <?php echo htmlentities(number_format($totalprice, 0, '.', ','));?></td>
             </tr>
             <tr>
-              <td class="text-left">VAT (18%) :</td>
-              <td class="text-right">$ &nbsp; <?php echo htmlentities(number_format(($totalprice*'0.18'), 0, '.', ','));?></td>
+              <td class="text-left">VAT value (18%) :</td>
+              <td class="text-right">MDL &nbsp; <?php echo htmlentities(number_format(($totalprice*'0.18'), 0, '.', ','));?></td>
             </tr>
             <tr>
               <td class="text-left">Total :</td>
-              <td class="text-right primary-color">$&nbsp; <?php echo htmlentities(number_format((($totalprice*'0.18')+$totalprice), 0, '.', ','));?></td>
+              <td class="text-right primary-color">MDL <?php echo htmlentities(number_format((($totalprice*'0.18')+$totalprice), 0, '.', ','));?></td>
             </tr>
           </tbody>
         </table>

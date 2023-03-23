@@ -57,9 +57,7 @@ if(strlen($_SESSION['id'])==0)
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Cart</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
@@ -94,7 +92,7 @@ if(strlen($_SESSION['id'])==0)
                 <table class="table ec-table">
                   <thead>
                     <tr>
-                      <th scope="col">NO.</th>
+                      <th scope="col">No.</th>
                       <th scope="col">Customer Name</th>
                       <th scope="col">Invoice No</th>
                       <th scope="col">Payment Methods</th>
@@ -104,7 +102,7 @@ if(strlen($_SESSION['id'])==0)
                   </thead>
                   <tbody>
                     <?php 
-                    $sql2="select distinct invoiceNumber,userId,paymentMethod    from orders where userId='".$_SESSION['id']."' ORDER BY id DESC";
+                    $sql2="select distinct invoiceNumber,userId, paymentMethod from orders where userId='".$_SESSION['id']."' ORDER BY id DESC";
                     $query2 = $dbh -> prepare($sql2);
                     $query2->execute();
                     $results2=$query2->fetchAll(PDO::FETCH_OBJ);

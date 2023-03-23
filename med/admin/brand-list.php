@@ -66,7 +66,7 @@ if(isset($_GET['del'])){
 		$brand=$_POST['brandName'];
 		$image=$_FILES["brandImage"]["name"];
 		move_uploaded_file($_FILES["brandImage"]["tmp_name"],"brandimages/".$_FILES["brandImage"]["name"]);
-		$sql="insert into tblbrand(BrandName,BrandImage)values(:brand,:image)";
+		$sql="insert into tblbrand(brandName,brandImage)values(:brand,:image)";
 		$query=$dbh->prepare($sql);
 		$query->bindParam(':brand',$brand,PDO::PARAM_STR);
 		$query->bindParam(':image',$image,PDO::PARAM_STR);

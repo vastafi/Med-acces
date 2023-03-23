@@ -95,10 +95,10 @@ include('includes/dbconnection.php');
           <div class="row">
             <div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 align-self-center">
               <div class="ec-slide-content slider-animation">
-                <h2 class="ec-slide-stitle">High Speed</h2>
-                <h1 class="ec-slide-title">3.2GH Core7 Desktop Machine</h1>
-                <p>Introducing Dell Vostro. Fundamentally redesigned with latest technology & can work in powerful sectors like industries.</p>
-                <span class="ec-slide-disc">Starting @<span>MDL 900</span></span>
+                <h2 class="ec-slide-stitle">Premium Multivitamin</h2>
+                <h1 class="ec-slide-title">11 vitamins and minerals</h1>
+                <p>Essential, perfect for those who fail to take enough vitamins normally.</p>
+                <span class="ec-slide-disc">Starting at <span>90 MDL</span></span>
                 <a href="product.php?pid=60" class="btn btn-lg btn-secondary">Shop Now</a>
               </div>
             </div>
@@ -111,11 +111,11 @@ include('includes/dbconnection.php');
           <div class="row">
             <div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 align-self-center">
               <div class="ec-slide-content slider-animation">
-                <h2 class="ec-slide-stitle">Powerful Laptop</h2>
-                <h1 class="ec-slide-title">Dell Latitude.</h1>
-                <p>Introducing Latitude vss4 model. Fundamentally redesigned and re-programmed to help
-                to do heavy tasks with freeze.</p>
-                <span class="ec-slide-disc">Starting @<span>$654</span></span>
+                <h2 class="ec-slide-stitle">Gripovit</h2>
+                <h1 class="ec-slide-title">Energy and vitality</h1>
+                <p>Food supplement containing vitamins and minerals, which helps to strengthen the
+                    immune system. Perfect for the first symptoms of cold and flu.</p>
+                <span class="ec-slide-disc">Starting at <span>99 MDL </span></span>
                 <a href="product.php?pid=64" class="btn btn-lg btn-secondary">Shop Now</a>
               </div>
             </div>
@@ -128,11 +128,11 @@ include('includes/dbconnection.php');
           <div class="row">
             <div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 align-self-center">
               <div class="ec-slide-content slider-animation">
-                <h2 class="ec-slide-stitle">Smooth & simple </h2>
-                <h1 class="ec-slide-title">Samsung Galaxy</h1>
-                <p>Introducing garaxy phone. Fundamentally redesigned and re-developed to help
-                you stay even more active, healthy, and connected.</p>
-                <span class="ec-slide-disc">Starting @<span>MDL 400</span></span>
+                <h2 class="ec-slide-stitle">Theraflu</h2>
+                <h1 class="ec-slide-title">Cold and flu</h1>
+                <p>A specialized blend of ingredients that help reduce cold and flu symptoms,
+                    including headache, cough, congestion and fever.</p>
+                <span class="ec-slide-disc">Starting at <span>90 MDL </span></span>
                 <a href="product.php?pid=81" class="btn btn-lg btn-secondary">Shop Now</a>
               </div>
             </div>
@@ -143,32 +143,6 @@ include('includes/dbconnection.php');
   </div>
   <!-- Main Slider End -->
 
-  <!-- About Start -->
-  <section class="section ec-about-sec section-space-p">
-    <div class="container">
-      <div class="row">
-        <div class="section-title d-none">
-          <h2 class="ec-title">About</h2>
-        </div>
-        <div class="col-lg-6">
-          <div class="ec-about">
-            <img src="assets/images/about/sale.jpg" alt="about-image">
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="ec-about-detail">
-            <h4>Lenovo V15 laptop, with 1TB storage.</h4>
-            <h5>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested alteration in some form.</h5>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from in Virginia.</p>
-            <a class="btn btn-lg btn-primary" href="product.php?pid=82">Buy Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- About End -->
-
   <!--  category Section Start -->
   <section class="section ec-category-section section-space-p">
     <div class="container">
@@ -176,10 +150,9 @@ include('includes/dbconnection.php');
         <div class="col-md-12 section-title-block">
           <div class="section-title">
             <h2 class="ec-title">Browse By Categories</h2>
-            <p class="sub-title">Check out our feature products.</p>
           </div>
           <div class="section-btn">
-            <span class="ec-section-btn"><a class="btn-primary" href="shop-left-sidebar-col-3.html">View All Categories</a></span>
+            <span class="ec-section-btn"><a class="btn-primary" href="categories.php?pid=60">View All Categories</a></span>
           </div>
         </div>
       </div>
@@ -188,110 +161,110 @@ include('includes/dbconnection.php');
           <div class="ec_cat_content">
             <div class="ec_cat_inner">
               <div class="ec-cat-image">
-                <img src="assets/images/category-image/28.jpg" alt="" />
+                <img src="assets/images/category-image/cosmetics.jpg" alt="" />
               </div>
               <div class="ec-cat-desc">
-                <span class="ec-section-btn"><a href="product.php?pid=70" class="btn-primary">Cosmetics</a></span>
+                <span class="ec-section-btn"><a href="categories.php?cid=60" class="btn-primary">Cosmetics</a></span>
               </div>
             </div>
           </div>
           <div class="ec_cat_content">
             <div class="ec_cat_inner">
               <div class="ec-cat-image">
-                <img src="assets/images/category-image/27.jpg" alt="" />
+                <img src="assets/images/category-image/imonomodulatory.jpg" alt="" />
               </div>
               <div class="ec-cat-desc">
-                <span class="ec-section-btn"><a href="product.php?pid=79" class="btn-primary">Immunomodulatory</a></span>
+                <span class="ec-section-btn"><a href="categories.php?cid=14" class="btn-primary">Immunomodulatory</a></span>
               </div>
             </div>
           </div>
           <div class="ec_cat_content">
             <div class="ec_cat_inner">
               <div class="ec-cat-image">
-                <img src="assets/images/category-image/24.jpg" alt="" />
+                <img src="assets/images/category-image/respiratory.jpg" alt="" />
               </div>
               <div class="ec-cat-desc">
-                <span class="ec-section-btn"><a href="product.php?pid=66" class="btn-primary">Respiratory system</a></span>
+                <span class="ec-section-btn"><a href="categories.php?cid=61" class="btn-primary">Respiratory system</a></span>
               </div>
             </div>
           </div>
           <div class="ec_cat_content">
             <div class="ec_cat_inner">
               <div class="ec-cat-image">
-                <img src="assets/images/category-image/25.jpg" alt="" />
+                <img src="assets/images/category-image/digestion.jpg" alt="" />
               </div>
               <div class="ec-cat-desc">
-                <span class="ec-section-btn"><a href="product.php?pid=75" class="btn-primary">Digestion,metabolism</a></span>
+                <span class="ec-section-btn"><a href="categories.php?cid=57" class="btn-primary">Digestion,metabolism</a></span>
               </div>
             </div>
           </div>
           <div class="ec_cat_content">
             <div class="ec_cat_inner">
               <div class="ec-cat-image">
-                <img src="assets/images/category-image/26.jpg" alt="" />
+                <img src="assets/images/category-image/antiparasitic.jpg" alt="" />
               </div>
               <div class="ec-cat-desc">
-                <span class="ec-section-btn"><a href="product.php?pid=61" class="btn-primary">Antiparasitic</a></span>
+                <span class="ec-section-btn"><a href="categories.php?cid=16" class="btn-primary">Antiparasitic</a></span>
               </div>
             </div>
           </div>
           <div class="ec_cat_content">
             <div class="ec_cat_inner">
               <div class="ec-cat-image">
-                <img src="assets/images/category-image/22.jpg" alt="" />
+                <img src="assets/images/category-image/cardiovascular.jpg" alt="" />
               </div>
               <div class="ec-cat-desc">
-                <span class="ec-section-btn"><a href="product.php?pid=78" class="btn-primary">Cardiovascular</a></span>
+                <span class="ec-section-btn"><a href="categories.php?cid=59" class="btn-primary">Cardiovascular</a></span>
               </div>
             </div>
           </div>
           <div class="ec_cat_content">
             <div class="ec_cat_inner">
               <div class="ec-cat-image">
-                <img src="assets/images/category-image/23.jpg" alt="" />
+                <img src="assets/images/category-image/dermatological.jpg" alt="" />
               </div>
               <div class="ec-cat-desc">
-                <span class="ec-section-btn"><a href="product.php?pid=81" class="btn-primary">Dermatological</a></span>
+                <span class="ec-section-btn"><a href="categories.php?cid=71" class="btn-primary">Dermatological</a></span>
               </div>
             </div>
           </div>
             <div class="ec_cat_content">
                 <div class="ec_cat_inner">
                     <div class="ec-cat-image">
-                        <img src="assets/images/category-image/23.jpg" alt="" />
+                        <img src="assets/images/category-image/musculoskeletal.jpg" alt="" />
                     </div>
                     <div class="ec-cat-desc">
-                        <span class="ec-section-btn"><a href="product.php?pid=81" class="btn-primary">Musculoskeletal</a></span>
+                        <span class="ec-section-btn"><a href="categories.php?cid=72" class="btn-primary">Musculoskeletal</a></span>
                     </div>
                 </div>
             </div>
             <div class="ec_cat_content">
                 <div class="ec_cat_inner">
                     <div class="ec-cat-image">
-                        <img src="assets/images/category-image/23.jpg" alt="" />
+                        <img src="assets/images/category-image/hematopoietic.jpg" alt="" />
                     </div>
                     <div class="ec-cat-desc">
-                        <span class="ec-section-btn"><a href="product.php?pid=81" class="btn-primary">Hematopoietic</a></span>
+                        <span class="ec-section-btn"><a href="categories.php?cid=73" class="btn-primary">Hematopoietic</a></span>
                     </div>
                 </div>
             </div>
             <div class="ec_cat_content">
                 <div class="ec_cat_inner">
                     <div class="ec-cat-image">
-                        <img src="assets/images/category-image/23.jpg" alt="" />
+                        <img src="assets/images/category-image/hormone.jpg" alt="" />
                     </div>
                     <div class="ec-cat-desc">
-                        <span class="ec-section-btn"><a href="product.php?pid=81" class="btn-primary">Hormone</a></span>
+                        <span class="ec-section-btn"><a href="categories.php?cid=74" class="btn-primary">Hormone</a></span>
                     </div>
                 </div>
             </div>
             <div class="ec_cat_content">
                 <div class="ec_cat_inner">
                     <div class="ec-cat-image">
-                        <img src="assets/images/category-image/23.jpg" alt="" />
+                        <img src="assets/images/category-image/vitamins.jpg" alt="" />
                     </div>
                     <div class="ec-cat-desc">
-                        <span class="ec-section-btn"><a href="product.php?pid=81" class="btn-primary">Vitamins</a></span>
+                        <span class="ec-section-btn"><a href="categories.php?cid=75" class="btn-primary">Vitamins</a></span>
                     </div>
                 </div>
             </div>
@@ -327,8 +300,8 @@ include('includes/dbconnection.php');
               <img src="assets/images/banner/2.png" alt="" />
               <div class="banner-content">
                 <div class="banner-text">
-                  <span class="ec-banner-stitle">Rezer’s</span>
-                  <span class="ec-banner-title">Hp spectra</span>
+                  <span class="ec-banner-stitle">Nurofen</span>
+                  <span class="ec-banner-title">Anti-Inflammmatory</span>
                 </div>
                 <span class="ec-banner-btn"><a href="product.php?pid=63" class="btn-primary">Discover Now</a></span>
               </div>
@@ -341,8 +314,8 @@ include('includes/dbconnection.php');
                 <div class="banner-content">
                   <div class="banner-text">
                     <span class="ec-banner-stitle">Exlusive</span>
-                    <span class="ec-banner-title">Headsets &amp; Phones</span>
-                    <span class="ec-banner-desc">Starting <span>MDL 500.00</span></span>
+                    <span class="ec-banner-title">BienDormir</span>
+                    <span class="ec-banner-desc">90.00 MDL</span>
                   </div>
                 </div>
               </a>
@@ -354,8 +327,8 @@ include('includes/dbconnection.php');
                 <img src="assets/images/banner/4.png" alt="" />
                 <div class="banner-content">
                   <div class="banner-text">
-                    <span class="ec-banner-stitle">Best 2022 Tabs</span>
-                    <span class="ec-banner-title">latest tablets </span>
+                    <span class="ec-banner-stitle">Best Vitamins</span>
+                    <span class="ec-banner-title">Immunity</span>
                   </div>
                 </div>
               </a>
@@ -374,7 +347,6 @@ include('includes/dbconnection.php');
         <div class="col-md-12 section-title-block">
           <div class="section-title">
             <h2 class="ec-title">Exclusive</h2>
-            <p class="sub-title">Check out our exclusive products.</p>
           </div>
           <div class="section-btn">
             <ul class="ec-pro-tab-nav nav">
@@ -399,7 +371,7 @@ include('includes/dbconnection.php');
               <div class="row">
                 <div class="ec-pro-tab-slider">
                   <?php
-                  $ret=mysqli_query($con,"select * from tblproducts where status='New' order by rand()");
+                  $ret=mysqli_query($con,"select * from tblproducts where productStatus='New' order by rand()");
                   while ($row=mysqli_fetch_array($ret)) 
                   {
                     $discount=$row['productDiscount'];
@@ -450,8 +422,8 @@ include('includes/dbconnection.php');
                           <h5 class="ec-pro-title"><a href="product.php?pid=<?php echo htmlentities($row['id']);?>"><?php echo htmlentities($row['productName']);?></a>
                           </h5>
                           <span class="ec-price">
-                            <span class="old-price">$&nbsp;<?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
-                            <span class="new-price">$&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
+                            <span class="old-price">MDL <?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
+                            <span class="new-price">MDL <?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
                           </span>
                         </div>
                       </div>
@@ -468,7 +440,7 @@ include('includes/dbconnection.php');
               <div class="row">
                 <div class="ec-pro-tab-slider">
                   <?php
-                  $ret=mysqli_query($con,"select * from tblproducts where status='Special' order by rand()");
+                  $ret=mysqli_query($con,"select * from tblproducts where productStatus='Special' order by rand()");
                   while ($row=mysqli_fetch_array($ret)) 
                   {
                     $discount=$row['productDiscount'];
@@ -519,8 +491,8 @@ include('includes/dbconnection.php');
                           <h5 class="ec-pro-title"><a href="product.php?pid=<?php echo htmlentities($row['id']);?>"><?php echo htmlentities($row['productName']);?></a>
                           </h5>
                           <span class="ec-price">
-                            <span class="old-price">$&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
-                            <span class="new-price">$&nbsp;<?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
+                            <span class="old-price">MDL&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
+                            <span class="new-price">MDL&nbsp;<?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
                           </span>
                         </div>
                       </div>
@@ -537,7 +509,7 @@ include('includes/dbconnection.php');
               <div class="row">
                 <div class="ec-pro-tab-slider">
                   <?php
-                  $ret=mysqli_query($con,"select * from tblproducts where status='Best' order by rand()");
+                  $ret=mysqli_query($con,"select * from tblproducts where productStatus='Best' order by rand()");
                   while ($row=mysqli_fetch_array($ret)) 
                   {
                     $discount=$row['productDiscount'];
@@ -588,8 +560,8 @@ include('includes/dbconnection.php');
                           <h5 class="ec-pro-title"><a href="product.php?pid=<?php echo htmlentities($row['id']);?>"><?php echo htmlentities($row['productName']);?></a>
                           </h5>
                           <span class="ec-price">
-                            <span class="old-price">$&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
-                            <span class="new-price">$&nbsp;<?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
+                            <span class="old-price">MDL&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
+                            <span class="new-price">MDL&nbsp;<?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
                           </span>
                         </div>
                       </div>
@@ -625,6 +597,18 @@ include('includes/dbconnection.php');
             </div>
           </div>
         </div>
+          <div class="ec_ser_content ec_ser_content_3 col-sm-12 col-md-3">
+              <div class="ec_ser_inner">
+                  <div class="ec-service-image">
+                      <img src="assets/images/icons/service_4.svg" class="svg_img" alt="service" />
+                  </div>
+                  <div class="ec-service-desc">
+                      <h2>Secure Payment</h2>
+                      <p>Refund Guaranteed.</p>
+                  </div>
+              </div>
+          </div>
+
         <div class="ec_ser_content ec_ser_content_2 col-sm-12 col-md-3">
           <div class="ec_ser_inner">
             <div class="ec-service-image">
@@ -644,17 +628,6 @@ include('includes/dbconnection.php');
             <div class="ec-service-desc">
               <h2>24/7 Support</h2>
               <p>Free Online Support.</p>
-            </div>
-          </div>
-        </div>
-        <div class="ec_ser_content ec_ser_content_3 col-sm-12 col-md-3">
-          <div class="ec_ser_inner">
-            <div class="ec-service-image">
-              <img src="assets/images/icons/service_4.svg" class="svg_img" alt="service" />
-            </div>
-            <div class="ec-service-desc">
-              <h2>Secure Payment</h2>
-              <p>Refund Guaranteed.</p>
             </div>
           </div>
         </div>
@@ -817,7 +790,7 @@ include('includes/dbconnection.php');
     <div class="fb-panel">
       <!-- Panel Content -->
       <div class="fb-header">
-        <img src="assets/images/user/4.jpg" alt="pic" />
+        <img src="assets/images/user/2.jpg" alt="pic" />
         <h2>Linda Michelle</h2>
         <p>Technical Manager</p>
       </div>

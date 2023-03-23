@@ -166,23 +166,23 @@ if(isset($_POST['submit']))
 														?>
 														<form class="row g-3" method="post" >
 															<div class="col-md-3">
-																<label for="inputEmail4" class="form-label">Product Image1</label>
+																<label for="inputEmail4" class="form-label">Product Image 1</label>
 																<img  src="productimages/<?php echo htmlentities($row->productImage);?>"   alt="Product Image" width="200px;">
 																<div style="text-align: center;"><a href="#" >Update</a></div>
 																
 															</div>
 															<div class="col-md-3">
-																<label class="form-label">Product Image2</label>
+																<label class="form-label">Product Image 2</label>
 																<img  src="productimages/<?php echo htmlentities($row->productImage2);?>"   alt="Product Image" width="200px;">
 																<div style="text-align: center;"><a href="#" >Update</a></div>
 															</div>
 															<div class="col-md-3">
-																<label class="form-label">Product Image3</label>
+																<label class="form-label">Product Image 3</label>
 																<img  src="productimages/<?php echo htmlentities($row->productImage3);?>"   alt="Product Image" width="200px;">
 																<div style="text-align: center;"><a href="#" >Update</a></div>
 															</div>
 															<div class="col-md-3">
-																<label class="form-label">Product Image4</label>
+																<label class="form-label">Product Image 4</label>
 																<img  src="productimages/<?php echo htmlentities($row->productImage4);?>"   alt="Product Image" width="200px;">
 																<div style="text-align: center;"><a href="#" >Update</a></div>
 															</div>

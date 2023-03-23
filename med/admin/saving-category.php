@@ -17,7 +17,7 @@ if( $_POST['token'] != 'FsWga4&@f6aw' ){
 $tag=$_POST['tag'];
 $category=$_POST['category'];
 $description=$_POST['description'];
-$sql="insert into tblcategory(categoryName,categorydescription,Tags)values(:category,:description,:tag)";
+$sql="insert into tblcategory(categoryName,categoryDescription,tags)values(:category,:description,:tag)";
 $query=$dbh->prepare($sql);
 $query->bindParam(':category',$category,PDO::PARAM_STR);
 $query->bindParam(':description',$description,PDO::PARAM_STR);
@@ -41,6 +41,6 @@ if ($LastInsertId>0)
 }
 else
 {
-  echo '<script>alert("Something Went Wrong. Please try again")</script>';
+  echo '<script>alert("Something went Wrong. Please try again")</script>';
 }
 ?>

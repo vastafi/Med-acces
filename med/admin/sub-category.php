@@ -173,7 +173,7 @@ if(isset($_GET['del'])){
 
 												<tbody>
 													<?php
-													$sql="SELECT subcategory.subcategory,subcategory.id,tblcategory.CategoryName from subcategory join tblcategory on subcategory.categoryid=tblcategory.id ORDER BY subcategory.id DESC";
+													$sql="SELECT subcategory.subcategory,subcategory.id,tblcategory.categoryName from subcategory join tblcategory on subcategory.categoryId=tblcategory.id ORDER BY subcategory.id DESC";
 													$query = $dbh -> prepare($sql);
 													$query->execute();
 													$results=$query->fetchAll(PDO::FETCH_OBJ);

@@ -7,22 +7,17 @@
 				<div class="col text-left header-top-left d-none d-lg-block">
 					<div class="header-top-social">
 						<span class="social-text text-upper">Follow us on:</span>
-						<ul class="mb-0">
-							<li class="list-inline-item"><a class="hdr-facebook" href="#"><i class="ecicon eci-facebook"></i></a></li>
-							<li class="list-inline-item"><a class="hdr-twitter" href="#"><i class="ecicon eci-twitter"></i></a></li>
-							<li class="list-inline-item"><a class="hdr-instagram" href="#"><i class="ecicon eci-instagram"></i></a></li>
-							<li class="list-inline-item"><a class="hdr-linkedin" href="#"><i class="ecicon eci-linkedin"></i></a></li>
-						</ul>
+
+                            <ul class="mb-0">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100088809137038"><i class="ecicon eci-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/valentinaastafi/"><i class="ecicon eci-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/valentina-astafi-a65a041a4/"><i class="ecicon eci-linkedin"></i></a></li>
+                            </ul>
+
 					</div>
 				</div>
 				<!-- Header Top social End -->
-				<!-- Header Top Message Start -->
-				<div class="col text-center header-top-center">
-					<div class="header-top-message text-upper">
-						<span>Free Shipping</span>This Week Order Over - MDL 100
-					</div>
-				</div>
-				<!-- Header Top Message End -->
+
 				<!-- Header Top Language Currency -->
 				<div class="col header-top-right d-none d-lg-block">
 					<div class="header-top-lan-curr d-flex justify-content-end">
@@ -156,7 +151,7 @@
 					<!-- Ec Header Logo Start -->
 					<div class="align-self-center">
 						<div class="header-logo">
-							<a href="index.html"><img src="assets/images/logo/medacces_logo.jpg" alt="Site Logo" /><img
+							<a href="index.php"><img src="assets/images/logo/medacces_logo.jpg" alt="Site Logo" /><img
 								class="dark-logo" src="assets/images/logo/medacces_logo.jpg" alt="Site Logo"
 								style="display: none;" />
 							</a>
@@ -169,7 +164,7 @@
 						<div class="header-search">
 							<form class="ec-btn-group-form" action="#">
 								<input class="form-control" placeholder="Enter Your Product Name..." type="text">
-								<button class="submit" type="submit"><img src="../assets/images/icons/search.svg"
+								<button class="submit" type="submit"><img src="assets/images/icons/search.svg"
 									class="svg_img header_svg" alt="" />
 								</button>
 							</form>
@@ -310,7 +305,7 @@
 								<ul class="mega-menu d-block">
 									<li class="d-flex">
 										<ul class="d-block">
-											<li class="menu_title"><a href="javascript:void(0)">Laptops</a></li>
+											<li class="menu_title"><a href="categories.php?cid=60">Cosmetics</a></li>
 											<?php
 											$ret2=mysqli_query($con,"select * from tblproducts where categoryName='60' order by rand() limit 4");
 											while ($row2=mysqli_fetch_array($ret2)) 
@@ -322,9 +317,9 @@
 											}?>
 										</ul>
 										<ul class="d-block">
-											<li class="menu_title"><a href="javascript:void(0)">Phones</a></li>
+											<li class="menu_title"><a href="categories.php?cid=17">Hygiene</a></li>
 											<?php
-											$ret3=mysqli_query($con,"select * from tblproducts where categoryName='57' order by rand() limit 4");
+											$ret3=mysqli_query($con,"select * from tblproducts where categoryName='17' order by rand() limit 4");
 											while ($row3=mysqli_fetch_array($ret3)) 
 											{
 												?>
@@ -333,9 +328,9 @@
 											}?>
 										</ul>
 										<ul class="d-block">
-											<li class="menu_title"><a href="javascript:void(0)">Desktops & Laptop Bags</a></li>
+											<li class="menu_title"><a href="categories.php?cid=71">Dermatological</a></li>
 											<?php
-											$ret4=mysqli_query($con,"select * from tblproducts where categoryName='72' order by rand() limit 4");
+											$ret4=mysqli_query($con,"select * from tblproducts where categoryName='71' order by rand() limit 4");
 											while ($row4=mysqli_fetch_array($ret4)) 
 											{
 												?>
@@ -345,10 +340,10 @@
 
 										</ul>
 										<ul class="d-block">
-											<li class="menu_title"><a href="javascript:void(0)">Printers & Tablets</a>
+											<li class="menu_title"><a href="categories.php?cid=75">Vitamins</a>
 											</li>
 											<?php
-											$ret5=mysqli_query($con,"select * from tblproducts where categoryName='61' || categoryName='17' order by rand() limit 4");
+											$ret5=mysqli_query($con,"select * from tblproducts where categoryName='75' order by rand() limit 4");
 											while ($row5=mysqli_fetch_array($ret5)) 
 											{
 												?>
@@ -357,26 +352,7 @@
 											}?>
 										</ul>
 									</li>
-									<li>
-										<ul class="ec-main-banner w-100">
-											<li><a class="p-0" href="product.php?pid=62"><img
-												class="img-responsive"
-												src="assets/images/menu-banner/25.jpg" alt=""></a>
-											</li>
-											<li><a class="p-0" href="product.php?pid=81"><img
-												class="img-responsive"
-												src="assets/images/menu-banner/26.jpg" alt=""></a>
-											</li>
-											<li><a class="p-0" href="#"><img
-												class="img-responsive"
-												src="assets/images/menu-banner/28.jpg" alt=""></a>
-											</li>
-											<li><a class="p-0" href="product.php?pid=66"><img
-												class="img-responsive"
-												src="assets/images/menu-banner/27.jpg" alt=""></a>
-											</li>
-										</ul>
-									</li>
+
 								</ul>
 							</li>
 							<li class="dropdown"><a href="javascript:void(0)">Products</a>
@@ -393,8 +369,7 @@
 
 								</ul>
 							</li>
-							<li><a href="#">Hot Offers</a></li>
-						</ul>
+                        </ul>
 					</div>
 				</div>
 			</div>
@@ -404,14 +379,16 @@
 	<!-- shop Mobile Menu Start -->
 	<div id="ec-mobile-menu" class="ec-side-cart ec-mobile-menu">
 		<div class="ec-menu-title">
-			<span class="menu_title">My Menu</span>
+			<span class="menu_title">Menu</span>
 			<button class="ec-close">×</button>
 		</div>
 		<div class="ec-menu-inner">
 			<div class="ec-menu-content">
 				<ul>
 					<li><a href="index.php">Home</a></li>
-					<li><a href="javascript:void(0)">Categories</a>
+
+                        <li>
+                        <a href="categories.php?cid=60">Cosmetics</a>
 						<ul class="sub-menu">
 							<?php
 							$ret6=mysqli_query($con,"select * from tblproducts where categoryName='60' order by rand() limit 4");
@@ -422,11 +399,13 @@
 								</li>
 								<?php
 							}?>
+                            </ul>
+                    </li>
 							<li>
-								<a href="javascript:void(0)">Phones</a>
+								<a href="categories.php?cid=17">Hygiene</a></a>
 								<ul class="sub-menu">
 									<?php
-									$ret7=mysqli_query($con,"select * from tblproducts where categoryName='57' order by rand() limit 4");
+									$ret7=mysqli_query($con,"select * from tblproducts where categoryName='17' order by rand() limit 4");
 									while ($row7=mysqli_fetch_array($ret7)) 
 									{
 										?>
@@ -436,10 +415,10 @@
 								</ul>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Desktops & Laptop bags</a>
+								<a href="categories.php?cid=71">Dermatological</a>
 								<ul class="sub-menu">
 									<?php
-									$ret8=mysqli_query($con,"select * from tblproducts where categoryName='72' order by rand() limit 4");
+									$ret8=mysqli_query($con,"select * from tblproducts where categoryName='71' order by rand() limit 4");
 									while ($row8=mysqli_fetch_array($ret8)) 
 									{
 										?>
@@ -449,10 +428,10 @@
 								</ul>
 							</li>
 							<li>
-								<a href="javascript:void(0)">Printers & Tablets</a>
+								<a href="categories.php?cid=75">Vitamins</a>
 								<ul class="sub-menu">
 									<?php
-									$ret9=mysqli_query($con,"select * from tblproducts where categoryName='61' || categoryName='17' order by rand() limit 4");
+									$ret9=mysqli_query($con,"select * from tblproducts where categoryName='75'  order by rand() limit 4");
 									while ($row9=mysqli_fetch_array($ret9)) 
 									{
 										?>
@@ -495,10 +474,11 @@
 				<div class="header-res-social">
 					<div class="header-top-social">
 						<ul class="mb-0">
-							<li class="list-inline-item"><a class="hdr-facebook" href="#"><i class="ecicon eci-facebook"></i></a></li>
-							<li class="list-inline-item"><a class="hdr-twitter" href="#"><i class="ecicon eci-twitter"></i></a></li>
-							<li class="list-inline-item"><a class="hdr-instagram" href="#"><i class="ecicon eci-instagram"></i></a></li>
-							<li class="list-inline-item"><a class="hdr-linkedin" href="#"><i class="ecicon eci-linkedin"></i></a></li>
+                            <ul class="mb-0">
+                                <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100088809137038"><i class="ecicon eci-facebook"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.instagram.com/valentinaastafi/"><i class="ecicon eci-instagram"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/valentina-astafi-a65a041a4/"><i class="ecicon eci-linkedin"></i></a></li>
+                            </ul>
 						</ul>
 					</div>
 				</div>

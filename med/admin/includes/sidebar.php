@@ -20,7 +20,14 @@
                     </a>
                     <hr>
                 </li>
-
+                <!-- company -->
+                <li>
+                    <a class="sidenav-item-link" href="company-details.php">
+                        <i class="mdi mdi-home-account"></i>
+                        <span class="nav-text">Company profile</span>
+                    </a>
+                    <hr>
+                </li>
 
                 <!-- Users -->
                 <li class="has-sub">
@@ -46,28 +53,6 @@
                     <hr>
                 </li>
 
-                <!-- Category -->
-                <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)">
-                        <i class="mdi mdi-dns-outline"></i>
-                        <span class="nav-text">Categories</span> <b class="caret"></b>
-                    </a>
-                    <div class="collapse">
-                        <ul class="sub-menu" id="categorys" data-parent="#sidebar-menu">
-                            <li class="">
-                                <a class="sidenav-item-link" href="main-category.php">
-                                    <span class="nav-text">Main Category</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a class="sidenav-item-link" href="sub-category.php">
-                                    <span class="nav-text">Sub Category</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-
                 <!-- Products -->
                 <li class="has-sub">
                     <a class="sidenav-item-link" href="javascript:void(0)">
@@ -84,6 +69,28 @@
                             <li class="">
                                 <a class="sidenav-item-link" href="product-list.php">
                                     <span class="nav-text">List Product</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- Category -->
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class="mdi mdi-dns-outline"></i>
+                        <span class="nav-text">Categories</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse">
+                        <ul class="sub-menu" id="categorys" data-parent="#sidebar-menu">
+                            <li class="">
+                                <a class="sidenav-item-link" href="main-category.php">
+                                    <span class="nav-text">Main Category</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="sidenav-item-link" href="sub-category.php">
+                                    <span class="nav-text">Sub Category</span>
                                 </a>
                             </li>
                         </ul>
@@ -129,14 +136,7 @@
                     </a>
                     <hr>
                 </li>
-                <!-- company -->
-                <li>
-                    <a class="sidenav-item-link" href="company-details.php">
-                        <i class="mdi mdi-home-account"></i>
-                        <span class="nav-text">Company profile</span>
-                    </a>
-                    <hr>
-                </li>
+
             </ul>
         </div>
     </div>

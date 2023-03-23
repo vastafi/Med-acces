@@ -22,7 +22,7 @@ else{
 		<script >
 			swal.fire({
 				'title': 'Thank you',
-				'text': 'Subscribed successfuly',
+				'text': 'Subscribed successfully',
 				'icon': 'success',
 				'type': 'success'
 			})

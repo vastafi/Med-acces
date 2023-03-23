@@ -33,21 +33,15 @@
               <h4 class="ec-footer-heading">Location</h4>
               <div class="ec-footer-links">
                 <ul class="align-items-center">
-                  <li class="ec-footer-link">Nicolae Iorga 21A, Chișinău</li>
+                  <li class="ec-footer-link">Nicolae Iorga 21 A, Chișinău</li>
                 </ul>
                 <div class="col-sm-12 col-lg-3 ec-footer-social">
                   <div class="ec-footer-widget">
                     <div class="ec-footer-links">
                       <ul class="align-items-center">
-                        <li class="list-inline-item"><a href="#"><i class="ecicon eci-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item"><a href="#"><i class="ecicon eci-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item"><a href="#"><i
-                          class="ecicon eci-instagram"></i></a>
-                        </li>
-                        <li class="list-inline-item"><a href="#"><i class="ecicon eci-linkedin"></i></a>
-                        </li>
+                        <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100088809137038"><i class="ecicon eci-facebook"></i></a> </li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/valentinaastafi/"><i class="ecicon eci-instagram"></i></a> </li>
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/valentina-astafi-a65a041a4/"><i class="ecicon eci-linkedin"></i></a> </li>
                       </ul>
                     </div>
                   </div>
@@ -55,6 +49,19 @@
               </div>
             </div>
           </div>
+            <div class="col-sm-12 col-lg-2 ec-footer-account">
+                <div class="ec-footer-widget">
+                    <h4 class="ec-footer-heading">Account</h4>
+                    <div class="ec-footer-links">
+                        <ul class="align-items-center">
+                            <li class="ec-footer-link"><a href="user-profile.php">My Account</a></li>
+                            <li class="ec-footer-link"><a href="user-history.php">Order History</a></li>
+                            <li class="ec-footer-link"><a href="wishlist.php">Wish List</a></li>
+                            <li class="ec-footer-link"><a href="product.php?pid=70">Specials</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
           <div class="col-sm-12 col-lg-3 ec-footer-news">
             <div class="ec-footer-widget">
               <h4 class="ec-footer-heading">Newsletter</h4>
@@ -76,19 +83,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-sm-12 col-lg-2 ec-footer-account">
-          <div class="ec-footer-widget">
-            <h4 class="ec-footer-heading">Account</h4>
-            <div class="ec-footer-links">
-              <ul class="align-items-center">
-                <li class="ec-footer-link"><a href="user-profile.php">My Account</a></li>
-                <li class="ec-footer-link"><a href="user-history.php">Order History</a></li>
-                <li class="ec-footer-link"><a href="wishlist.php">Wish List</a></li>
-                <li class="ec-footer-link"><a href="product.php?pid=70">Specials</a></li>
-              </ul>
-            </div>
-          </div>
+
         </div>
         <div class="col-sm-12 col-lg-2 ec-footer-service">
           <div class="ec-footer-widget">
@@ -96,10 +91,10 @@
             <div class="ec-footer-links">
               <ul class="align-items-center">
                 <li class="ec-footer-link"><a href="#">Discount Returns</a></li>
-                <li class="ec-footer-link"><a href="#">Policy & policy </a>
+                <li class="ec-footer-link"><a href="#">Policy & privacy </a>
                 </li>
                 <li class="ec-footer-link"><a href="#">Customer Service</a></li>
-                <li class="ec-footer-link"><a href="#">Term & condition</a>
+                <li class="ec-footer-link"><a href="terms-conditions.php">Term & condition</a>
                 </li>
               </ul>
             </div>
@@ -119,6 +114,7 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -129,7 +125,7 @@
         <div class="col footer-copy">
           <div class="footer-bottom-copy ">
             <div class="ec-copy">Copyright © 2023 <a class="site-name text-upper"
-              href="index.php">V.A</a>. All Rights Reserved</div>
+              href="https://github.com/vastafi">V.A</a>. All Rights Reserved</div>
             </div>
           </div>
           <!-- Footer Copyright End -->

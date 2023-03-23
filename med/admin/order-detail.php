@@ -20,7 +20,7 @@ if(strlen($_SESSION['odmsaid'])==0)
 
     <!-- GOOGLE FONTS -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="assets/mdi/css/materialdesignicons.min.css">
@@ -129,11 +129,11 @@ if(strlen($_SESSION['odmsaid'])==0)
 														<thead>
 															<tr class="line">
 																<td><strong>#</strong></td>
-																<td class="text-center"><strong>IMAGE</strong></td>
-																<td class="text-center"><strong>PRODUCT</strong></td>
-																<td class="text-center"><strong>PRICE/UNIT</strong></td>
-																<td class="text-right"><strong>QUANTITY</strong></td>
-																<td class="text-right"><strong>SUBTOTAL</strong></td>
+																<td class="text-center"><strong>Image</strong></td>
+																<td class="text-center"><strong>Product</strong></td>
+																<td class="text-center"><strong>Price (unit)</strong></td>
+																<td class="text-right"><strong>Quantity</strong></td>
+																<td class="text-right"><strong>SubTotal</strong></td>
 															</tr>
 														</thead>
 														<tbody>

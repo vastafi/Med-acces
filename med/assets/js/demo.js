@@ -406,8 +406,8 @@ function ecCheckCookie()
 
     /*----------------------------- Product Countdown --------------------*/
     $("#ec-offer-count").countdowntimer({
-        startDate: "2022/10/01 12:00:00",
-        dateAndTime: "2022/10/28 12:00:00",
+        startDate: "2023/04/15 12:00:00",
+        dateAndTime: "2023/04/15 12:00:00",
         labelsFormat: true,
         displayFormat: "DHMS"
     });

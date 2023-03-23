@@ -6,18 +6,11 @@
         <!-- Header Top phone Start -->
         <div class="col header-top-left">
           <div class="header-top-call">
-            <img src="assets/images/icons/top-call.svg" class="svg_img top_svg" alt="" /> Phone:
-            <a href="tel:+48735527287"> +373 60067021</a>
+              <img src="https://img.icons8.com/color/48/null/hand-with-smartphone.png"/> Phone:
+            <a href="tel:37360067021"> +373 60067021</a>
           </div>
         </div>
         <!-- Header Top phone End -->
-        <!-- Header Top call Start -->
-        <div class="col header-top-center">
-          <div class="header-top-call">
-            Order online or call us (+373)600 67 021
-          </div>
-        </div>
-        <!-- Header Top call End -->
         <!-- Header Top Language Currency -->
         <div class="col header-top-right d-none d-lg-block">
           <div class="header-top-right-inner d-flex justify-content-end">
@@ -69,7 +62,7 @@
             <!-- Header User Start -->
             <div class="ec-header-user dropdown">
               <button class="dropdown-toggle" data-bs-toggle="dropdown"><img
-                src="assets/images/icons/user.svg" class="svg_img header_svg"
+                src="../assets/images/icons/user.svg" class="svg_img header_svg"
                 alt="" />
               </button>
               <ul class="dropdown-menu dropdown-menu-right">
@@ -92,7 +85,7 @@
             <!-- Header Cart Start -->
             <a href="wishlist.php" class="ec-header-btn ec-header-wishlist">
               <div class="header-icon">
-                <img src="assets/images/icons/wishlist.svg"
+                <img src="../assets/images/icons/wishlist.svg"
                 class="svg_img header_svg" alt="" />
               </div>
               <?php
@@ -183,16 +176,24 @@
                 <div class="ec-search-select-inner">
                   <select name="ec-search-cat">
                     <option selected disabled>All</option>
-                    <option value="Laptops">Laptops</option>
-                    <option value="Phones">Phones</option>
-                    <option value="Desktops">Desktops</option>
+                    <option value="Cardiovascular">Cardiovascular</option>
+                    <option value="Respiratory">Respiratory</option>
+                    <option value="Digestion">Digestion</option>
+                    <option value="Dermatological">Dermatological</option>
+                    <option value="Musculoskeletal">Musculoskeletal</option>
+                    <option value="Hematopoietic">Hematopoietic</option>
+                    <option value="Hormone">Hormone</option>
+                    <option value="Antiparasitic">Antiparasitic</option>
+                    <option value="Hygiene">Hygiene</option>
+                    <option value="Cosmetics">Cosmetics</option>
+                    <option value="Vitamins">Vitamins</option>
+                    <option value="Immunomodulatory">Immunomodulatory</option>
                   </select>
                 </div>
                 <input class="form-control" placeholder="I’m searching for..." type="text">
-                <button class="search_submit" type="submit">Search 
-                  <img
-                  src="../assets/images/icons/search.svg" class="svg_img search_svg"
-                  alt="" />
+                <button class="search_submit" type="submit">Search
+                    <img src="https://img.icons8.com/avantgarde/100/null/search.png" class="svg_img search_svg" />
+
                 </button>
               </form>
             </div>
@@ -246,9 +247,10 @@
                   <span class="ec-header-count ec-cart-wishlist"><?php echo $count?></span>
                   <?php
                 }?>
-                <span class="ec-btn-title">wishlist</span>
+                <span class="ec-btn-title">Wishlist</span>
               </a>
               <!-- Header wishlist End -->
+
               <!-- Header Cart Start -->
               <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
                 <div class="header-icon">
@@ -285,8 +287,7 @@
                   <?php
                 }
                 ?>
-                <span class="ec-btn-title">In
-                Cart</span>
+                <span class="ec-btn-title">In Cart</span>
               </a>
               <!-- Header Cart End -->
             </div>
@@ -316,9 +317,18 @@
               <div class="ec-search-select-inner">
                 <select name="ec-search-cat">
                   <option selected disabled>All</option>
-                  <option value="Laptops & Bags">Laptops & Bags</option>
-                  <option value="Smart Phones">Smart Phones</option>
-                  <option value="Desktops">Desktops</option>
+                    <option value="Immunomodulatory">Immunomodulatory</option>
+                    <option value="Cardiovascular">Cardiovascular system</option>
+                    <option value="Respiratory">Respiratory system</option>
+                    <option value="Digestion">Digestion, metabolisms</option>
+                    <option value="Dermatological">Dermatological</option>
+                    <option value="Musculoskeletal">Musculoskeletal</option>
+                    <option value="Hematopoietic">Hematopoietic</option>
+                    <option value="Hormone">Hormone</option>
+                    <option value="Antiparasitic">Antiparasitic</option>
+                    <option value="Hygiene">Hygiene</option>
+                    <option value="Cosmetics">Cosmetics</option>
+                    <option value="Vitamins">Vitamins</option>
                 </select>
               </div>
               <input class="form-control" placeholder="I’m searching for..." type="text">
@@ -349,35 +359,61 @@
               <div id="ec-category-menu" class="ec-category-menu">
                 <ul class="ec-category-wrapper">
                   <li>
-                    <a title="" class="ec-cat-menu-link" href="product.php?pid=62">
-                      <img src="assets/images/icons/laptops.svg" class="svg_img pro_svg" alt="" />Laptops
+                    <a title="" class="ec-cat-menu-link" href="categories.php?cid=59">
+                      <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Cardiovascular
                     </a>
                   </li>
                   <li>
-                    <a title="" class="ec-cat-menu-link" href="product.php?pid=68">
-                      <img src="assets/images/icons/smartphone.svg" class="svg_img pro_svg" alt="" />Smart phones
+                    <a title="" class="ec-cat-menu-link" href="categories.php?cid=61">
+                      <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Respiratory
                     </a>
                   </li>
                   <li>
-                    <a title="" class="ec-cat-menu-link" href="#">
-                      <img src="assets/images/icons/bag.svg" class="svg_img pro_svg" alt="" />Laptop Bags
+                    <a title="" class="ec-cat-menu-link" href="categories.php?cid=57">
+                      <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Digestion
                     </a>
                   </li>
                   <li>
-                    <a title="" class="ec-cat-menu-link" href="product.php?pid=66">
-                      <img src="assets/images/icons/printer.svg" class="svg_img pro_svg" alt="" />Printers
+                    <a title="" class="ec-cat-menu-link" href="categories.php?cid=71">
+                      <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Dermatological
                     </a>
                   </li>
                   <li>
-                    <a title="" class="ec-cat-menu-link" href="product.php?pid=79">
-                      <img src="assets/images/icons/tablets.svg" class="svg_img pro_svg" alt="" />Tablets
+                    <a title="" class="ec-cat-menu-link" href="categories.php?cid=72">
+                      <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Musculoskeletal
                     </a>
                   </li>
                   <li>
-                    <a title="" class="ec-cat-menu-link" href="product.php?pid=77">
-                      <img src="assets/images/icons/headphones.svg" class="svg_img pro_svg" alt="" />Headsets
+                    <a title="" class="ec-cat-menu-link" href="categories.php?cid=73">
+                      <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Hematopoietic
                     </a>
                   </li>
+                    <li>
+                        <a title="" class="ec-cat-menu-link" href="categories.php?cid=74">
+                            <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Hormone
+                        </a>
+                    </li>
+                    <li>
+                        <a title="" class="ec-cat-menu-link" href="categories.php?cid=14">
+                            <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Hygiene
+                        </a>
+                    </li>
+                    <li>
+                        <a title="" class="ec-cat-menu-link" href="categories.php?cid=60">
+                            <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Cosmetics
+                        </a>
+                    </li>
+                    <li>
+                        <a title="" class="ec-cat-menu-link" href="categories.php?cid=75">
+                            <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Vitamins
+                        </a>
+                    </li>
+                    <li>
+                        <a title="" class="ec-cat-menu-link" href="categories.php?cid=14">
+                            <img src="assets/images/icons/pills.png" class="svg_img pro_svg" alt="" />Immunity
+                        </a>
+                    </li>
+
                 </ul>
               </div>
             </div>
@@ -391,7 +427,7 @@
                 <ul class="mega-menu d-block">
                   <li class="d-flex">
                     <ul class="d-block">
-                      <li class="menu_title"><a href="javascript:void(0)">Laptops</a></li>
+                      <li class="menu_title"><a href="javascript:void(0)">Cosmetics</a></li>
                       <?php
                       $ret2=mysqli_query($con,"select * from tblproducts where categoryName='60' order by rand() limit 4");
                       while ($row2=mysqli_fetch_array($ret2)) 
@@ -403,9 +439,9 @@
                       }?>
                     </ul>
                     <ul class="d-block">
-                      <li class="menu_title"><a href="javascript:void(0)">Phones</a></li>
+                      <li class="menu_title"><a href="javascript:void(0)">Hygiene</a></li>
                       <?php
-                      $ret3=mysqli_query($con,"select * from tblproducts where categoryName='57' order by rand() limit 4");
+                      $ret3=mysqli_query($con,"select * from tblproducts where categoryName='17' order by rand() limit 4");
                       while ($row3=mysqli_fetch_array($ret3)) 
                       {
                         ?>
@@ -414,9 +450,9 @@
                       }?>
                     </ul>
                     <ul class="d-block">
-                      <li class="menu_title"><a href="javascript:void(0)">Desktops & Laptop Bags</a></li>
+                      <li class="menu_title"><a href="javascript:void(0)">Dermatological</a></li>
                       <?php
-                      $ret4=mysqli_query($con,"select * from tblproducts where categoryName='72' order by rand() limit 4");
+                      $ret4=mysqli_query($con,"select * from tblproducts where categoryName='71' order by rand() limit 4");
                       while ($row4=mysqli_fetch_array($ret4)) 
                       {
                         ?>
@@ -425,10 +461,10 @@
                       }?>
                     </ul>
                     <ul class="d-block">
-                      <li class="menu_title"><a href="javascript:void(0)">Printers & Headsets</a>
+                      <li class="menu_title"><a href="javascript:void(0)">Vitamins</a>
                       </li>
                       <?php
-                      $ret5=mysqli_query($con,"select * from tblproducts where categoryName='61' || categoryName='17' order by rand() limit 4");
+                      $ret5=mysqli_query($con,"select * from tblproducts where categoryName='75' order by rand() limit 4");
                       while ($row5=mysqli_fetch_array($ret5)) 
                       {
                         ?>
@@ -440,20 +476,16 @@
                   <li>
                     <ul class="ec-main-banner w-100">
                       <li><a class="p-0" href="product.php?pid=62"><img
-                        class="img-responsive"
-                        src="assets/images/menu-banner/21.jpg" alt=""></a>
+                        class="img-responsive" alt=""></a>
                       </li>
                       <li><a class="p-0" href="product.php?pid=81"><img
-                        class="img-responsive"
-                        src="assets/images/menu-banner/22.jpg" alt=""></a>
+                        class="img-responsive" alt=""></a>
                       </li>
                       <li><a class="p-0" href="#"><img
-                        class="img-responsive"
-                        src="assets/images/menu-banner/24.jpg" alt=""></a>
+                        class="img-responsive" alt=""></a>
                       </li>
                       <li><a class="p-0" href="product.php?pid=66"><img
-                        class="img-responsive"
-                        src="assets/images/menu-banner/23.jpg" alt=""></a>
+                        class="img-responsive" alt=""></a>
                       </li>
                     </ul>
                   </li>
@@ -472,8 +504,7 @@
 
                 </ul>
               </li>
-              <li><a href="#">Hot Offers</a></li>
-            </ul>
+              </ul>
           </div>
         </div>
       </div>
@@ -495,7 +526,7 @@
           <li><a href="javascript:void(0)">Categories</a>
             <ul class="sub-menu">
               <li>
-                <a href="javascript:void(0)">Laptops</a>
+                <a href="javascript:void(0)">Cosmetics</a>
                 <ul class="sub-menu">
                   <?php
                   $ret6=mysqli_query($con,"select * from tblproducts where categoryName='60' order by rand() limit 4");
@@ -509,10 +540,10 @@
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Phones</a>
+                <a href="javascript:void(0)">Hygiene</a>
                 <ul class="sub-menu">
                   <?php
-                  $ret7=mysqli_query($con,"select * from tblproducts where CategoryName='57' order by rand() limit 4");
+                  $ret7=mysqli_query($con,"select * from tblproducts where CategoryName='17' order by rand() limit 4");
                   while ($row7=mysqli_fetch_array($ret7)) 
                   {
                     ?>
@@ -522,10 +553,10 @@
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Desktops & Laptop Bags</a>
+                <a href="javascript:void(0)">Dermatological</a>
                 <ul class="sub-menu">
                   <?php
-                  $ret8=mysqli_query($con,"select * from tblproducts where categoryName='72' order by rand() limit 4");
+                  $ret8=mysqli_query($con,"select * from tblproducts where categoryName='71' order by rand() limit 4");
                   while ($row8=mysqli_fetch_array($ret8)) 
                   {
                     ?>
@@ -535,10 +566,10 @@
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Printers & Tablets</a>
+                <a href="javascript:void(0)">Vitamins</a>
                 <ul class="sub-menu">
                   <?php
-                  $ret9=mysqli_query($con,"select * from tblproducts where categoryName='61' || categoryName='17' order by rand() limit 4");
+                  $ret9=mysqli_query($con,"select * from tblproducts where categoryName='75' || categoryName='17' order by rand() limit 4");
                   while ($row9=mysqli_fetch_array($ret9)) 
                   {
                     ?>
@@ -547,9 +578,7 @@
                   }?>
                 </ul>
               </li>
-              <li><a class="p-0" href="shop-left-sidebar-col-3.html"><img class="img-responsive"
-                src="assets/images/menu-banner/1.jpg" alt=""></a>
-              </li>
+
             </ul>
           </li>
           <li><a href="javascript:void(0)">Products</a>
@@ -598,10 +627,9 @@
         <div class="header-res-social">
           <div class="header-top-social">
             <ul class="mb-0">
-              <li class="list-inline-item"><a href="#"><i class="ecicon eci-facebook"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="ecicon eci-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="ecicon eci-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="ecicon eci-linkedin"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100088809137038"><i class="ecicon eci-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/valentinaastafi/"><i class="ecicon eci-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/valentina-astafi-a65a041a4/"><i class="ecicon eci-linkedin"></i></a></li>
             </ul>
           </div>
         </div>

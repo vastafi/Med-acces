@@ -40,7 +40,7 @@ if(isset($_POST['login']))
              } else
              { 
                 echo "<script>
-                alert('Your account was disabled Approach Admin');document.location ='index.php';
+                alert('Your account was disabled! Approach Admin.');document.location ='index.php';
                 </script>";
             }
         } 

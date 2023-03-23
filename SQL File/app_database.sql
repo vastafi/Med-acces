@@ -19,13 +19,19 @@ CREATE TABLE `orders` (
 INSERT INTO `orders` (`id`, `userId`, `productId`, `invoiceNumber`, `quantity`, `orderNote`, `orderDate`, `paymentMethod`, `orderStatus`) VALUES
 (59, 30, '63', 343098410, 2, 'Make sure you deliver fast', '2023-02-03 09:44:00', 'Cash On Delivery', NULL),
 (60, 30, '72', 343098410, 1, 'Make sure you deliver fast', '2023--03 09:44:00', 'Cash On Delivery', NULL),
-(61, 30, '79', 343098410, 3, 'Make sure you deliver fast', '2023-03-03 09:44:01', 'Cash On Delivery', NULL),
-(65, 5, '64', 708811244, 3, 'Help and deliver fast', '2023-03-09 03:30:12', 'Cash On Delivery', NULL),
-(66, 5, '71', 708811244, 2, 'Help and deliver fast', '2023-03-09 08:30:12', 'Cash On Delivery', NULL);
-(67, 30, '63', 343098410, 2, 'Make sure you deliver fast', '2022-12-03 09:44:00', 'Cash On Delivery', NULL),
-(68, 30, '72', 343098410, 1, 'Make sure you deliver fast', '2022-12-03 09:44:00', 'Cash On Delivery', NULL),
-(69, 30, '79', 343098410, 3, 'Make sure you deliver fast', '2023-03-03 09:44:01', 'Cash On Delivery', NULL),
-(70, 5, '64', 708811244, 3, 'Help and deliver fast', '2023-03-09 03:30:12', 'Cash On Delivery', NULL),
+(61, 31, '79', 343098410, 3, 'Make sure you deliver fast', '2023-03-03 09:44:01', 'Cash On Delivery', NULL),
+(65, 33, '142', 708811244, 3, 'Help and deliver fast', '2023-03-09 03:30:12', 'Cash On Delivery', NULL),
+(66, 34, '141', 708811244, 2, 'Help and deliver fast', '2023-04-09 08:30:12', 'Cash On Delivery', NULL),
+(67, 35, '140', 343098410, 2, 'Make sure you deliver fast', '2022-03-03 09:44:00', 'Cash On Delivery', NULL),
+(68, 36, '72', 343098410, 1, 'Make sure you deliver fast', '2023-03-15 09:44:00', 'Cash On Delivery', NULL),
+(69, 37, '79', 343098410, 3, 'Make sure you deliver fast', '2023-03-03 09:44:01', 'Cash On Delivery', NULL),
+(70, 38, '118', 708811244, 3, 'Help and deliver fast', '2023-04-09 03:30:12', 'Cash On Delivery', NULL),
+(71, 39, '138', 708811244, 3, 'Help and deliver fast', '2023-03-09 03:30:12', 'Cash On Delivery', NULL),
+(72, 40, '137', 708811244, 2, 'Help and deliver fast', '2023-03-09 08:30:12', 'Cash On Delivery', NULL),
+(73, 41, '63', 343098410, 2, 'Make sure you deliver fast', '2023-04-03 09:44:00', 'Cash On Delivery', NULL),
+(74, 40, '148', 343098410, 1, 'Make sure you deliver fast', '2023-04-03 09:44:00', 'Cash On Delivery', NULL),
+(75, 38, '144', 343098410, 3, 'Make sure you deliver fast', '2023-03-30 09:44:01', 'Cash On Delivery', NULL),
+(76, 5, '147', 708811244, 3, 'Help and deliver fast', '2023-04-09 03:30:12', 'Cash On Delivery', NULL);
 
 -- Table structure for table `permissions`
 CREATE TABLE `permissions` (
@@ -40,7 +46,7 @@ CREATE TABLE `permissions` (
 -- Dumping data for table `permissions`
 INSERT INTO `permissions` (`id`, `permission`, `createuser`, `deleteuser`, `createbid`, `updatebid`) VALUES
 (1, 'Superuser', '1', '1', '1', '1'),
-(2, 'Admin', '1', NULL, '1', '1'),
+(2, 'Admin', '1', 1, '1', '1'),
 (3, 'User', NULL, NULL, '1', NULL);
 
 -- Table structure for table `productreviews`
@@ -60,7 +66,16 @@ INSERT INTO `productreviews` (`id`, `productId`, `rating`, `name`, `email`, `rev
 (12, 67, 4, 'Anton Vasile', 'vasile@gmail.com', 'This is the quality product that I was been looking for many years', '2023-02-23 12:11:38'),
 (13, 38, 3, 'Nica Ion', 'ion@gmail.com', 'I like that portal', '2023-03-01 09:11:28'),
 (14, 41, 2, 'Anton Vasile', 'vasile@gmail.com', 'I like your product', '2023-03-07 08:19:40'),
-(19, 68, 1, 'Nica Ion', 'ion@gmail.com', 'This is product I was been looking', '2023-03-07 09:47:58');
+(19, 68, 1, 'Nica Ion', 'ion@gmail.com', 'This is product I was been looking', '2023-03-07 09:47:58'),
+(20, 123,4, 'Ion Ivanov', 'ion@mail.md', 'The product was very good, the quality and price very good!', '2023-02-03'),
+(21,130,5, 'Ana Popescu', 'ana@mail.md', 'The product is good and the price is affordable.', '2023-03-03'),
+(22,150,5, 'Maria Duma', 'maria@mail.md', 'The product was delivered quickly and is very good!', '2023-08-03'),
+(23,60,5, 'Ana Gheorghita', 'ana@mail.md', 'The price of the product is quite high.', '2023-04-03'),
+(24,64,4,'Ion Negoescu', 'ion@mail.md', 'The product is of good quality, but it is quite expensive.', '2023-04-03'),
+(25,124,5, 'Ion Ivanov', 'ion@mail.md', 'The quality of the product is excellent and the price is very good.', '2023-04-03'),
+(26,180,5,'Ana Popescu', 'ana@mail.md', 'The product is good and the delivery was fast.', '2023-02-03'),
+(27,127,4 'Maria Duma', 'maria@mail.md', 'The product is not up to my expectations and the price is quite high.', '2023-03-03' ),
+(28,120,5, 'Ana Gheorghita', 'ana@mail.md', 'I was very satisfied with the product and the affordable price.', '2023-03-03');
 
 -- Table structure for table `subcategory`
 CREATE TABLE `subcategory` (
@@ -166,6 +181,7 @@ INSERT INTO `tbladmin` (`id`, `staffid`, `adminName`, `userName`, `firstName`, `
 (130, NULL, NULL, 'irina', 'Irina', 'Stefan', 097654789, 'irina@gmail.com', NULL, 1, 'g2o9@h3$n%&h09', 'userF7.jpg', NULL, '2023-05-22 11:33:08'),
 (135, NULL, NULL, 'stefan', 'Stefan', 'Alin', 097654789, 'stefan@gmail.com', NULL, 1, 'g2o9@h3$n%&h09', 'userB5.jpg', NULL, '2023-05-25 11:33:08'),
 (140, NULL, NULL, 'alin', 'Alin', 'Darius', 097654789, 'alin@gmail.com', NULL, 1, 'g2o9@h3$n%&h09', 'userB4.jpg', NULL, '2023-05-27 11:33:08');
+
 -- Table structure for table `tblbrand`
 CREATE TABLE `tblbrand` (
   `id` int(10) NOT NULL,
@@ -369,8 +385,19 @@ CREATE TABLE `users` (
 
 -- Dumping data for table `users`
 INSERT INTO `users` (`id`, `name`, `email`, `contactNo`, `password`, `shippingAddress`, `shippingCountry`, `shippingCity`, `shippingZipcode`, `shippingContact`, `billingAddress`, `billingCountry`, `billingCity`, `billingState`, `billingZipcode`, `billingContact`, `activationcode`, `regDate`, `updationDate`) VALUES
-(5, ' Nicole Petrov', 'nicole@gmail.com', 770546590, '81dc9bdb52d04dc20036dbd8313ed055', 'Moldovava', NULL, 'Chisinau', 256, NULL, 'Main street Road', NULL, 'Chisinau', NULL, 256, 770546590, '98ab04547bf7fbb0b4805342453923e5', '2022-02-18 09:00:57', ''),
-(30, 'Sara Ambros', 'sara@gmail.com', 770546590, '827ccb0eea8a706c4c34a16891f84e7b', NULL, NULL, NULL, NULL, NULL, 'Chisinau', 'Moldova', 'Bloc4', 'Ciocana', 790, NULL, 'g2o9@h3$n%&h09', '2022-10-03 09:40:34', NULL);
+(5, ' Nicole Petrov', 'nicole@gmail.com', 770546590, '81dc9bdb52d04dc20036dbd8313ed055', 'Moldova', NULL, 'Chisinau', 256, NULL, 'Riscani', NULL, 'Chisinau', NULL, 256, 770546590, '98ab04547bf7fbb0b4805342453923e5', '2022-02-18 09:00:57', NULL),
+(30, 'Sara Ambros', 'sara@gmail.com', 770546590, '827ccb0eea8a706c4c34a16891f84e7b', 'Moldova', NULL, NULL, NULL, NULL, 'Chisinau', 'Moldova', 'Bloc4', 'Ciocana', 790, NULL, 'g2o9@h3$n%&h09', '2022-10-03 09:40:34', NULL),
+(31, ' Nicole Petrov', 'nicole@gmail.com', 680546590, '81dc9bdb52d04dc20036dbd8313ed055', 'Moldova', NULL, 'Chisinau', 256, NULL, 'Botanica', NULL, 'Chisinau', NULL, 256, 770546590, '98ab04547bf7fbb0b4805342453923e5', '2022-02-18 09:00:57', NULL),
+(42, 'Sara Ambros', 'sara@gmail.com', 77846590, '827ccb0eea8a706c4c34a16891f84e7b', 'Moldova', NULL, NULL, NULL, NULL, 'Chisinau', 'Moldova', 'Bloc4', 'Ciocana', 790, NULL, 'g2o9@h3$n%&h09', '2022-10-03 09:40:34', NULL),
+(33, 'Maria Popescu', 'mariapopescu@example.com', '+37372222222', '123456', 'str. Eroilor, nr. 5, bl. B', 'Moldova', 'Ialoveni', '2050', 'Maria Popescu', 'str. Eroilor, nr. 5, bl. B', 'Moldova', 'Ialoveni', 'Ialoveni', '2050', 'Maria Popescu', 'ACT002', '2022-09-02', NULL),
+(34, 'Alexandru Tanase', 'alexandru tanase@example.com', '+37373333333', '123456', 'str. Gara, nr. 8, bl. C', 'Moldova', 'Edinet', '2055', 'Alexandru Tanase', 'str. Gara, nr. 8, bl. C', 'Moldova', 'Edinet', 'Edinet', '2055', 'Alexandru Tanase', 'ACT003', '2022-09-03', NULL),
+(35, 'Ion Petrescu', 'ionpetrescu@example.com', '+37374444444', '123456', 'str. Armeneasca, nr. 18, bl. D', 'Moldova', 'Ungheni', '2060', 'Ion Petrescu', 'str. Armeneasca, nr. 18, bl. D', 'Moldova', 'Ungheni', 'Ungheni', '2060', 'Ion Petrescu', 'ACT004', '2022-09-04', NULL),
+(36, 'Ana Georgescu', 'anageorgescu@example.com', '+37375555555', '123456', 'str. Garii, nr. 23, bl. E', 'Moldova', 'Straseni', '2065', 'Ana Georgescu', 'str. Garii, nr. 23, bl. E', 'Moldova', 'Straseni', 'Straseni', '2065', 'Ana Georgescu', 'ACT005', '2022-09-05', NULL),
+(37, 'Mihai Ionescu', 'mihaiionescu@example.com', '+37376666666', '123456', 'str. Mihai Eminescu, nr. 33, bl. F', 'Moldova', 'Balti', '2070', 'Mihai Ionescu', 'str. Mihai Eminescu, nr. 33, bl. F', 'Moldova', 'Balti', 'Balti', '2070', 'Mihai Ionescu', 'ACT006', '2022-09-06', NULL),
+(38, 'Vasile Grigore', 'vasilegrigore@example.com', '+37377777777', '123456', 'str. Eminescu, nr. 44, bl. G', 'Moldova', 'Cahul', '2075', 'Vasile Grigore', 'str. Eminescu, nr. 44, bl. G', 'Moldova', 'Cahul', 'Cahul', '2075', 'Vasile Grigore', 'ACT007', '2022-09-07',NULL),
+(39, 'Ionela Dimitrescu', 'ioneladimitrescu@example.com', '+37378888888', '123456', 'str. Petru Rares, nr. 55, bl. H', 'Moldova', 'Falesti', '2080', 'Ionela Dimitrescu', 'str. Petru Rares, nr. 55, bl. H', 'Moldova', 'Falesti', 'Falesti', '2080', 'Ionela Dimitrescu', 'ACT008', '2022-09-08', NULL),
+(40, 'Mihai Mitrica', 'mihaimitrica@example.com', '+37379999999', '123456', 'str. Nordului, nr. 66, bl. I', 'Moldova', 'Soroca', '2085', 'Mihai Mitrica', 'str. Nordului, nr. 66, bl. I', 'Moldova', 'Soroca', 'Soroca', '2085', 'Mihai Mitrica', 'ACT009', '2022-09-09',NULL),
+(41, 'Alexandra Dobrescu', 'alexandradobrescu@example.com', '+37370000000', '123456', 'str. Mihai Viteazul, nr. 77, bl. J', 'Moldova', 'Comrat', '2090', 'Alexandra Dobrescu', 'str. Mihai Viteazul, nr. 77, bl. J', 'Moldova', 'Comrat', 'Comrat', '2090', 'Alexandra Dobrescu', 'ACT010', '2022-09-10', NULL);
 
 -- Table structure for table `userlog`
 CREATE TABLE userlog (

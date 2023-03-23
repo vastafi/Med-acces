@@ -302,7 +302,6 @@ if(strlen($_SESSION['odmsaid'])==0)
 														<div class="col-md-6">
 															<label class="form-label">Select Status</label>
 															<select  name="status" id="status"  class="form-control" required>
-																<option value="">Select status</option>
 																<option value="New">New Arrivals</option>
 																<option value="Special">Special Offer</option>
 																<option value="Best">Best Sellers</option>
@@ -408,7 +407,7 @@ if(strlen($_SESSION['odmsaid'])==0)
 		move_uploaded_file($_FILES["image1"]["tmp_name"],"productimages/".$_FILES["image1"]["name"]);
 		move_uploaded_file($_FILES["image2"]["tmp_name"],"productimages/".$_FILES["image2"]["name"]);
 		move_uploaded_file($_FILES["image3"]["tmp_name"],"productimages/".$_FILES["image3"]["name"]);
-		$sql="insert into tblproducts(categoryName,productName,pharmaForm,codeATC,registrationNumber,dateManufacture,expirationDate,dose,producteur,importateur, productPrice,priceBefore,productDetails,productDescription,groupTag,brandName,productDiscount,subcategory,productImage,quantity,status,productImage2,productImage3,productImage4)values(:category,:product,:pharmaForm,:codeATC,:registrationNumber,:dateManufacture,:expirationData,:dose,:producer,:importer,:price1,:price2,:details,:description,:group_tag,:brand,:discount,:subcategory,:image,:quantity,:status,:image1,:image2,:image3)";
+		$sql="insert into tblproducts(categoryName,productName,pharmaForm,codeATC,registrationNumber,dateManufacture,expirationDate,dose,producteur,importateur, productPrice,priceBefore,productDetails,productDescription,groupTag,brandName,productDiscount,subcategory,productImage,quantity,productStatus,productImage2,productImage3,productImage4)values(:category,:product,:pharmaForm,:codeATC,:registrationNumber,:dateManufacture,:expirationData,:dose,:producer,:importer,:price1,:price2,:details,:description,:group_tag,:brand,:discount,:subcategory,:image,:quantity,:status,:image1,:image2,:image3)";
 		$query=$dbh->prepare($sql);
 		$query->bindParam(':category',$category,PDO::PARAM_STR);
 		$query->bindParam(':product',$product,PDO::PARAM_STR);
@@ -453,7 +452,7 @@ if(strlen($_SESSION['odmsaid'])==0)
 		}
 		else
 		{
-			echo '<script>alert("Ok. Please try again")</script>';
+			echo '<script>alert("Ok. Try again")</script>';
 		}
 	}
 

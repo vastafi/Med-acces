@@ -97,9 +97,7 @@ include('includes/dbconnection.php');
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Single Products</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
@@ -126,8 +124,8 @@ include('includes/dbconnection.php');
           $ret=mysqli_query($con,"select * from tblproducts where id='$pid'");
           while($row=mysqli_fetch_array($ret))
           {
-            $_SESSION['pcategory']=$row['CategoryName'];
-            $quantity=$row['Quantity'];
+            $_SESSION['pcategory']=$row['categoryName'];
+            $quantity=$row['quantity'];
 
             ?>
             <div class="single-pro-block">
@@ -192,8 +190,7 @@ include('includes/dbconnection.php');
                           <i class="ecicon eci-star fill"></i>
                           <i class="ecicon eci-star-o"></i>
                         </div>
-                        <span class="ec-read-review"><a href="#ec-spt-nav-review">Be the first to
-                        review this product</a></span>
+                        <span class="ec-read-review"><a href="#ec-spt-nav-review">Write a review!</a></span>
                       </div>
                       <div class="ec-single-desc"><?php echo htmlentities($row['productDetails']);?>
                     </div>
@@ -202,11 +199,11 @@ include('includes/dbconnection.php');
                       <div class="ec-single-sales-inner">
                         <div class="ec-single-sales-title">sales accelerators
                         </div>
-                        <div class="ec-single-sales-visitor">real time <span>45</span> visitor
+                        <div class="ec-single-sales-visitor">real time <span>12</span> visitor
                           right now!
                         </div>
                         <div class="ec-single-sales-progress">
-                          <span class="ec-single-progress-desc">Hurry up!left <?php echo htmlentities($row['quantity']);?> in
+                          <span class="ec-single-progress-desc">Hurry up! left <?php echo htmlentities($row['quantity']);?> in
                           stock</span>
                           <span class="ec-single-progressbar"></span>
                         </div>
@@ -221,16 +218,15 @@ include('includes/dbconnection.php');
                     </div>
                     <div class="ec-single-price-stoke">
                       <div class="ec-single-price">
-                        <span class="ec-single-ps-title">As low as</span>
-                        <span class="new-price">$&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
+                        <span class="new-price">MDL <?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
                       </div>
                       <div class="ec-single-stoke">
                         <?php
-                        if ($quantity>=1) {?>
-                          <span class="ec-single-ps-title">IN STOCK</span>
+                        if ($quantity >=0) {?>
+                          <span class="ec-single-ps-title">In stock</span>
                           <?php
                         }else{?>
-                          <span class="ec-single-ps-title">OUT OF STOCK</span>
+                          <span class="ec-single-ps-title">Out of stock</span>
                         <?php }
                         ?>
                       </div>
@@ -249,31 +245,6 @@ include('includes/dbconnection.php');
                           alt="" />
                         </a>
                       </div>
-                    </div>
-                    <div class="ec-single-social">
-                      <ul class="mb-0">
-                        <li class="list-inline-item facebook"><a href="#"><i
-                          class="ecicon eci-facebook"></i></a>
-                        </li>
-                        <li class="list-inline-item twitter"><a href="#"><i
-                          class="ecicon eci-twitter"></i></a>
-                        </li>
-                        <li class="list-inline-item instagram"><a href="#"><i
-                          class="ecicon eci-instagram"></i></a>
-                        </li>
-                        <li class="list-inline-item youtube-play"><a href="#"><i
-                          class="ecicon eci-youtube-play"></i></a>
-                        </li>
-                        <li class="list-inline-item behance"><a href="#"><i
-                          class="ecicon eci-behance"></i></a>
-                        </li>
-                        <li class="list-inline-item whatsapp"><a href="#"><i
-                          class="ecicon eci-whatsapp"></i></a>
-                        </li>
-                        <li class="list-inline-item plus"><a href="#"><i
-                          class="ecicon eci-plus"></i></a>
-                        </li>
-                      </ul>
                     </div>
                   </div>
                 </div>
@@ -306,10 +277,16 @@ include('includes/dbconnection.php');
                     <p><?php echo htmlentities($row['productDetails']);?>
                   </p>
                   <ul>
-                    <li>Any Product types that You want - Simple, Configurable</li>
-                    <li>Downloadable/Digital Products, Virtual Products</li>
-                    <li>Inventory Management with Backordered items</li>
-                    <li>Flatlock seams throughout.</li>
+                      <li>Take the medicine as directed.</li>
+                      <li>Follow the recommended dose of the drug.</li>
+                      <li>Administer the medication at regular intervals.</li>
+                      <li>Keep the medicine in the original container.</li>
+                      <li>Talk to your doctor before taking this medicine.</li>
+                      <li>Do not take more than directed.</li>
+                      <li>Carefully follow the doctor's instructions regarding the medicine.</li>
+                      <li>Talk to your doctor before changing the dose or stopping the medicine.</li>
+                      <li>Please inform your doctor if you are pregnant or breastfeeding.</li>
+                      <li>Talk to your doctor before taking other medicines with it.</li>
                   </ul>
                 </div>
               </div>
@@ -317,10 +294,12 @@ include('includes/dbconnection.php');
                 <div class="ec-single-pro-tab-moreinfo">
                  <p><?php echo htmlentities($row['productDescription']);?>
                  <ul>
-                  <li><span>Weight</span> 1kg</li>
-                  <li><span>Dimensions</span> 40 × 30 × 7 cm</li>
-                  <li><span>Color</span> Black, Pink, brown, Red, White</li>
-                </ul>
+                  <li>Administration</li>
+                  <li>Recommended dose</li>
+                  <li>Drug interactions</li>
+                  <li>Side effects</li>
+                  <li>Contraindications</li>
+                 </ul>
               </div>
             </div>
 
@@ -329,11 +308,11 @@ include('includes/dbconnection.php');
                 <div class="ec-t-review-wrapper">
                   <div class="ec-t-review-item">
                     <div class="ec-t-review-avtar">
-                      <img src="assets/images/review-image/1.jpg" alt="" />
+                      <img src="assets/images/review-image/user.jpg" alt="" />
                     </div>
                     <div class="ec-t-review-content">
                       <div class="ec-t-review-top">
-                        <div class="ec-t-review-name">Jeny Doe</div>
+                        <div class="ec-t-review-name">Ambros Andrei</div>
                         <div class="ec-t-review-rating">
                           <i class="ecicon eci-star fill"></i>
                           <i class="ecicon eci-star fill"></i>
@@ -343,22 +322,20 @@ include('includes/dbconnection.php');
                         </div>
                       </div>
                       <div class="ec-t-review-bottom">
-                        <p>Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the industry's
-                          standard dummy text ever since the 1500s, when an unknown
-                          printer took a galley of type and scrambled it to make a
-                          type specimen.
+                        <p>I saw immediate results and my symptoms disappeared in just a few days.
+                            I recommend this medicine for the treatment of my condition and I am
+                            sure that other people will have the same positive experience.
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="ec-t-review-item">
                     <div class="ec-t-review-avtar">
-                      <img src="assets/images/review-image/2.jpg" alt="" />
+                      <img src="assets/images/review-image/user.jpg" alt="" />
                     </div>
                     <div class="ec-t-review-content">
                       <div class="ec-t-review-top">
-                        <div class="ec-t-review-name">Linda Morgus</div>
+                        <div class="ec-t-review-name">Mădălina Bejanu</div>
                         <div class="ec-t-review-rating">
                           <i class="ecicon eci-star fill"></i>
                           <i class="ecicon eci-star fill"></i>
@@ -368,11 +345,9 @@ include('includes/dbconnection.php');
                         </div>
                       </div>
                       <div class="ec-t-review-bottom">
-                        <p>Lorem Ipsum is simply dummy text of the printing and
-                          typesetting industry. Lorem Ipsum has been the industry's
-                          standard dummy text ever since the 1500s, when an unknown
-                          printer took a galley of type and scrambled it to make a
-                          type specimen.
+                        <p>It is very effective and I saw an improvement in my health in just a few weeks.
+                            I recommend this medicine with confidence and I am sure that other people will
+                            have the same positive experience.
                         </p>
                       </div>
                     </div>
@@ -493,8 +468,8 @@ include('includes/dbconnection.php');
                   <i class="ecicon eci-star"></i>
                 </div>
                 <span class="ec-price">
-                  <span class="old-price">$&nbsp;<?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
-                  <span class="new-price">$&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
+                  <span class="old-price">MDL <?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
+                  <span class="new-price">MDL<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
                 </span>
               </div>
             </div>
@@ -583,10 +558,10 @@ include('includes/dbconnection.php');
                   <i class="ecicon eci-star fill"></i>
                   <i class="ecicon eci-star"></i>
                 </div>
-                <div class="ec-pro-list-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dutmmy text ever since the 1500s, when an unknown printer took a galley.</div>
+                <div class="ec-pro-list-desc"></div>
                 <span class="ec-price">
-                  <span class="old-price">$&nbsp;<?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
-                  <span class="new-price">$&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
+                  <span class="old-price">MDL <?php echo htmlentities(number_format($row['priceBefore'], 0, '.', ','));?></span>
+                  <span class="new-price">MDL <?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span>
                 </span>
               </div>
             </div>

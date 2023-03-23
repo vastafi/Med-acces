@@ -71,7 +71,7 @@ if(isset($_GET['del'])){
 								<span><i class="mdi mdi-chevron-right"></i></span>Product</p>
 							</div>
 							<div>
-								<a href="product-add.php" class="btn btn-primary"> Add Product</a>
+								<a href="product-add.php" class="btn btn-primary">Add Product</a>
 							</div>
 						</div>
 						<!-- start modal -->
@@ -80,7 +80,7 @@ if(isset($_GET['del'])){
 								<div class="modal-content">
 
 									<div class="modal-header px-4">
-										<h5 class="modal-title" id="exampleModalCenterTitle">Add New Stock</h5>
+										<h5 class="modal-title" id="exampleModalCenterTitle">Add Stock</h5>
 									</div>
 
 									<div class="modal-body px-4" id="info_update5">
@@ -101,11 +101,13 @@ if(isset($_GET['del'])){
 													<tr>
 														<th>Product</th>
 														<th>Name</th>
+                                                        <th>Dose</th>
 														<th>Price</th>
-														<th>Offer</th>
+														<th>Code ATC</th>
 														<th>Stock</th>
-														<th>Status</th>
+														<th>Prod. Date</th>
 														<th>Exp.Date</th>
+                                                        <th>Prod. Status</th>
 														<th>Action</th>
 													</tr>
 												</thead>
@@ -125,10 +127,11 @@ if(isset($_GET['del'])){
 															<tr>
 																<td><img class="tbl-thumb" src="productimages/<?php echo htmlentities($row->productImage);?>" alt="Product Image" /></td>
 																<td><?php  echo htmlentities($row->productName);?></td>
+                                                                <td><?php  echo htmlentities($row->dose);?></td>
 																<td>MDL <?php echo htmlentities(number_format($row->productPrice, 0, '.', ','));?></td>
-																<td><?php  echo htmlentities($row->productDiscount);?>% OFF</td>
+																<td><?php  echo htmlentities($row->codeATC);?></td>
 																<td><?php  echo htmlentities($row->quantity);?></td>
-																<td>ACTIVE</td>
+														        <td><?php  echo htmlentities(date("d-m-Y", strtotime($row->dateManufacture)));?>
 																<td><?php  echo htmlentities(date("d-m-Y", strtotime($row->expirationDate)));?>
                                                                     <div class="btn-group mb-1">
                                                                          <button type="button"
@@ -140,6 +143,7 @@ if(isset($_GET['del'])){
                                                                         <a class="dropdown-item" href="actions.php">Action</a>
 
                                                                     </div></td>
+                                                                <td><?php  echo htmlentities($row->productStatus);?></td>
 																<td>
 																	<div class="btn-group mb-1">
 																		<button type="button"

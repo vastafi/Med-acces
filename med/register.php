@@ -81,9 +81,7 @@ if( $_POST['token'] != 'FsWga4&@f6aw' ){
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Register</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
@@ -129,7 +127,7 @@ if( $_POST['token'] != 'FsWga4&@f6aw' ){
                 </span>
                 <span class="ec-register-wrap ec-register-half">
                   <label>Address</label>
-                  <input type="text" name="address" placeholder="Address Line 1" />
+                  <input type="text" name="address" placeholder="Address" />
                 </span>
                 <span class="ec-register-wrap ec-register-half">
                   <label>Password</label>
@@ -140,11 +138,14 @@ if( $_POST['token'] != 'FsWga4&@f6aw' ){
                   <span class="ec-rg-select-inner">
                     <select name="city" id="ec-select-city" class="ec-register-select">
                       <option selected disabled>City</option>
-                      <option value="Town1">Town1</option>
-                      <option value="Town2">Town2</option>
-                      <option value="Town3">Town3</option>
-                      <option value="Town4">Town4</option>
-                      <option value="Town5">Town5</option>
+                      <option value="Chisinau">Chisinau</option>
+                      <option value="Falesti">Falesti</option>
+                      <option value="Balti">Balti</option>
+                      <option value="Orhei">Orhei</option>
+                      <option value="Cahul">Cahul</option>
+                      <option value="Cantemir">Cantemir</option>
+                      <option value="Singerei">Singerei</option>
+                      <option value="Floresti">Floresti</option>
                     </select>
                   </span>
                 </span>
@@ -157,25 +158,12 @@ if( $_POST['token'] != 'FsWga4&@f6aw' ){
                   <span class="ec-rg-select-inner">
                     <select name="country" class="ec-register-select" id="ec-select-country">
                       <option selected disabled>Country</option>
-                      <option value="Poland">Poland</option>
-                      <option value="Canada">Canada</option>
-                      <option value="USA">USA</option>
-                      <option value="UK">UK</option>
-                      <option value="Japan">Japan</option>
+                      <option value="Moldova">Moldova</option>
+                      <option value="Romania">Romania</option>
                     </select>
                   </span>
                 </span>
-                <span class="ec-register-wrap ec-register-half">
-                  <label>Region State</label>
-                  <span class="ec-rg-select-inner">
-                    <select name="state" id="ec-select-state" class="ec-register-select">
-                      <option selected disabled>Region/State</option>
-                      <option value="Central">Central</option>
-                      <option value="Western">Western</option>
-                      <option value="Eastern">Eastern</option>
-                      <option value="Southern">Southern</option>
-                    </select>
-                  </span>
+
                 </span>
                 <input type="hidden"  name="token" value="FsWga4&@f6aw" />
                 <!-- <span class="ec-register-wrap ec-recaptcha">

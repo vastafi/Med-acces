@@ -78,9 +78,7 @@ if(isset($_POST['submit'])){
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Cart</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
@@ -146,18 +144,18 @@ if(isset($_POST['submit'])){
                                 <td data-label="Product" class="ec-cart-pro-name"><a
                                   href="product.php?pid=<?php echo htmlentities($row['id']);?>"><img class="ec-cart-pro-img mr-4"
                                   src="admin/productimages/<?php echo htmlentities($row['productImage']);?>"
-                                  alt="" /><?php echo $row['ProductName'];
+                                  alt="" /><?php echo $row['productName'];
                                   ?></a>
                                 </td>
                                 <td data-label="Price" class="ec-cart-pro-price"><span
-                                  class="amount">$ &nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span></td>
+                                  class="amount">MDL &nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?></span></td>
                                   <td data-label="Quantity" class="ec-cart-pro-qty"
                                   style="text-align: center;">
                                   <div class="cart-qty-plus-minus">
                                     <input type="number" value="<?php echo $_SESSION['cart'][$row['id']]['quantity']; ?>" name="quantity[<?php echo $row['id']; ?>]"  value="<?php echo $_SESSION['cart'][$row['id']]['quantity']; ?>"  />
                                   </div>
                                 </td>
-                                <td data-label="Total" class="ec-cart-pro-subtotal">$ &nbsp;
+                                <td data-label="Total" class="ec-cart-pro-subtotal">MDL  &nbsp;
                                   <?php echo htmlentities(number_format($_SESSION['cart'][$row['id']]['quantity']*$row['productPrice'], 0, '.', ','));?></td>
                                   <td data-label="Remove" class="ec-cart-pro-remove">
                                     <a href="cart.php?action=remove&code=<?php echo $row['id']; ?>"><i class="ecicon eci-trash-o"></i></a>
@@ -207,7 +205,9 @@ if(isset($_POST['submit'])){
               </div>
             </div>
             <!--cart content End -->
-          </div>
+          </div>By creating an account you will be able to shop faster,
+          be up to date on an order's status, and keep track of the orders you have
+          previously made.
           <!-- Sidebar Area Start -->
           <div class="ec-cart-rightside col-lg-4 col-md-12">
             <div class="ec-sidebar-wrap">
@@ -236,11 +236,6 @@ if(isset($_POST['submit'])){
                           <select name="ec_cart_state"  id="ec-cart-select-state" class="ec-cart-select">
                             <option selected="" disabled="">Please Select a country/municipality
                             </option>
-                            <option value="1">Region/State 1</option>
-                            <option value="2">Region/State 2</option>
-                            <option value="3">Region/State 3</option>
-                            <option value="4">Region/State 4</option>
-                            <option value="5">Region/State 5</option>
                             <option value="1">Moldova/Chișinău</option>
                             <option value="2">Moldova/Bălți</option>
                             <option value="3">Moldova/Tiraspol</option>
@@ -271,7 +266,6 @@ if(isset($_POST['submit'])){
                     </form>
                   </div>
                 </div>
-
                 <div class="ec-sb-block-content">
                   <div class="ec-cart-summary-bottom">
                     <div class="ec-cart-summary">
@@ -285,7 +279,7 @@ if(isset($_POST['submit'])){
                       </div>
                       <div class="ec-cart-summary-total">
                         <span class="text-left">Total Amount</span>
-                        <span class="text-right">MDL <?php echo htmlentities(number_format(($totalprice+'80'), 0, '.', ','));?></span>
+                        <span class="text-right">MDL <?php echo htmlentities(number_format(($totalprice+'5'), 0, '.', ','));?></span>
                       </div>
                     </div>
 

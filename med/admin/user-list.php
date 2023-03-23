@@ -17,7 +17,7 @@ if(isset($_GET['delid']))
 		echo "<script>alert('User blocked');</script>"; 
 		echo "<script>window.location.href = 'user-list.php'</script>";
 	}else{
-		echo '<script>alert("update failed! try again later")</script>';
+		echo '<script>alert("Update failed! try again later")</script>';
 	}
 }
 if(isset($_GET['resid']))
@@ -31,7 +31,7 @@ if(isset($_GET['resid']))
 		echo "<script>alert('User Restored');</script>"; 
 		echo "<script>window.location.href = 'user-list.php'</script>";
 	}else{
-		echo '<script>alert("update failed! try again later")</script>';
+		echo '<script>alert("Update failed! try again later")</script>';
 	}
 }
 
@@ -209,9 +209,11 @@ if(isset($_GET['del'])){
 																	</button>
 
 																	<div class="dropdown-menu">
-																		<a class="dropdown-item edit_data5" id="<?php echo  ($row->id); ?>" href="#">View</a>
-																		<a class="dropdown-item" href="user-list.php?delid=<?php echo ($row->id);?>" onclick="return confirm('Do you really want to Block ?');" title="Block this User">Block</a>
-																	</div>
+																		<a class="dropdown-item edit_data5" id="<?php echo ($row->id); ?>" href="#">View</a>
+                                                                        <a class="dropdown-item" href="user-list.php?del=<?php echo ($row->id);?>" onclick="return confirm('Do you really want to delete permanently?');">Delete</a>
+                                                                        <a class="dropdown-item" href="user-list.php?delid=<?php echo ($row->id);?>" onclick="return confirm('Do you really want to Block ?');" title="Block this User">Block</a>
+
+                                                                    </div>
 																</div>
 															</td>
 														</tr>
@@ -301,7 +303,7 @@ if(isset($_GET['del'])){
 											</div>
 											<div class="col-lg-3">
 												<div class="form-group mb-4">
-													<label for="mobileno">Mobile No</label>
+													<label for="mobileno">Mobile Number</label>
 													<input type="text" class="form-control" name="mobileno" id="mobileno"
 													>
 												</div>
@@ -309,18 +311,19 @@ if(isset($_GET['del'])){
 											<div class="col-lg-4">
 												<div class="form-group mb-4">
 													<label for="dignity">Permission</label>
-													<select class="form-control"   name="dignity"  id="dignity"  >
+													<select class="form-control" name="dignity" id="dignity">
 														<option value="">Select permisions</option>
 														<option value="Admin">Admin</option>
 														<option value="User">User</option>
+                                                        <option value="Manager">Manager</option>
+                                                        <option value="Sales">Sales</option>
 													</select>
 												</div>
 											</div>
 											<div class="col-lg-4">
 												<div class="form-group mb-4">
 													<label for="password">password</label>
-													<input type="password" class="form-control" name="password" id="password"
-													>
+													<input type="password" class="form-control" name="password" id="password">
 												</div>
 											</div>
 

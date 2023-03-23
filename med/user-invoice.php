@@ -55,14 +55,12 @@ include('includes/dbconnection.php');
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">User-invoice</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
                 <li class="ec-breadcrumb-item"><a href="index.php">Home</a></li>
-                <li class="ec-breadcrumb-item active">User Invoice</li>
+                <li class="ec-breadcrumb-item active">Invoice</li>
               </ul>
               <!-- ec-breadcrumb-list end -->
             </div>
@@ -102,7 +100,7 @@ include('includes/dbconnection.php');
                       <div class="row">
                         <?php 
                         $inid=intval($_GET['invid']);
-                        $query=mysqli_query($con,"SELECT *  from users join orders on orders.userid=users.id where orders.invoiceNumber='$inid' limit 1");
+                        $query=mysqli_query($con,"SELECT *  from users join orders on orders.userId=users.id where orders.invoiceNumber='$inid' limit 1");
                         while($row=mysqli_fetch_array($query))
                         {    
                           ?>
@@ -153,7 +151,7 @@ include('includes/dbconnection.php');
                             <table class="table ec-table">
                               <thead>
                                 <tr>
-                                  <th scope="col">NO.</th>
+                                  <th scope="col">No.</th>
                                   <th scope="col">Name</th>
                                   <th scope="col">Qty</th>
                                   <th scope="col">Price</th>
@@ -163,7 +161,7 @@ include('includes/dbconnection.php');
                               <tbody>
                                 <?php 
                                 $inid=intval($_GET['invid']);
-                                $query2=mysqli_query($con,"SELECT tblproducts.productName,tblproducts.productPrice,orders.quantity  from orders join tblproducts on tblproducts.id=orders.productId where orders.invoiceNumber='$inid'");
+                                $query2=mysqli_query($con,"SELECT tblproducts.productName,tblproducts.productPrice,orders.quantity from orders join tblproducts on tblproducts.id=orders.productId where orders.invoiceNumber='$inid'");
                                 $cnt=1;
                                 while($row2=mysqli_fetch_array($query2))
                                 {    
@@ -172,8 +170,8 @@ include('includes/dbconnection.php');
                                     <th><span><?php echo $cnt ?></span></th>
                                     <td><span><?php echo $row2['productName'];?></span></td>
                                     <td><span><?php echo $qty=$row2['quantity'];?></span></td>
-                                    <td><span>$&nbsp;<?php echo number_format($ppu=$row2['productPrice'],0);?></span></td>
-                                    <td><span>$&nbsp;<?php echo number_format($subtotal=($ppu*$qty),0);?></span></td>
+                                    <td><span>MDL <?php echo number_format($ppu=$row2['productPrice'],0);?></span></td>
+                                    <td><span>MDL&nbsp;<?php echo number_format($subtotal=($ppu*$qty),0);?></span></td>
                                   </tr>
                                   <?php
                                   $grandtotal+=$subtotal; 
@@ -190,7 +188,7 @@ include('includes/dbconnection.php');
                                     <span><strong>Sub Total</strong></span>
                                   </td>
                                   <td class="border-color">
-                                    <span>$&nbsp;<?php echo number_format($grandtotal,0);?></span>
+                                    <span>MDL <?php echo number_format($grandtotal,0);?></span>
                                   </td>
                                 </tr>
                                 <tr>
@@ -206,9 +204,7 @@ include('includes/dbconnection.php');
                                 </tr>
                                 <tr>
                                   <td class="border-none m-m15"
-                                  colspan="3"><span class="note-text-color">Extra
-                                    note such as company or payment
-                                  information...</span></td>
+                                  colspan="3"><span class="note-text-color">Extra note such as company or payment information...</span></td>
                                   <td class="border-color m-m15"
                                   colspan="1"><span><strong>Total</strong></span>
                                 </td>

@@ -40,7 +40,7 @@
                 if($row->photo=="avatar15.jpg")
                 { 
                   ?>
-                  <img src="../assets/img/user/user.png" class="user-image" alt="User Image" />
+                  <img src="../assets/img/user/user.jpg" class="user-image" alt="User Image" />
                   <?php 
                 } else { 
                   ?>
@@ -57,7 +57,7 @@
                   if($row->photo=="avatar15.jpg")
                   { 
                     ?>
-                    <img src="../assets/img/user/user.png" class="img-circle" alt="User Image" />
+                    <img src="../assets/img/user/user.jpg" class="img-circle" alt="User Image" />
                     <?php 
                   } else { 
                     ?>
@@ -127,8 +127,7 @@
                   <a href="javscript:void(0)"
                   class="media media-message media-notification">
                   <div class="position-relative mr-3">
-                    <img class="rounded-circle" src="../assets/img/user/userF4.jpg"
-                    alt="Image">
+                      <i class="mdi mdi-account-multiple-check font-size-20"></i>
                     <span class="status away"></span>
                   </div>
                   <div class="media-body d-flex justify-content-between">
@@ -150,8 +149,7 @@
               <a href="javscript:void(0)"
               class="media media-message media-notification media-active">
               <div class="position-relative mr-3">
-                <img class="rounded-circle" src="../assets/img/user/user.png"
-                alt="Image">
+                  <i class="mdi mdi-account-multiple-check font-size-20"></i>
                 <span class="status active"></span>
               </div>
               <div class="media-body d-flex justify-content-between">
@@ -172,8 +170,7 @@
         <li>
           <a href="javscript:void(0)" class="media media-message media-notification">
             <div class="position-relative mr-3">
-              <img class="rounded-circle" src="../assets/img/user/user.png"
-              alt="Image">
+                <i class="mdi mdi-account-multiple-check font-size-20"></i>
               <span class="status away"></span>
             </div>
             <div class="media-body d-flex justify-content-between">
@@ -298,8 +295,7 @@
         <li>
           <a href="javscript:void(0)" class="media media-message media-notification">
             <div class="position-relative mr-3">
-              <img class="rounded-circle" src="../assets/img/user/user.png"
-              alt="Image">
+                <i class="mdi mdi-account-multiple-check font-size-20"></i>
               <span class="status away"></span>
             </div>
             <div class="media-body d-flex justify-content-between">
@@ -318,8 +314,7 @@
         <li>
           <a href="javscript:void(0)" class="media media-message media-notification">
             <div class="position-relative mr-3">
-              <img class="rounded-circle" src="../assets/img/user/user.png"
-              alt="Image">
+                <i class="mdi mdi-account-multiple-check font-size-20"></i>
               <span class="status away"></span>
             </div>
             <div class="media-body d-flex justify-content-between">
@@ -338,8 +333,7 @@
         <li>
           <a href="javscript:void(0)" class="media media-message media-notification media-active">
             <div class="position-relative mr-3">
-              <img class="rounded-circle" src="../assets/img/user/user.png"
-              alt="Image">
+                <i class="mdi mdi-account-multiple-check font-size-20"></i>
               <span class="status active"></span>
             </div>
             <div class="media-body d-flex justify-content-between">
@@ -358,8 +352,7 @@
         <li>
           <a href="javscript:void(0)" class="media media-message media-notification">
             <div class="position-relative mr-3">
-              <img class="rounded-circle" src="../assets/img/user/user.png"
-              alt="Image">
+                <i class="mdi mdi-account-multiple-check font-size-20"></i>
               <span class="status away"></span>
             </div>
             <div class="media-body d-flex justify-content-between">
@@ -378,9 +371,8 @@
         <li>
           <a href="javscript:void(0)" class="media media-message media-notification">
             <div class="position-relative mr-3">
-              <img class="rounded-circle" src="../assets/img/user/user.png"
-              alt="Image">
-              <span class="status away"></span>
+                <i class="mdi mdi-account-multiple-check font-size-20"></i>
+                <span class="status away"></span>
             </div>
             <div class="media-body d-flex justify-content-between">
               <div class="message-contents">

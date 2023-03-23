@@ -55,23 +55,7 @@ if(strlen($_SESSION['odmsaid'])==0)
 			<div class="ec-content-wrapper">
 				<div class="content">
 					<!-- Top Statistics -->
-					<div class="row">
-						<div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
-							<div class="card card-mini dash-card card-1">
-								<div class="card-body">
-									<?php 
-									$sql ="SELECT id from tbladmin where status='1'";
-									$query = $dbh -> prepare($sql);
-									$query->execute();
-									$results=$query->fetchAll(PDO::FETCH_OBJ);
-									$totalunreadquery=$query->rowCount();
-									?>
-									<h2 class="mb-1"><?php echo htmlentities($totalunreadquery);?></h2>
-									<p>Total Signups</p>
-									<span class="mdi mdi-account-arrow-left"></span>
-								</div>
-							</div>
-						</div>
+                    <div class="row">
 						<div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
 							<div class="card card-mini dash-card card-2">
 								<div class="card-body">
@@ -81,11 +65,24 @@ if(strlen($_SESSION['odmsaid'])==0)
 									?>
 									<h2 class="mb-1"><?php echo $listedproduct;?></h2>
 									<p>Total Products</p>
-									<span class="mdi mdi-desktop-mac"></span>
+									<span class="mdi mdi-account"></span>
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+                        <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+                            <div class="card card-mini dash-card card-4">
+                                <div class="card-body">
+                                    <?php
+                                    $qury=mysqli_query($con,"select sum(tblproducts.quantity*tblproducts.productPrice) as week  from orders join tblproducts on tblproducts.id=orders.productId where date(orders.orderDate)>=(DATE(NOW()) - INTERVAL 7 DAY)");
+                                    $row=mysqli_fetch_array($qury);
+                                    ?>
+                                    <h2 class="mb-1">MDL <?php echo number_format($row['week'],2);?></h2>
+                                    <p>Weekly Revenue</p>
+                                    <span class="mdi mdi-currency-usd"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
 							<div class="card card-mini dash-card card-3">
 								<div class="card-body">
 									<?php
@@ -98,19 +95,24 @@ if(strlen($_SESSION['odmsaid'])==0)
 								</div>
 							</div>
 						</div>
-						<div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
-							<div class="card card-mini dash-card card-4">
-								<div class="card-body">
-									<?php
-									$qury=mysqli_query($con,"select sum(tblproducts.quantity*tblproducts.productPrice) as week  from orders join tblproducts on tblproducts.id=orders.productId where date(orders.orderDate)>=(DATE(NOW()) - INTERVAL 7 DAY)");
-									$row=mysqli_fetch_array($qury);
-									?>
-									<h2 class="mb-1">MDL <?php echo number_format($row['week'],2);?></h2>
-									<p>Weekly Revenue</p>
-									<span class="mdi mdi-currency-usd"></span>
-								</div>
-							</div>
-						</div>
+
+                        <div class="col-xl-3 col-sm-6 p-b-15 lbl-card">
+                            <div class="card card-mini dash-card card-1">
+                                <div class="card-body">
+                                    <?php
+                                    $sql ="SELECT id from tbladmin where status='1'";
+                                    $query = $dbh -> prepare($sql);
+                                    $query->execute();
+                                    $results=$query->fetchAll(PDO::FETCH_OBJ);
+                                    $totalunreadquery=$query->rowCount();
+                                    ?>
+                                    <h2 class="mb-1"><?php echo htmlentities($totalunreadquery);?></h2>
+                                    <p>Total Signups</p>
+                                    <span class="mdi mdi-account-arrow-left"></span>
+                                </div>
+                            </div>
+                        </div>
+
 					</div>
 
 					<div class="row">
@@ -118,7 +120,7 @@ if(strlen($_SESSION['odmsaid'])==0)
 							<!-- Sales Graph -->
 							<div id="user-acquisition" class="card card-default">
 								<div class="card-header">
-									<h2>Sales Report</h2>
+									<h2>Report</h2>
 								</div>
 								<div class="card-body">
 									<ul class="nav nav-tabs nav-style-border justify-content-between justify-content-lg-start border-bottom" role="tablist">
@@ -334,7 +336,7 @@ if(strlen($_SESSION['odmsaid'])==0)
 													<tr>
 														<td class="text-dark"><?php  echo htmlentities($row->productName);?></td>
 														<td class="text-center"><?php  echo htmlentities($row->quantity);?></td>
-														<td class="text-right">33% <i
+														<td class="text-right">24 %<i
 															class="mdi mdi-arrow-up-bold text-success pl-1 font-size-12"></i>
 														</td>
 													</tr>
@@ -391,7 +393,7 @@ if(strlen($_SESSION['odmsaid'])==0)
 																<div class="media-image mr-3 rounded-circle">
 																	<a href="profile.html"><img
 																		class="profile-img rounded-circle w-45"
-																		src="assets/img/user/userF3.jpg"
+																		src="assets/img/user/user.jpg"
 																		alt="customer image">
 																	</a>
 																</div>

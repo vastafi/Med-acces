@@ -3,7 +3,6 @@ session_start();
 error_reporting(0);
 include('includes/dbconnection.php');
 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -104,9 +103,7 @@ include('includes/dbconnection.php');
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Contact Us</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
@@ -133,29 +130,25 @@ include('includes/dbconnection.php');
               <div class="ec-contact-form">
                 <form method="post" class="" id="fruitkha-contact" onSubmit="return valid_datas2( this );">
                   <span class="ec-contact-wrap">
-                    <label>Full Name*</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your names"
-                    />
+                    <label>Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your names"/>
                   </span>
-                  
+
                   <span class="ec-contact-wrap">
-                    <label>Email*</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address"
-                    />
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address"/>
                   </span>
                   <span class="ec-contact-wrap">
-                    <label>Phone Number*</label>
-                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number"
-                    />
+                    <label>Phone Number</label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter your phone number"/>
                   </span>
                   <span class="ec-contact-wrap">
-                    <label>Subject*</label>
-                    <input type="text" name="subject" id="subject" placeholder="Enter your subject"
-                    />
+                    <label>Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="Enter your subject"/>
                   </span>
                   <span class="ec-contact-wrap">
-                    <label>Message*</label>
-                    <textarea name="message" id="message" 
+                    <label>Message</label>
+                    <textarea name="message" id="message"
                     placeholder="Please leave your message here.."></textarea>
                   </span>
                   <span><input type="hidden" name="token" value="FsWga4&@f6aw" /></span>
@@ -169,23 +162,23 @@ include('includes/dbconnection.php');
           <div class="ec-contact-rightside">
             <div class="ec_contact_map">
               <div class="ec_map_canvas">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49116.39176087041!2d-86.41867791216099!3d39.69977417971648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886ca48c841038a1%3A0x70cfba96bf847f0!2sPlainfield%2C%20IN%2C%20USA!5e0!3m2!1sen!2sbd!4v1586106673811!5m2!1sen!2sbd" height="460" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5439.653372683671!2d28.82430911904907!3d47.02400688257969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97dccdbd4a405%3A0xb19eeb76d39fd9fb!2sStrada%20Nicolae%20Iorga%2021%2C%20Chi%C8%99in%C4%83u%2C%20Moldova!5e0!3m2!1sen!2sus!4v1679601381673!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
             <div class="ec_contact_info">
               <h1 class="ec_contact_info_head">Contact us</h1>
-              
+
               <ul class="align-items-center">
                 <li class="ec-contact-item"><i class="ecicon eci-map-marker"
                   aria-hidden="true"></i>
-                  <span>Address :</span>Nicolae Iorga, 21A
+                  <span>Address: </span>Nicolae Iorga, 21 A
                 </li>
                 <li class="ec-contact-item align-items-center"><i class="ecicon eci-phone"
-                  aria-hidden="true"></i><span>Call Us :</span><a href="tel:+440123456789">+373 600 67 021</a>
+                  aria-hidden="true"></i><span>Call Us: </span><a href="tel:+37360067021">+373 600 67 021</a>
                 </li>
                 <li class="ec-contact-item align-items-center"><i class="ecicon eci-envelope"
-                  aria-hidden="true"></i><span>Email :</span><a
-                  href="mailto:example@ec-email.com">example@ec-email.com</a>
+                  aria-hidden="true"></i><span>Email: </span><a
+                  href="mailto:example@ec-email.com">example@gmail.com</a>
                 </li>
               </ul>
             </div>

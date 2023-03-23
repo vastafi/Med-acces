@@ -16,7 +16,7 @@ if(isset($_POST['change']))
 
     $activationcode=md5($email.time());
 
-    $query=mysqli_query($con,"update users set activationcode='$activationcode' WHERE email='$email' and contactNo='$contact' ");
+    $query=mysqli_query($con,"update users set activationCode='$activationcode' WHERE email='$email' and contactNo='$contact' ");
     if($query)
 
     {

@@ -19,7 +19,7 @@ if(isset($_POST['update']))
 	$query->bindParam(':fulldescription',$fulldescription,PDO::PARAM_STR);
 	$query->execute();
 	if ( $query->execute()) {
-		echo '<script>alert("subcategory has been added.")</script>';
+		echo '<script>alert("Subcategory has been edited!")</script>';
 		echo "<script>window.location.href ='sub-category.php'</script>";
 	}else{
 		echo '<script>alert("Something Went Wrong. Please try again")</script>';

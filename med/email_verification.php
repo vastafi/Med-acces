@@ -5,7 +5,7 @@ include('includes/dbconnection.php');
 if(!empty($_GET['code']) && isset($_GET['code']))
 {
   $code=$_GET['code'];
-  $sql=mysqli_query($con,"SELECT * FROM users WHERE activationcode='$code'");
+  $sql=mysqli_query($con,"SELECT * FROM users WHERE activationCode='$code'");
   $num=mysqli_fetch_array($sql);
   if($num>0)
   {

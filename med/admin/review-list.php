@@ -116,7 +116,7 @@ if(isset($_GET['del'])){
 															<tr>
 																<td><img class="tbl-thumb" src="productimages/<?php echo htmlentities($row->productImage);?>" alt="product image"/></td>
 																<td><?php  echo $row->product;?></td>
-																<td><img class="tbl-thumb" src="assets/img/user/userB1.jpg" alt="product image"/></td>
+																<td><img class="tbl-thumb" src="assets/img/user/user.jpg" alt="product image"/></td>
 																<td><?php  echo $row->name;?></td>
 																<td>
 																	<?php

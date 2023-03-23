@@ -5507,7 +5507,7 @@ i.ecicon.eci-star-o {
 .ec-category-wrapper-1 .ec_cat_content .ec-cat-image {
   box-shadow: 5px 7px 13px 0px rgba(35, 31, 32, 0.1);
   -webkit-box-shadow: 5px 7px 13px 0px rgba(35, 31, 32, 0.1);
-  -moz-box-shadow: 5px 7px 13px 0px rgbaa(35, 31, 32, 0.1);
+  -moz-box-shadow: 5px 7px 13px 0px rgba(35, 31, 32, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }

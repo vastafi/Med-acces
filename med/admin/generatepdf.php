@@ -19,8 +19,7 @@ require('fpdf/fpdf.php');
 class myPDF extends FPDF{
 	
      // Page footer
-	function Footer()
-	{
+	function Footer()	{
     // Position at 1.5 cm from bottom
 		$this->SetY(-15);
     // Arial italic 8
@@ -42,8 +41,7 @@ $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
 if($query->rowCount() > 0)
 {
-	foreach($results as $row)
-	{  
+	foreach($results as $row)	{
 		$date = date('d-m-y');
 		$user2=($_GET['userid']);
         //set font to arial, bold, 14pt
@@ -52,7 +50,7 @@ if($query->rowCount() > 0)
         //cell(width , height , text , border , endline , [align])
 
 		$pdf->Cell(130 ,5,$row->companyName,0,0);
-		$pdf->Cell (59 ,5,'INVOICE',0,1);//end of line
+		$pdf->Cell (59 ,5,'Invoice',0,1);//end of line
 
 		//set font to arial, regular, 12pt
 		$pdf->SetFont('Arial','',12);
@@ -82,10 +80,8 @@ $sql2="SELECT * from  users where id='$user' ";
 $query2 = $dbh -> prepare($sql2);
 $query2->execute();
 $results2=$query2->fetchAll(PDO::FETCH_OBJ);
-if($query2->rowCount() > 0)
-{
-	foreach($results2 as $row2)
-	{  
+if($query2->rowCount() > 0){
+	foreach($results2 as $row2)	{
 		//Billing address
 		$pdf->Cell (100  ,5,'Billing to',0,1);//end of line
 		//add dummy cell at begining of each line for indetation
@@ -112,7 +108,7 @@ $pdf->SetFont('Arial','B',12);
 $pdf->Cell(10 ,8,'No',1,0);
 $pdf->Cell (80 ,8,'Name',1,0);
 $pdf->Cell (20 ,8,'Quantity',1,0);
-$pdf->Cell (39 ,8,'Unit Price',1,0);
+$pdf->Cell (39 ,8,'Price (units)',1,0);
 $pdf->Cell (40 ,8,'Amount',1,1);//end of line
 
 $pdf->SetFont('Arial','',12); 
@@ -121,8 +117,7 @@ $invoice=($_GET['search']);
 if(isset($invoice)&& !empty($invoice)){
 	$query="SELECT tblproducts.productName,tblproducts.productPrice,orders.quantity  from orders join tblproducts on tblproducts.id=orders.productid where orders.invoiceNumber='$invoice'";
 	$cnt=1;
-	foreach ($dbh->query($query) as $row) 
-	{
+	foreach ($dbh->query($query) as $row) 	{
 		$pdf->Cell(10 ,8,$cnt,1,0);
 		$pdf->Cell (80 ,8,$row['productName'],1,0);
 		$pdf->Cell (20 ,8,$row['quantity'],1,0);
@@ -144,7 +139,7 @@ $pdf->Cell (40 ,8,(number_format((0.1*$grandtotal),0)),1,1,'R');//end of line
 
 
 $pdf->Cell(110 ,8,'',0,0);
-$pdf->Cell (39 ,8,'Total Due',0,0);
+$pdf->Cell (39 ,8,'Total',0,0);
 $pdf->Cell (40 ,8,(number_format(((0.1*$grandtotal)+$grandtotal),0)),1,1,'R');//end of line
 /// end of records /// 
 

@@ -141,9 +141,7 @@ if(isset($_POST['login']))
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Checkout</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
@@ -275,28 +273,29 @@ if(isset($_POST['login']))
                             <input type="text" name="postalcode" value="<?php echo $row['billingZipcode'];?>" placeholder="Post Code" />
                           </span>
                           <span class="ec-bill-wrap ec-bill-half">
-                            <label>Country *</label>
+                            <label>City *</label>
                             <span class="ec-bl-select-inner">
                               <select name="ec_select_country" id="ec-select-country" class="ec-bill-select">
                                 <option selected disabled><?php echo $row['billingCountry'];?></option>
-                                <option value="1">Country 1</option>
-                                <option value="2">Country 2</option>
-                                <option value="3">Country 3</option>
-                                <option value="4">Country 4</option>
-                                <option value="5">Country 5</option>
+                                 <option selected disabled>City</option>
+                                  <option value="Chisinau">Chisinau</option>
+                                     <option value="Falesti">Falesti</option>
+                                      <option value="Balti">Balti</option>
+                                      <option value="Orhei">Orhei</option>
+                                      <option value="Cahul">Cahul</option>
+                                      <option value="Cantemir">Cantemir</option>
+                                     <option value="Singerei">Singerei</option>
+                                     <option value="Floresti">Floresti</option>
                               </select>
                             </span>
                           </span>
                           <span class="ec-bill-wrap ec-bill-half">
-                            <label>Region State</label>
+                            <label>Country</label>
                             <span class="ec-bl-select-inner">
                               <select name="ec_select_state" id="ec-select-state" class="ec-bill-select">
                                 <option selected disabled><?php echo $row['billingState'];?></option>
-                                <option value="1">Region/State 1</option>
-                                <option value="2">Region/State 2</option>
-                                <option value="3">Region/State 3</option>
-                                <option value="4">Region/State 4</option>
-                                <option value="5">Region/State 5</option>
+                                <option value="Moldova">Moldova</option>
+                                 <option value="Romania">Romania</option>
                               </select>
                             </span>
                           </span>
@@ -350,12 +349,12 @@ if(isset($_POST['login']))
                 ?>
                 <div>
                   <span class="text-left">Sub-Total</span>
-                  <span class="text-right">UGX&nbsp;<?php echo htmlentities(number_format("$totalprice", 0, '.', ','));?></span>
+                  <span class="text-right">MDL <?php echo htmlentities(number_format("$totalprice", 0, '.', ','));?></span>
                 </div>
 
                 <div>
                   <span class="text-left">Delivery Charges</span>
-                  <span class="text-right">UGX&nbsp;80.00</span>
+                  <span class="text-right">MDL&nbsp;5.00</span>
                 </div>
                     <!-- <div>
                       <span class="text-left">Coupan Discount</span>
@@ -373,7 +372,7 @@ if(isset($_POST['login']))
 
                   <div class="ec-checkout-summary-total">
                     <span class="text-left">Total Amount</span>
-                    <span class="text-right">UGX&nbsp;<?php echo htmlentities(number_format(("$totalprice"+'80'), 0, '.', ','));?></span>
+                    <span class="text-right">MDL <?php echo htmlentities(number_format(("$totalprice"+'5'), 0, '.', ','));?></span>
                   </div>
 
                 </div>
@@ -419,7 +418,7 @@ if(isset($_POST['login']))
                               <i class="ecicon eci-star"></i>
                             </div>
                             <span class="ec-price">
-                              <span class="new-price">UGX&nbsp;<?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?>&nbsp;<span style="color: #444444;">X</span>&nbsp;
+                              <span class="new-price">MDL <?php echo htmlentities(number_format($row['productPrice'], 0, '.', ','));?>&nbsp;<span style="color: #444444;">X</span>&nbsp;
                               <span style="color: #124c92;"><?php echo $_SESSION['cart'][$row['id']]['quantity']; ?></span>
                             </span>
                           </span>
@@ -478,7 +477,7 @@ if(isset($_POST['login']))
                     <span class="ec-pay-opt-head">Add Comments About Your Order</span>
                     <textarea name="ordernote" placeholder="Comments"></textarea>
                   </span>
-                  <span class="ec-pay-agree"><input type="checkbox" value="" required><a href="#">I have
+                  <span class="ec-pay-agree"><input type="checkbox" value="" required><a href="terms-conditions.php">I have
                     read and agree to the <span>Terms & Conditions</span></a><span
                     class="checked"></span></span>
                     <br>
@@ -510,21 +509,15 @@ if(isset($_POST['login']))
                   <div class="ec-check-pay-img">
                     <img src="assets/images/icons/payment2.png" alt="">
                   </div>
-                  <div class="ec-check-pay-img">
-                    <img src="assets/images/icons/payment3.png" alt="">
-                  </div>
-                  <div class="ec-check-pay-img">
-                    <img src="assets/images/icons/payment4.png" alt="">
-                  </div>
-                  <div class="ec-check-pay-img">
-                    <img src="assets/images/icons/payment5.png" alt="">
-                  </div>
-                  <div class="ec-check-pay-img">
-                    <img src="assets/images/icons/payment6.png" alt="">
-                  </div>
-                  <div class="ec-check-pay-img">
-                    <img src="assets/images/icons/payment7.png" alt="">
-                  </div>
+                    <div class="ec-check-pay-img">
+                        <img src="assets/images/icons/payment4.png" alt="">
+                    </div>
+                    <div class="ec-check-pay-img">
+                    </div>
+                    <div class="ec-check-pay-img">
+                    </div>
+                    <div class="ec-check-pay-img">
+                    </div>
                 </div>
               </div>
             </div>

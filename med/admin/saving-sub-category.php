@@ -19,7 +19,7 @@ $subcategoryname=$_POST['subcategoryname'];
 $category=$_POST['category'];
 $fulldescription=$_POST['fulldescription'];
 $tag=$_POST['tag'];
-$sql="insert into subcategory(subcategory,categoryid,description,tags)values(:subcategoryname,:category,:fulldescription,:tag)";
+$sql="insert into subcategory(subcategory,categoryId,description,tags)values(:subcategoryname,:category,:fulldescription,:tag)";
 $query=$dbh->prepare($sql);
 $query->bindParam(':subcategoryname',$subcategoryname,PDO::PARAM_STR);
 $query->bindParam(':category',$category,PDO::PARAM_STR);

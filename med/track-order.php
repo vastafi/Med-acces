@@ -55,9 +55,7 @@ include('includes/dbconnection.php');
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Trach Order</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">
@@ -82,7 +80,7 @@ include('includes/dbconnection.php');
           <div class="ec-trackorder-top">
             <h2 class="ec-order-id">order #8745</h2>
             <div class="ec-order-detail">
-              <div>Expected arrival 14-10-2022</div>
+              <div>Expected arrival 14-04-2023</div>
               <div>EverGreen <span>UBH 894E</span></div>
             </div>
           </div>

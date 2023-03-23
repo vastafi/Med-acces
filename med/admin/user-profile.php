@@ -35,7 +35,7 @@ if(isset($_POST['submit2']))
 	$adminid=$_SESSION['odmsaid'];
 	$cpassword=md5($_POST['currentpassword']);
 	$newpassword=md5($_POST['newpassword']);
-	$sql ="SELECT ID FROM tbladmin WHERE id=:adminid and password=:cpassword";
+	$sql ="SELECT id FROM tbladmin WHERE id=:adminid and password=:cpassword";
 	$query= $dbh -> prepare($sql);
 	$query-> bindParam(':adminid', $adminid, PDO::PARAM_STR);
 	$query-> bindParam(':cpassword', $cpassword, PDO::PARAM_STR);
@@ -66,7 +66,7 @@ if(isset($_POST['submit3']))
 	$adminid=$_SESSION['odmsaid'];
 	$profileimage=$_FILES["profileimage"]["name"];
 	move_uploaded_file($_FILES["profileimage"]["tmp_name"],"profileimages/".$_FILES["profileimage"]["name"]);
-	$sql="update  tbladmin set Photo=:profileimage where ID=:aid";
+	$sql="update  tbladmin set photo=:profileimage where id=:aid";
 	$query = $dbh->prepare($sql);
 	$query->bindParam(':profileimage',$profileimage,PDO::PARAM_STR);
 	$query->bindParam(':aid',$adminid,PDO::PARAM_STR);
@@ -294,7 +294,7 @@ if(isset($_POST['submit3']))
 																	</div>
 																	<div class="media-body pr-3">
 																		<a class="mt-0 mb-1 font-size-15 text-dark" href="#">New Order</a>
-																		<p>Doreen has placed an new order</p>
+																		<p>Dorin has placed an new order</p>
 																	</div>
 																	<span class="font-size-12 d-inline-block">
 																		<i class="mdi mdi-clock-outline"></i> 04:30 PM
@@ -307,7 +307,7 @@ if(isset($_POST['submit3']))
 																	<div class="media-body pr-3">
 																		<a class="mt-0 mb-1 font-size-15 text-dark" href="#">New Enquiry
 																		</a>
-																		<p>Johnson sent you new message</p>
+																		<p>Joh sent you new message</p>
 																	</div>
 																	<span class="font-size-12 d-inline-block">
 																		<i class="mdi mdi-clock-outline"></i> 10:23 AM
@@ -319,7 +319,7 @@ if(isset($_POST['submit3']))
 																	</div>
 																	<div class="media-body pr-3">
 																		<a class="mt-0 mb-1 font-size-15 text-dark" href="#">Support Ticket</a>
-																		<p>Everist has placed an new ticket</p>
+																		<p>Andrei has placed an new ticket</p>
 																	</div>
 																	<span class="font-size-12 d-inline-block">
 																		<i class="mdi mdi-clock-outline"></i> 07:10 AM
@@ -331,7 +331,7 @@ if(isset($_POST['submit3']))
 																	</div>
 																	<div class="media-body pr-3">
 																		<a class="mt-0 mb-1 font-size-15 text-dark" href="#">New order</a>
-																		<p>Elizabeth has placed an new order</p>
+																		<p>Lili has placed an new order</p>
 																	</div>
 																	<span class="font-size-12 d-inline-block">
 																		<i class="mdi mdi-clock-outline"></i> 10:44 PM
@@ -411,7 +411,7 @@ if(isset($_POST['submit3']))
 															<div class="form-group mb-4">
 																<label for="userName">User name</label>
 																<input class="form-control" name="userName" value="<?php  echo $row->userName;?>" id="userName" >
-																<span class="d-block mt-1">Accusamus nobis at omnis consequuntur culpa tempore saepe animi.
+																<span class="d-block mt-1">We apologize for the moment.
 																</span>
 															</div>
 															<div class="col-lg-6">

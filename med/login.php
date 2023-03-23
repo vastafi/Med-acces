@@ -21,7 +21,7 @@ if(isset($_POST['login']))
   }
   else
   {
-    echo "<script>alert('failed wrong credentials!');</script>";
+    echo "<script>alert('Failed wrong credentials!');</script>";
   }
 }
 
@@ -77,9 +77,7 @@ if(isset($_POST['login']))
       <div class="row">
         <div class="col-12">
           <div class="row ec_breadcrumb_inner">
-            <div class="col-md-6 col-sm-12">
-              <h2 class="ec-breadcrumb-title">Login</h2>
-            </div>
+            <div class="col-md-6 col-sm-12"></div>
             <div class="col-md-6 col-sm-12">
               <!-- ec-breadcrumb-list start -->
               <ul class="ec-breadcrumb-list">

@@ -14,7 +14,7 @@ if(isset($_POST['submit']))
 	$regno=$_POST['regno'];
 	$country=$_POST['country'];
 	$mobno=$_POST['mobilenumber'];
-	$sql="update tblcompany set companyaddress=:companyaddress,companyname=:companyname,companyemail=:companyemail,regno=:regno,companyphone=:mobilenumber,country=:country";
+	$sql="update tblcompany set companyAddress=:companyaddress,companyName=:companyname,companyEmail=:companyemail,regNo=:regno,companyPhone=:mobilenumber,country=:country";
 	$query = $dbh->prepare($sql);
 	$query->bindParam(':companyaddress',$companyaddress,PDO::PARAM_STR);
 	$query->bindParam(':companyemail',$companyemail,PDO::PARAM_STR);
@@ -52,7 +52,7 @@ if(isset($_POST['submit2']))
 		if ($query->execute()){
 			echo '<script>alert("Company logo updated successfully")</script>';
 		}else{
-			echo '<script>alert("update failed! try again later")</script>';
+			echo '<script>alert("update failed! Try again later")</script>';
 		}
 	}
 }
@@ -126,7 +126,7 @@ if(isset($_POST['submit2']))
 												<div class="card-body">
 													<h4 class="py-2 text-dark"><?php  echo $row->companyName;?></h4>
 													<p>
-														<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0a676b7861246f726b677a666f4a6d676b636624696567"><?php  echo $row->companyemail;?></a>
+														<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0a676b7861246f726b677a666f4a6d676b636624696567"><?php  echo $row->companyEmail;?></a>
 													</p>
 												</div>
 											</div>
@@ -134,9 +134,7 @@ if(isset($_POST['submit2']))
 											<div class="contact-info pt-4">
 												<h5 class="text-dark">Contact Information</h5>
 												<p class="text-dark font-weight-medium pt-24px mb-2">Email address</p>
-												<p>
-													<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="83eee2f1e8ade6fbe2eef3efe6c3e4eee2eaefade0ecee"><?php  echo $row->companyEmail;?></a>
-												</p>
+												<p>	<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="83eee2f1e8ade6fbe2eef3efe6c3e4eee2eaefade0ecee"><?php  echo $row->companyEmail;?></a></p>
 												<p class="text-dark font-weight-medium pt-24px mb-2">Phone Number</p><p>0<?php  echo $row->companyPhone;?></p>
 												<p class="text-dark font-weight-medium pt-24px mb-2">Reg No.</p>
 												<p><?php  echo $row->regNo;?></p>
@@ -218,19 +216,19 @@ if(isset($_POST['submit2']))
 															<div class="row mb-2">
 																<div class="col-lg-6">
 																	<div class="form-group">
-																		<label for="firstName">Company Name</label>
+																		<label for="companyname">Company Name</label>
 																		<input class="form-control" name="companyname" value="<?php  echo $row->companyName;?>" id="companyname" >
 																	</div>
 																</div>
 																<div class="col-lg-6">
 																	<div class="form-group">
-																		<label for="lastName">Reg No.</label>
+																		<label for="regno">Reg No.</label>
 																		<input class="form-control" name="regno" value="<?php  echo $row->regNo;?>" id="regno" >
 																	</div>
 																</div>
 															</div>
 															<div class="form-group ">
-																<label for="userName">Physical Address</label>
+																<label for="companyaddress">Physical Address</label>
 																<input class="form-control" name="companyaddress" value="<?php  echo $row->companyAddress;?>" id="companyaddress" >
 															</div>
 

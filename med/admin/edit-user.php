@@ -27,7 +27,7 @@ if(strlen($_SESSION['odmsaid'])==0)
 
 				<div class="col-lg-6">
 					<div class="form-group">
-						<label for="brandName">Frist Name</label>
+						<label for="FirstName">Frist Name</label>
 						<input type="text" class="form-control" name="firstname" value="<?php  echo $row2->firstName;?>" id="firstname">
 					</div>
 				</div>
@@ -39,21 +39,20 @@ if(strlen($_SESSION['odmsaid'])==0)
 				</div>
 				<div class="col-lg-6">
 					<div class="form-group">
-						<label for="brandName">Email</label>
+						<label for="email">Email</label>
 						<input type="text" class="form-control" name="email" value="<?php  echo $row2->email;?>" id="email">
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="form-group">
-						<label for="LastName">Mobile No.</label>
+						<label for="Mobile">Mobile No.</label>
 						<input type="text" class="form-control" value="<?php  echo $row2->mobileNumber;?>"  name="phone" id="phone" >
 					</div>
 				</div>
 
 			</div>
 			<div class="modal-footer px-4">
-				<button type="button" class="btn btn-secondary btn-pill"
-				data-bs-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-secondary btn-pill" data-bs-dismiss="modal">Cancel</button>
 			</div>
 			<?php 
 		}
