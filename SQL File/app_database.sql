@@ -343,6 +343,45 @@ CREATE TABLE `tblproducts` (
 -- Dumping data for table `tblproducts`
 INSERT INTO `tblproducts` (`id`, `categoryName`, `subcategory`, `brandName` , `productName` , `pharmaForm`, `dose`, `volume`, `division`, `codeATC`, `registrationNumber`, `dateManufacture`, `expirationDate`, `groupTag`, `quantity`,`status`, `producteur` ,`importateur`, `productImage` , `productImage2`, `productImage3`,`productImage4`, `productPrice`,`priceBefore` , `productDiscount` , `productDescription` , `productDetails`, `productStatus`, `postingDate`, `updationDate`) VALUES
 (57,14,51, 3, 'Interferon Alpha', 'Injection', '2 million IU', '1 vial', '3', 'L03AB02', 'R09876', '2021-01-01', '2025-01-01 00:00:00','', 10, 'active', 'ABC Pharma', 'DEF Pharma', '', '', '', '', 150.00, 150.00, 0, 'This is a product description', 'This is a product details', 'active', '2020-11-12 00:00:00', NULL),
+
+CREATE TABLE `invoices` (
+                            `invoiceId` int(11) NOT NULL,
+                            `netTotal` double NOT NULL DEFAULT 0,
+                            `invoiceDate` date NOT NULL DEFAULT current_timestamp(),
+                            `userId` int(11) NOT NULL,
+                            `totalAmount` double NOT NULL,
+                            `totalDiscount` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_bin;
+
+--
+-- Dumping data for table `invoices`
+--
+
+INSERT INTO `invoices` (`invoiceId`,   `netTotal`, `invoiceDate` ,   `userId`,   `totalAmount`, `totalDiscount`) VALUES
+(1, 30, '2023-03-19', 14, 30, 0),
+(2, 2626, '2023-02-19', 6, 2626, 0);
+
+CREATE TABLE `suppliers` (
+`id` int(11) NOT NULL,
+`nameSupplier` varchar(100) COLLATE utf16_bin NOT NULL,
+`email` varchar(100) COLLATE utf16_bin NOT NULL,
+`contactNumber` varchar(10) COLLATE utf16_bin NOT NULL,
+`address` varchar(100) COLLATE utf16_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_bin;
+
+
+INSERT INTO `suppliers` (`id`, `nameSupplier`, `email`, `contactNumber`, `address`) VALUES
+(15, 'Ace Medical Supplies', 'info@acemedsupplies.com', '1234567890', '123 Main Street'),
+(47, 'Medtech Solutions', 'info@medtechsolutions.com', '0987654321', '456 Park Avenue'),
+(389, 'All Health Supplies', 'info@allhealthsupplies.com', '1234567891', '789 Washington Blvd.'),
+(445, 'The Medical Store', 'info@themedicalstore.com', '0987654332', '101 State Street'),
+(52, 'Healthcare Suppliers', 'info@healthcaresuppliers.com', '1234567892', '202 Broadway Avenue'),
+(67, 'Medical Supply Depot', 'info@medsupplydepot.com', '0987654333', '303 Elm Street'),
+(78, 'Medical World Supplies', 'info@medworldsupplies.com', '1234567893', '404 Chestnut Street'),
+(89, 'Advance Medical Supplies', 'info@advancedmedsupplies.com', '0987654334', '505 Park Place'),
+(99, 'Medical Supplies Plus', 'info@medsuppliesplus.com', '1234567894', '606 Main Avenue'),
+(10, 'The Medical Company', 'info@themedicalcompany.com', '0987654335', '707 Pine Street');
+
 -- Table structure for table `tblsubscribe`
 CREATE TABLE `tblsubscribe` (
   `id` int(10) NOT NULL,
@@ -419,6 +458,22 @@ CREATE TABLE `wishlist` (
 INSERT INTO `wishlist` (`id`, `userId`, `productId`, `postingDate`) VALUES
 (27, 30, 75, '2022-10-03 11:16:36');
 
+
+CREATE TABLE `purchases` (
+`supplierName` varchar(100) COLLATE utf16_bin NOT NULL,
+`invoiceNumber` int(11) NOT NULL,
+`voucherNumber` int(11) NOT NULL,
+`purchaseDate` varchar(10) COLLATE utf16_bin NOT NULL,
+ `totalAmount` double NOT NULL,
+`paymentStatus` varchar(20) COLLATE utf16_bin NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_bin;
+
+ALTER TABLE `purchases`
+    ADD PRIMARY KEY (`voucherNumber`);
+
+ALTER TABLE `purchases`
+    MODIFY `voucherNumber` int(11) NOT NULL AUTO_INCREMENT;
+
 -- Indexes for dumped tables
 
 -- Indexes for table `orders`
@@ -481,6 +536,11 @@ ALTER TABLE `users`
 ALTER TABLE `wishlist`
   ADD PRIMARY KEY (`id`);
 
+-- Indexes for table `suppliers`
+ALTER TABLE `suppliers`
+    ADD PRIMARY KEY (`id`);
+
+
 -- AUTO_INCREMENT for dumped tables
 
 -- AUTO_INCREMENT for table `orders`
@@ -540,3 +600,7 @@ ALTER TABLE `wishlist`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 COMMIT;
 
+-- AUTO_INCREMENT for table `suppliers`
+ALTER TABLE `suppliers`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110;
+COMMIT;

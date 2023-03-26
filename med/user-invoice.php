@@ -199,7 +199,7 @@ include('includes/dbconnection.php');
                                     <span><strong>Tax (10%)</strong></span>
                                   </td>
                                   <td class="border-color">
-                                    <span>$<?php echo number_format((0.1*$grandtotal),0);?></span>
+                                    <span>MDL<?php echo number_format((0.1*$grandtotal),0);?></span>
                                   </td>
                                 </tr>
                                 <tr>
@@ -209,7 +209,7 @@ include('includes/dbconnection.php');
                                   colspan="1"><span><strong>Total</strong></span>
                                 </td>
                                 <td class="border-color m-m15">
-                                  <span>$<?php echo number_format(((0.1*$grandtotal)+$grandtotal),0);?></span></td>
+                                  <span>MDL <?php echo number_format(((0.1*$grandtotal)+$grandtotal),0);?></span></td>
                                 </tr>
                               </tfoot>
                             </table>
@@ -232,6 +232,7 @@ include('includes/dbconnection.php');
   <!-- Footer Start -->
   <?php @include("includes/footer.php");?>
   <!-- Footer Area End -->
+
   <!-- Vendor JS -->
   <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
   <script src="assets/js/vendor/jquery.notify.min.js"></script>
@@ -240,6 +241,7 @@ include('includes/dbconnection.php');
   <script src="assets/js/vendor/bootstrap.min.js"></script>
   <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
   <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
   <!--Plugins JS-->
   <script src="assets/js/plugins/swiper-bundle.min.js"></script>
   <script src="assets/js/plugins/countdownTimer.min.js"></script>
@@ -248,6 +250,7 @@ include('includes/dbconnection.php');
   <script src="assets/js/plugins/slick.min.js"></script>
   <script src="assets/js/plugins/infiniteslidev2.js"></script>
   <script src="assets/js/plugins/fb-chat.js"></script>
+
   <!-- Main Js -->
   <script src="assets/js/vendor/index.js"></script>
   <script src="assets/js/demo.js"></script>

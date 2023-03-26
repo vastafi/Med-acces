@@ -10,29 +10,21 @@ if(isset($_POST['change']))
   $contact=$_POST['contact'];
   $query=mysqli_query($con,"SELECT * FROM users WHERE email='$email' and contactNo='$contact'");
   $num=mysqli_fetch_array($query);
-  if($num>0)
-  {
+  if($num>0) {
     $name = $num['name'];
-
     $activationcode=md5($email.time());
-
     $query=mysqli_query($con,"update users set activationCode='$activationcode' WHERE email='$email' and contactNo='$contact' ");
-    if($query)
-
-    {
+    if($query)  {
         // Load Composer's autoloader
       require 'vendor/autoload.php';
             // Instantiation and passing `true` enables exceptions
       $mail = new PHPMailer(true);
-
       $subject = stripslashes( nl2br( 'Password Reset' ) );
              //$message = stripslashes( nl2br( '' ) );
-
       try {
-
             //Server settings
-            $mail->SMTPDebug = 0;  // 0 - Disable Debugging, 2 - Responses received from the server
-          $mail->isSMTP();    // Set mailer to use SMTP
+          $mail->SMTPDebug = 0;  // 0 - Disable Debugging, 2 - Responses received from the server
+          $mail->isSMTP();   // Set mailer to use SMTP
           $mail->Host       = 'smtp.gmail.com';  // Specify main and backup SMTP servers
           $mail->SMTPAuth   = true;     // Enable SMTP authentication
           $mail->Username   = 'compscie95@gmail.com'; // SMTP username
@@ -55,17 +47,12 @@ if(isset($_POST['change']))
           ob_start();
           ?>
           Dear &nbsp;  <?php echo ucfirst( $name ); ?>, <br />
-
           <div style='padding-top:6px;'>You requested to change your password.</div>
-
           <div style='padding-top:8px;'>To do so please click on the link below:</div>
-
-          <div style='padding-top:10px;'><a href='http://localhost/Electronicshop/email_verification.php?code=<?php echo $activationcode ?>'>Click here to change your password</a></div>
-
+          <div style='padding-top:10px;'><a href='http://localhost/Electronicshop/email_verification.php?code=<?php echo $activationCode ?>'>Click here to change your password</a></div>
           <div style='padding-top:3px;'>If you didn't request a password change just ignore this email.</div>
           <p style='padding-top:3px;'>Best Regards,</p>
-          <p style='padding-top:2px;'>Shop Team.</p>
-
+          <p style='padding-top:2px;'>Med Acces Team.</p>
                    <br />
           <br />
           <?php
@@ -86,8 +73,7 @@ if(isset($_POST['change']))
         } 
       }
     }
-    else
-    {
+    else {
       $extra="forgot_password.php";
       $host  = $_SERVER['HTTP_HOST'];
       $uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
@@ -140,7 +126,6 @@ if(isset($_POST['change']))
     <!-- Ekka Cart Start -->
     <?php @include("includes/shoppingcart.php");?>
     <!-- Ekka Cart End -->
-
 
     <!-- Ec breadcrumb start -->
     <div class="sticky-header-next-sec  ec-breadcrumb section-space-mb">
@@ -238,6 +223,7 @@ if(isset($_POST['change']))
       <div class="desc">You Have Add To Wishlist Successfully</div>
     </div>
     <!--successfully toast end -->
+
     <!-- Vendor JS -->
     <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
     <script src="assets/js/vendor/jquery.notify.min.js"></script>

@@ -106,7 +106,7 @@
             <div class="ec-footer-links">
               <ul class="align-items-center">
                 <li class="ec-footer-link"><a href="#">About us</a></li>
-                <li class="ec-footer-link"><a href="#">FAQ</a></li>
+                <li class="ec-footer-link"><a href="questions.php">FAQ</a></li>
                 <li class="ec-footer-link"><a href="user-history.php">Delivery Information</a>
                 </li>
                 <li class="ec-footer-link"><a href="contactus.php">Contact us</a></li>

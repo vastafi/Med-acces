@@ -305,7 +305,6 @@ if(isset($_POST['login']))
                     </div>
                   </div>
                 </div>
-
               </div>
               <?php 
             } ?>
@@ -351,29 +350,14 @@ if(isset($_POST['login']))
                   <span class="text-left">Sub-Total</span>
                   <span class="text-right">MDL <?php echo htmlentities(number_format("$totalprice", 0, '.', ','));?></span>
                 </div>
-
                 <div>
                   <span class="text-left">Delivery Charges</span>
                   <span class="text-right">MDL&nbsp;5.00</span>
                 </div>
-                    <!-- <div>
-                      <span class="text-left">Coupan Discount</span>
-                      <span class="text-right"><a class="ec-checkout-coupan">Apply Coupan</a></span>
-                    </div>
-                    <div class="ec-checkout-coupan-content">
-                      <form class="ec-checkout-coupan-form" name="ec-checkout-coupan-form"
-                      method="post" action="#">
-                      <input class="ec-coupan" type="text" required=""
-                      placeholder="Enter Your Coupan Code" name="ec-coupan" value="">
-                      <button class="ec-coupan-btn button btn-primary" type="submit"
-                      name="subscribe" value="">Apply</button>
-                    </form>
-                  </div> -->
-
-                  <div class="ec-checkout-summary-total">
+                <div class="ec-checkout-summary-total">
                     <span class="text-left">Total Amount</span>
                     <span class="text-right">MDL <?php echo htmlentities(number_format(("$totalprice"+'5'), 0, '.', ','));?></span>
-                  </div>
+                </div>
 
                 </div>
                 <div class="ec-checkout-pro">
@@ -442,8 +426,7 @@ if(isset($_POST['login']))
             </div>
             <div class="ec-sb-block-content">
               <div class="ec-checkout-pay">
-                <div class="ec-pay-desc">Please select the preferred payment method to use on this
-                order.</div>
+                <div class="ec-pay-desc">Please select the payment method to use on this order.</div>
                 <form action="#" method="post">
                   <?php
                   $pdtid=array();
@@ -531,8 +514,6 @@ if(isset($_POST['login']))
   <!-- Footer Start -->
   <?php @include("includes/footer.php");?>
   <!-- Footer Area End -->
-
-
 </div>
 </div>
 <!-- Feature tools end -->
@@ -555,6 +536,7 @@ if(isset($_POST['login']))
 <script src="assets/js/plugins/infiniteslidev2.js"></script>
 <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
 <script src="assets/js/plugins/jquery.sticky-sidebar.js"></script>
+
 <!-- Google translate Js -->
 <script src="assets/js/vendor/google-translate.js"></script>
 <script>
@@ -562,10 +544,9 @@ if(isset($_POST['login']))
     new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
   }
 </script>
+
 <!-- Main Js -->
 <script src="assets/js/vendor/index.js"></script>
 <script src="assets/js/demo.js"></script>
-
-
 </body>
 </html>

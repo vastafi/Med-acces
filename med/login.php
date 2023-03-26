@@ -123,6 +123,8 @@ if(isset($_POST['login']))
                   <button class="btn btn-primary" name="login" type="submit">Login</button>
                 </span>
               </form>
+                <br>
+                You don't have an account, go to <a href="register.php">Register</a>
             </div>
           </div>
         </div>
@@ -142,10 +144,6 @@ if(isset($_POST['login']))
     <div class="desc">You Have Add To Wishlist Successfully</div>
   </div>
   <!--successfully toast end -->
-
-  <!-- Theme Custom Cursors -->
-  <!-- <div class="ec-cursor"></div> -->
-  <!--   <div class="ec-cursor-2"></div> -->
 
   <!-- Vendor JS -->
   <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>

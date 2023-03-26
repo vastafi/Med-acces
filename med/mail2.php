@@ -3,11 +3,11 @@ error_reporting(0);
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-if( empty( $_POST['token'] ) ){
+if( empty( $_POST['token'] ) ) {
 	echo '<span class="notice">Error!</span>';
 	exit;
 }
-if( $_POST['token'] != 'FsWga4&@f6aw' ){
+if( $_POST['token'] != 'FsWga4&@f6aw' ) {
 	echo '<span class="notice">Error!</span>';
 	exit;
 }
@@ -69,7 +69,7 @@ try {
     $s = $mail->send();
     if( $s == 1 ){
     	echo '<div class="success" ><i class="ecicon eci-check-circle"></i><h3>Thank You!</h3>Your message has been sent successfully.</div>';
-    }else{
+    }else {
     	echo '<div>Your message sending failed!</div>';
     }
 } catch (Exception $e) {

@@ -50,8 +50,33 @@
                             </li>
                         </ul>
                     </div>
+
+                </li>
+                <!-- manufacturer start -->
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class=" mdi mdi-group"></i>
+                        <span class="nav-text">Supplier</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse">
+                        <ul class="sub-menu" id="orders" data-parent="#sidebar-menu">
+                            <li class="">
+                                <a class="sidenav-item-link" href="manage_supplier.php">
+                                    <span class="nav-text">Manage Supplier</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="sidenav-item-link" href="supplier_add.php">
+                                    <span class="nav-text">Add Supplier</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <hr>
                 </li>
+                <!-- manufacturer end -->
+
+
 
                 <!-- Products -->
                 <li class="has-sub">
@@ -115,10 +140,60 @@
                                     <span class="nav-text">Order History</span>
                                 </a>
                             </li>
-
                         </ul>
                     </div>
                 </li>
+
+
+                <!-- Invoice -->
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class=" mdi mdi-scale-balance"></i>
+                        <span class="nav-text">Invoice</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse">
+                        <ul class="sub-menu" id="orders" data-parent="#sidebar-menu">
+                            <li class="">
+                                <a class="sidenav-item-link" href="new_invoice.php">
+                                    <span class="nav-text">New Invoice</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="sidenav-item-link" href="manage_invoice.php">
+                                    <span class="nav-text">Manage invoice</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </li>
+
+                <!-- invoice end -->
+
+                <!-- Report -->
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)">
+                        <i class=" mdi mdi-book"></i>
+                        <span class="nav-text">Report</span> <b class="caret"></b>
+                    </a>
+                    <div class="collapse">
+                        <ul class="sub-menu" id="orders" data-parent="#sidebar-menu">
+                            <li class="">
+                                <a class="sidenav-item-link" href="sales_report.php">
+                                    <span class="nav-text">Sales report</span>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a class="sidenav-item-link" href="purchase_report.php">
+                                    <span class="nav-text">Purchase report</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr>
+                </li>
+
+                <!-- report end -->
 
                 <!-- Reviews -->
                 <li>

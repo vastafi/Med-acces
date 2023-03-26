@@ -9,15 +9,12 @@ if(!empty($_GET['code']) && isset($_GET['code']))
   $num=mysqli_fetch_array($sql);
   if($num>0)
   {
-    
       $_SESSION['activatecode']=$code;
       echo "<script type='text/javascript'> document.location = 'change_password.php'; </script>";
-   
-  }
+     }
   else
   {
     $msg ="Wrong activation code.";
   }
 }
-
 ?>

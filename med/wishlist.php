@@ -79,7 +79,6 @@ if(isset($_GET['del']))
   <?php @include("includes/shoppingcart.php");?>
   <!-- Ekka Cart End -->
 
-
   <!-- Ec breadcrumb start -->
   <div class="sticky-header-next-sec  ec-breadcrumb section-space-mb">
     <div class="container">

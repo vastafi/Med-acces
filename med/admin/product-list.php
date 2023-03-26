@@ -120,8 +120,17 @@ if(isset($_GET['del'])){
 													$results=$query->fetchAll(PDO::FETCH_OBJ);
 													if($query->rowCount() > 0)
 													{
-														foreach($results as $row)
-														{ 
+														foreach($results as $row) {
+                                                            $expiration_date = date_create($row->expirationDate);
+                                                            $today = date_create(date('Y-m-d'));
+                                                            $diff = date_diff($today, $expiration_date);
+
+                                                            // Check if there are less than 3 days left until the expiration date
+                                                            if ($diff->days <= 3) {
+                                                                echo '' ;
+                                                            } else {
+                                                                echo '';
+                                                            }
 
 															?>
 															<tr>

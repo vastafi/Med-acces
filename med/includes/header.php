@@ -1,8 +1,10 @@
 <header class="ec-header">
+
   <!--Ec Header Top Start -->
   <div class="header-top">
     <div class="container">
       <div class="row align-items-center">
+
         <!-- Header Top phone Start -->
         <div class="col header-top-left">
           <div class="header-top-call">
@@ -11,9 +13,11 @@
           </div>
         </div>
         <!-- Header Top phone End -->
+
         <!-- Header Top Language Currency -->
         <div class="col header-top-right d-none d-lg-block">
           <div class="header-top-right-inner d-flex justify-content-end">
+
             <!-- Currency Start -->
             <div class="header-top-lan-curr header-top-curr dropdown">
               <button class="dropdown-toggle" data-bs-toggle="dropdown">MDL <i
@@ -26,6 +30,7 @@
               </ul>
             </div>
             <!-- Currency End -->
+
             <!-- Language Start -->
             <div class="header-top-lan-curr header-top-lan dropdown">
               <button class="dropdown-toggle" data-bs-toggle="dropdown">ENG<i
@@ -40,29 +45,27 @@
               </ul>
             </div>
             <!-- Language End -->
+
             <!-- Social Start -->
             <div class="header-top-social">
               <ul class="mb-0">
-                <li class="list-inline-item"><a href="#"><i class="ecicon eci-facebook"></i></a>
-                </li>
-                <li class="list-inline-item"><a href="#"><i class="ecicon eci-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#"><i class="ecicon eci-instagram"></i></a>
-                </li>
-                <li class="list-inline-item"><a href="#"><i class="ecicon eci-linkedin"></i></a>
-                </li>
+                  <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100088809137038"><i class="ecicon eci-facebook"></i></a> </li>
+                  <li class="list-inline-item"><a href="https://www.instagram.com/valentinaastafi/"><i class="ecicon eci-instagram"></i></a> </li>
+                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/valentina-astafi-a65a041a4/"><i class="ecicon eci-linkedin"></i></a> </li>
               </ul>
             </div>
             <!-- Social End -->
           </div>
         </div>
         <!-- Header Top Language Currency -->
+
         <!-- Header Top responsive Action -->
         <div class="col header-top-res d-lg-none">
           <div class="ec-header-bottons">
             <!-- Header User Start -->
             <div class="ec-header-user dropdown">
               <button class="dropdown-toggle" data-bs-toggle="dropdown"><img
-                src="../assets/images/icons/user.svg" class="svg_img header_svg"
+                src="assets/images/icons/user.svg" class="svg_img header_svg"
                 alt="" />
               </button>
               <ul class="dropdown-menu dropdown-menu-right">
@@ -82,11 +85,11 @@
               </ul>
             </div>
             <!-- Header User End -->
+
             <!-- Header Cart Start -->
             <a href="wishlist.php" class="ec-header-btn ec-header-wishlist">
               <div class="header-icon">
-                <img src="../assets/images/icons/wishlist.svg"
-                class="svg_img header_svg" alt="" />
+                <img src="assets/images/icons/wishlist.svg" class="svg_img header_svg" alt="" />
               </div>
               <?php
               if(strlen($_SESSION['login'])==0)
@@ -105,11 +108,11 @@
               }?>
             </a>
             <!-- Header Cart End -->
+
             <!-- Header Cart Start -->
             <a href="#ec-side-cart" class="ec-header-btn ec-side-toggle">
               <div class="header-icon">
-                <img src="assets/images/icons/pro_cart.svg"
-                class="svg_img header_svg" alt="" />
+                <img src="assets/images/icons/pro_cart.svg" class="svg_img header_svg" alt="" />
               </div>
               <?php
               if(!empty($_SESSION['cart']))
@@ -141,6 +144,7 @@
               ?>
             </a>
             <!-- Header Cart End -->
+
             <!-- Header menu Start -->
             <a href="#ec-mobile-menu" class="ec-header-btn ec-side-toggle ec-d-l d-lg-none">
               <i class="ecicon eci-bars"></i>
@@ -153,6 +157,7 @@
     </div>
   </div>
   <!-- Ec Header Top  End -->
+
   <!-- Ec Header Bottom  Start -->
   <div class="ec-header-bottom d-none d-lg-block">
     <div class="container position-relative">
@@ -176,23 +181,23 @@
                 <div class="ec-search-select-inner">
                   <select name="ec-search-cat">
                     <option selected disabled>All</option>
-                    <option value="Cardiovascular">Cardiovascular</option>
-                    <option value="Respiratory">Respiratory</option>
-                    <option value="Digestion">Digestion</option>
-                    <option value="Dermatological">Dermatological</option>
-                    <option value="Musculoskeletal">Musculoskeletal</option>
-                    <option value="Hematopoietic">Hematopoietic</option>
-                    <option value="Hormone">Hormone</option>
-                    <option value="Antiparasitic">Antiparasitic</option>
-                    <option value="Hygiene">Hygiene</option>
-                    <option value="Cosmetics">Cosmetics</option>
-                    <option value="Vitamins">Vitamins</option>
-                    <option value="Immunomodulatory">Immunomodulatory</option>
+                      <option value="Cardiovascular">Card</option>
+                      <option value="Respiratory">Resp</option>
+                      <option value="Digestion">Digest</option>
+                      <option value="Dermatological">Derma</option>
+                      <option value="Musculoskeletal">Muscu</option>
+                      <option value="Hematopoietic">Hemat</option>
+                      <option value="Hormone">Hormone</option>
+                      <option value="Antiparasitic">Antip</option>
+                      <option value="Hygiene">Hyg</option>
+                      <option value="Cosmetics">Cosmet</option>
+                      <option value="Vitamins">Vita</option>
+                      <option value="Immunomodulatory">Immuno</option>
                   </select>
                 </div>
                 <input class="form-control" placeholder="I’m searching for..." type="text">
                 <button class="search_submit" type="submit">Search
-                    <img src="https://img.icons8.com/avantgarde/100/null/search.png" class="svg_img search_svg" />
+                    <img src="assets/images/icons/search.svg" class="svg_img search_svg" />
 
                 </button>
               </form>
@@ -203,6 +208,7 @@
           <!-- Ec Header Button Start -->
           <div class="align-self-center ec-header-cart">
             <div class="ec-header-bottons">
+
               <!-- Header User Start -->
               <div class="ec-header-user dropdown">
                 <button class="dropdown-toggle" data-bs-toggle="dropdown">
@@ -213,7 +219,7 @@
                 <ul class="dropdown-menu dropdown-menu-right">
                   <li><a class="dropdown-item" href="user-profile.php">My account</a></li>
                   <li><a class="dropdown-item" href="register.php">Register</a></li>
-                  <li><a class="dropdown-item" href="checkout.html">Checkout</a></li>
+                  <li><a class="dropdown-item" href="checkout.php">Checkout</a></li>
                   <?php if(strlen($_SESSION['login'])==0)
                   {   ?>
                     <li><a class="dropdown-item" href="login.php">Login</a></li>
@@ -226,6 +232,7 @@
                 </ul>
               </div>
               <!-- Header User End -->
+
               <!-- Header wishlist Start -->
               <a href="wishlist.php" class="ec-header-btn ec-header-wishlist">
                 <div class="header-icon">
@@ -297,6 +304,7 @@
     </div>
   </div>
   <!-- Ec Header Button End -->
+
   <!-- Header responsive Bottom  Start -->
   <div class="ec-header-bottom d-lg-none">
     <div class="container position-relative">
@@ -310,6 +318,7 @@
           </div>
         </div>
         <!-- Ec Header Logo End -->
+
         <!-- Ec Header Search Start -->
         <div class="col align-self-center ec-header-search">
           <div class="header-search">
@@ -317,18 +326,18 @@
               <div class="ec-search-select-inner">
                 <select name="ec-search-cat">
                   <option selected disabled>All</option>
-                    <option value="Immunomodulatory">Immunomodulatory</option>
-                    <option value="Cardiovascular">Cardiovascular system</option>
-                    <option value="Respiratory">Respiratory system</option>
-                    <option value="Digestion">Digestion, metabolisms</option>
-                    <option value="Dermatological">Dermatological</option>
-                    <option value="Musculoskeletal">Musculoskeletal</option>
-                    <option value="Hematopoietic">Hematopoietic</option>
-                    <option value="Hormone">Hormone</option>
-                    <option value="Antiparasitic">Antiparasitic</option>
-                    <option value="Hygiene">Hygiene</option>
-                    <option value="Cosmetics">Cosmetics</option>
-                    <option value="Vitamins">Vitamins</option>
+                    <option value="Immunomodulatory">Immun</option>
+                    <option value="Cardiovascular">Cardio</option>
+                    <option value="Respiratory">Respir</option>
+                    <option value="Digestion">Digest</option>
+                    <option value="Dermatological">Derma</option>
+                    <option value="Musculoskeletal">Muscu</option>
+                    <option value="Hematopoietic">Hema</option>
+                    <option value="Hormone">Horm</option>
+                    <option value="Antiparasitic">Anti</option>
+                    <option value="Hygiene">Hyg</option>
+                    <option value="Cosmetics">Cosmet</option>
+                    <option value="Vitamins">Vita</option>
                 </select>
               </div>
               <input class="form-control" placeholder="I’m searching for..." type="text">
@@ -345,6 +354,7 @@
     </div>
   </div>
   <!-- Header responsive Bottom  End -->
+
   <!-- EC Main Menu Start -->
   <div id="ec-main-menu-desk" class="sticky-nav">
     <div class="container position-relative">
@@ -427,10 +437,10 @@
                 <ul class="mega-menu d-block">
                   <li class="d-flex">
                     <ul class="d-block">
-                      <li class="menu_title"><a href="javascript:void(0)">Cosmetics</a></li>
+                      <li class="menu_title"><a href="categories.php?cid=60">Cosmetics</a></li>
                       <?php
-                      $ret2=mysqli_query($con,"select * from tblproducts where categoryName='60' order by rand() limit 4");
-                      while ($row2=mysqli_fetch_array($ret2)) 
+                      $ret2=mysqli_query($con,"select * from tblproducts where categoryName='60' order by rand() limit 5");
+                      while ($row2=mysqli_fetch_array($ret2))
                       {
                         ?>
                         <li><a href="product.php?pid=<?php echo htmlentities($row2['id']);?>"><?php echo substr($row2['productName'],0,25);?></a>
@@ -439,10 +449,10 @@
                       }?>
                     </ul>
                     <ul class="d-block">
-                      <li class="menu_title"><a href="javascript:void(0)">Hygiene</a></li>
+                      <li class="menu_title"><a href="categories.php?cid=14">Hygiene</a></li>
                       <?php
-                      $ret3=mysqli_query($con,"select * from tblproducts where categoryName='17' order by rand() limit 4");
-                      while ($row3=mysqli_fetch_array($ret3)) 
+                      $ret3=mysqli_query($con,"select * from tblproducts where categoryName='14' order by rand() limit 5");
+                      while ($row3=mysqli_fetch_array($ret3))
                       {
                         ?>
                         <li><a href="product.php?pid=<?php echo htmlentities($row3['id']);?>"><?php echo substr($row3['productName'],0,25);?></a></li>
@@ -450,10 +460,10 @@
                       }?>
                     </ul>
                     <ul class="d-block">
-                      <li class="menu_title"><a href="javascript:void(0)">Dermatological</a></li>
+                      <li class="menu_title"><a href="categories.php?cid=71">Dermatological</a></li>
                       <?php
-                      $ret4=mysqli_query($con,"select * from tblproducts where categoryName='71' order by rand() limit 4");
-                      while ($row4=mysqli_fetch_array($ret4)) 
+                      $ret4=mysqli_query($con,"select * from tblproducts where categoryName='71' order by rand() limit 5");
+                      while ($row4=mysqli_fetch_array($ret4))
                       {
                         ?>
                         <li><a href="product.php?pid=<?php echo htmlentities($row4['id']);?>"><?php echo substr($row4['productName'],0,25);?></a></li>
@@ -461,11 +471,11 @@
                       }?>
                     </ul>
                     <ul class="d-block">
-                      <li class="menu_title"><a href="javascript:void(0)">Vitamins</a>
+                      <li class="menu_title"><a href="categories.php?cid=75">Vitamins</a>
                       </li>
                       <?php
-                      $ret5=mysqli_query($con,"select * from tblproducts where categoryName='75' order by rand() limit 4");
-                      while ($row5=mysqli_fetch_array($ret5)) 
+                      $ret5=mysqli_query($con,"select * from tblproducts where categoryName='75' order by rand() limit 5");
+                      while ($row5=mysqli_fetch_array($ret5))
                       {
                         ?>
                         <li><a href="product.php?pid=<?php echo htmlentities($row5['id']);?>"><?php echo substr($row5['productName'],0,25);?></a></li>
@@ -511,11 +521,12 @@
     </div>
   </div>
   <!-- Ec Main Menu End -->
+
   <!-- shop Menu Start -->
   <div class="ec-mobile-menu-overlay"></div>
   <div id="ec-mobile-menu" class="ec-side-cart ec-mobile-menu">
     <div class="ec-menu-title">
-      <span class="menu_title">My Menu</span>
+      <span class="menu_title">Menu</span>
       <button class="ec-close">×</button>
     </div>
     <div class="ec-menu-inner">
@@ -526,10 +537,10 @@
           <li><a href="javascript:void(0)">Categories</a>
             <ul class="sub-menu">
               <li>
-                <a href="javascript:void(0)">Cosmetics</a>
+                <a href="categories.php?cid=60">Cosmetics</a>
                 <ul class="sub-menu">
                   <?php
-                  $ret6=mysqli_query($con,"select * from tblproducts where categoryName='60' order by rand() limit 4");
+                  $ret6=mysqli_query($con,"select * from tblproducts where categoryName='60' order by rand() limit 5");
                   while ($row6=mysqli_fetch_array($ret6)) 
                   {
                     ?>
@@ -540,10 +551,10 @@
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Hygiene</a>
+                <a href="categories.php?cid=14">Hygiene</a>
                 <ul class="sub-menu">
                   <?php
-                  $ret7=mysqli_query($con,"select * from tblproducts where CategoryName='17' order by rand() limit 4");
+                  $ret7=mysqli_query($con,"select * from tblproducts where CategoryName='14' order by rand() limit 5");
                   while ($row7=mysqli_fetch_array($ret7)) 
                   {
                     ?>
@@ -553,10 +564,10 @@
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Dermatological</a>
+                <a href="categories.php?cid=71">Dermatological</a>
                 <ul class="sub-menu">
                   <?php
-                  $ret8=mysqli_query($con,"select * from tblproducts where categoryName='71' order by rand() limit 4");
+                  $ret8=mysqli_query($con,"select * from tblproducts where categoryName='71' order by rand() limit 5");
                   while ($row8=mysqli_fetch_array($ret8)) 
                   {
                     ?>
@@ -566,10 +577,10 @@
                 </ul>
               </li>
               <li>
-                <a href="javascript:void(0)">Vitamins</a>
+                <a href="categories.php?cid=75">Vitamins</a>
                 <ul class="sub-menu">
                   <?php
-                  $ret9=mysqli_query($con,"select * from tblproducts where categoryName='75' || categoryName='17' order by rand() limit 4");
+                  $ret9=mysqli_query($con,"select * from tblproducts where categoryName='75' order by rand() limit 5");
                   while ($row9=mysqli_fetch_array($ret9)) 
                   {
                     ?>
@@ -578,12 +589,10 @@
                   }?>
                 </ul>
               </li>
-
             </ul>
           </li>
           <li><a href="javascript:void(0)">Products</a>
             <ul class="sub-menu">
-
               <?php
               $ret1=mysqli_query($con,"select * from tblproducts order by rand() limit 6");
               while ($row1=mysqli_fetch_array($ret1)) 
@@ -594,11 +603,11 @@
               }?>
             </ul>
           </li>
-          <li><a href="#">Hot Offers</a></li>
-        </ul>
+         </ul>
       </div>
       <div class="header-res-lan-curr">
         <div class="header-top-lan-curr">
+
           <!-- Language Start -->
           <div class="header-top-lan dropdown">
             <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Language <i
@@ -610,6 +619,7 @@
             </ul>
           </div>
           <!-- Language End -->
+
           <!-- Currency Start -->
           <div class="header-top-curr dropdown">
             <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Currency <i
@@ -622,7 +632,9 @@
             </ul>
           </div>
           <!-- Currency End -->
+
         </div>
+
         <!-- Social Start -->
         <div class="header-res-social">
           <div class="header-top-social">
@@ -634,8 +646,10 @@
           </div>
         </div>
         <!-- Social End -->
+
       </div>
     </div>
   </div>
+
   <!-- shop Menu End -->
 </header>

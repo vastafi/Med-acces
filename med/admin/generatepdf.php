@@ -134,7 +134,7 @@ $pdf->Cell (39 ,8,'Subtotal',0,0);
 $pdf->Cell (40 ,8,(number_format($grandtotal,0)),1,1,'R');//end of line
 
 $pdf->Cell(110 ,8,'',0,0);
-$pdf->Cell (39 ,8,'Tax(10%)',0,0);
+$pdf->Cell (39 ,8,'Tax (10%)',0,0);
 $pdf->Cell (40 ,8,(number_format((0.1*$grandtotal),0)),1,1,'R');//end of line
 
 

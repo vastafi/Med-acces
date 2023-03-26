@@ -85,6 +85,69 @@ include('includes/dbconnection.php');
   <!-- Ekka Cart Start -->
   <?php @include("includes/shoppingcart.php");?>
   <!-- Ekka Cart End -->
+  <!-- Testimonial Start -->
+  <section class="section ec-test-section section-space-p">
+      <div class="container">
+         <div class="row">
+              <div class="ec-test-outer">
+                  <ul id="ec-testimonial-slider">
+                      <li class="ec-test-item">
+                          <div class="ec-test-inner">
+                              <div class="ec-test-img"><img alt="testimonial" title="testimonial"
+                                                            src="assets/images/testimonial/RudolfVirchow.jpg" />
+                              </div>
+                              <div class="ec-test-content">
+                                  <div class="ec-test-icon"><img src="assets/images/testimonial/quote-3.svg"
+                                                                 class="svg_img test_svg" alt="" />
+                                  </div>
+                                  <div class="ec-test-desc">Medicines may replace your doctor, but no medicine can replace a doctor.</div>
+                                  <div class="ec-test-name-info">
+                                      <div class="ec-test-name">Rudolf Virchow</div>
+                                      <div class="ec-test-designation">German scientist </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="ec-test-item">
+                          <div class="ec-test-inner">
+                              <div class="ec-test-img"><img alt="testimonial" title="testimonial"
+                                                            src="assets/images/testimonial/DavidAgus.jpg" />
+                              </div>
+                              <div class="ec-test-content">
+                                  <div class="ec-test-icon"><img src="assets/images/testimonial/quote-3.svg"
+                                                                 class="svg_img test_svg" alt="" />
+                                  </div>
+                                  <div class="ec-test-desc">In the fight with the disease, drugs are as important as operation or radiotherapy.</div>
+                                  <div class="ec-test-name-info">
+                                      <div class="ec-test-name">David Agus</div>
+                                      <div class="ec-test-designation">Doctor, writer</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                      <li class="ec-test-item">
+                          <div class="ec-test-inner">
+                              <div class="ec-test-img"><img alt="testimonial" title="testimonial"
+                                                            src="assets/images/testimonial/AtulGawande.jpg" />
+                              </div>
+                              <div class="ec-test-content">
+                                  <div class="ec-test-icon"><img src="assets/images/testimonial/quote-3.svg"
+                                                                 class="svg_img test_svg" alt="" />
+                                  </div>
+                                  <div class="ec-test-desc">Good medicines are the ones that save your life, but excellent medicines are the ones that allow you to live it.</div>
+                                  <div class="ec-test-name-info">
+                                      <div class="ec-test-name">Atul Gawande</div>
+                                      <div class="ec-test-designation">Surgeon, journalist, writer</div>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- testimonial end -->
 
   <!-- Main Slider Start -->
   <div class="ec-main-slider section section-space-mb">
@@ -504,6 +567,7 @@ include('includes/dbconnection.php');
               </div>
             </div>
             <!-- ec 2nd Product tab end -->
+
             <!-- ec 3rd Product tab start -->
             <div class="tab-pane fade" id="tab-pro-best-sellers">
               <div class="row">
@@ -635,77 +699,6 @@ include('includes/dbconnection.php');
     </div>
   </section>
   <!--services Section End -->
-
-  <!-- Testimonial Start -->
-  <section class="section ec-test-section section-space-p">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-12 section-title-block">
-                  <div class="section-title">
-                      <h2 class="ec-title">Testimonials</h2>
-                  </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="ec-test-outer">
-                  <ul id="ec-testimonial-slider">
-                      <li class="ec-test-item">
-                          <div class="ec-test-inner">
-                              <div class="ec-test-img"><img alt="testimonial" title="testimonial"
-                                                            src="assets/images/testimonial/RudolfVirchow.jpg" />
-                              </div>
-                              <div class="ec-test-content">
-                                  <div class="ec-test-icon"><img src="assets/images/testimonial/quote-3.svg"
-                                                                 class="svg_img test_svg" alt="" />
-                                  </div>
-                                  <div class="ec-test-desc">Medicines may replace your doctor, but no medicine can replace a doctor.</div>
-                                  <div class="ec-test-name-info">
-                                      <div class="ec-test-name">Rudolf Virchow</div>
-                                      <div class="ec-test-designation">German scientist </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="ec-test-item">
-                          <div class="ec-test-inner">
-                              <div class="ec-test-img"><img alt="testimonial" title="testimonial"
-                                                            src="assets/images/testimonial/DavidAgus.jpg" />
-                              </div>
-                              <div class="ec-test-content">
-                                  <div class="ec-test-icon"><img src="assets/images/testimonial/quote-3.svg"
-                                                                 class="svg_img test_svg" alt="" />
-                                  </div>
-                                  <div class="ec-test-desc">In the fight with the disease, drugs are as important as operation or radiotherapy.</div>
-                                  <div class="ec-test-name-info">
-                                      <div class="ec-test-name">David Agus</div>
-                                      <div class="ec-test-designation">Doctor, writer</div>
-                                  </div>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="ec-test-item">
-                          <div class="ec-test-inner">
-                              <div class="ec-test-img"><img alt="testimonial" title="testimonial"
-                                                            src="assets/images/testimonial/AtulGawande.jpg" />
-                              </div>
-                              <div class="ec-test-content">
-                                  <div class="ec-test-icon"><img src="assets/images/testimonial/quote-3.svg"
-                                                                 class="svg_img test_svg" alt="" />
-                                  </div>
-                                  <div class="ec-test-desc">Good medicines are the ones that save your life, but excellent medicines are the ones that allow you to live it.</div>
-                                  <div class="ec-test-name-info">
-                                      <div class="ec-test-name">Atul Gawande</div>
-                                      <div class="ec-test-designation">Surgeon, journalist, writer</div>
-                                  </div>
-                              </div>
-                          </div>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </section>
-  <!-- testimonial end -->
 
   <!-- Brand Section Start -->
   <section class="section ec-brand-area section-space-p">

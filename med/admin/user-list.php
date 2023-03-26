@@ -130,6 +130,7 @@ if(isset($_GET['del'])){
 							</button>
 						</div>
 					</div>
+
 					<!-- start modal -->
 					<div class="modal fade"  id="editData5" tabindex="-1" role="dialog" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-md" role="document">
@@ -228,6 +229,7 @@ if(isset($_GET['del'])){
 							</div>
 						</div>
 					</div>
+
 					<!-- Add User Modal  -->
 					<div class="modal fade modal-add-contact" id="addUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -347,6 +349,8 @@ if(isset($_GET['del'])){
 							</div>
 						</div>
 					</div>
+
+
 					<div class="modal fade modal-add-contact" id="blockedUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
 						<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
 							<div class="modal-content">

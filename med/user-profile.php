@@ -244,7 +244,7 @@ if(strlen($_SESSION['login'])==0)
                     <div class="thumb-preview ec-preview">
                       <div class="image-thumb-preview">
                         <img class="image-thumb-preview ec-image-preview v-img"
-                        src="assets/images/user/2.jpg" alt="edit" />
+                        src="assets/images/user/user.jpg" alt="edit" />
                       </div>
                       <button type="submit" class="btn btn-primary ">Update Image</button>
                     </div>
@@ -320,6 +320,7 @@ if(strlen($_SESSION['login'])==0)
   <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
   <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
+
   <!--Plugins JS-->
   <script src="assets/js/plugins/swiper-bundle.min.js"></script>
   <script src="assets/js/plugins/nouislider.js"></script>
@@ -329,6 +330,7 @@ if(strlen($_SESSION['login'])==0)
   <script src="assets/js/plugins/slick.min.js"></script>
   <script src="assets/js/plugins/infiniteslidev2.js"></script>
   <script src="assets/js/plugins/jquery.sticky-sidebar.js"></script>
+
   <!-- Main Js -->
   <script src="assets/js/vendor/index.js"></script>
   <script src="assets/js/demo.js"></script>

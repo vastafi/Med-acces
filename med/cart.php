@@ -205,16 +205,17 @@ if(isset($_POST['submit'])){
               </div>
             </div>
             <!--cart content End -->
-          </div>By creating an account you will be able to shop faster,
+          </div> By creating an account you will be able to shop faster,
           be up to date on an order's status, and keep track of the orders you have
           previously made.
           <!-- Sidebar Area Start -->
           <div class="ec-cart-rightside col-lg-4 col-md-12">
             <div class="ec-sidebar-wrap">
+                <br>
               <!-- Sidebar Summary Block -->
               <div class="ec-sidebar-block">
                 <div class="ec-sb-title">
-                  <h3 class="ec-sidebar-title">Summary</h3>
+                                      <h3 class="ec-sidebar-title">Summary</h3>
                 </div>
                 <div class="ec-sb-block-content">
                   <h4 class="ec-ship-title">Estimate Shipping</h4>
@@ -292,9 +293,11 @@ if(isset($_POST['submit'])){
         </div>
       </div>
     </section>
+
     <!-- Footer Start -->
     <?php @include("includes/footer.php");?>
     <!-- Footer Area End -->
+
     <!-- Vendor JS -->
     <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
     <script src="assets/js/vendor/jquery.notify.min.js"></script>
@@ -303,6 +306,7 @@ if(isset($_POST['submit'])){
     <script src="assets/js/vendor/bootstrap.min.js"></script>
     <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
     <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
     <!--Plugins JS-->
     <script src="assets/js/plugins/swiper-bundle.min.js"></script>
     <script src="assets/js/plugins/countdownTimer.min.js"></script>
@@ -311,6 +315,7 @@ if(isset($_POST['submit'])){
     <script src="assets/js/plugins/slick.min.js"></script>
     <script src="assets/js/plugins/infiniteslidev2.js"></script>
     <script src="assets/js/plugins/fb-chat.js"></script>
+
     <!-- Main Js -->
     <script src="assets/js/vendor/index.js"></script>
     <script src="assets/js/demo.js"></script>

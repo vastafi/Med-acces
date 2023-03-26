@@ -657,6 +657,7 @@ include('includes/dbconnection.php');
     </div>
   </div>
   <!-- Footer navigation panel for responsive display end -->
+
   <!-- successfully toast Start -->
   <div id="addtocart_toast" class="addtocart_toast">
     <div class="desc">You Have Add To Cart Successfully</div>
@@ -665,7 +666,6 @@ include('includes/dbconnection.php');
     <div class="desc">You Have Add To Wishlist Successfully</div>
   </div>
   <!--successfully toast end -->
-
 
   <!-- Vendor JS -->
   <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
@@ -685,6 +685,7 @@ include('includes/dbconnection.php');
   <script src="assets/js/plugins/infiniteslidev2.js"></script>
   <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/plugins/jquery.sticky-sidebar.js"></script>
+
   <!-- Google translate Js -->
   <script src="assets/js/vendor/google-translate.js"></script>
   <script>

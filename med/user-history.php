@@ -160,6 +160,7 @@ if(strlen($_SESSION['id'])==0)
   <script src="assets/js/vendor/bootstrap.min.js"></script>
   <script src="assets/js/vendor/jquery-migrate-3.3.0.min.js"></script>
   <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+
   <!--Plugins JS-->
   <script src="assets/js/plugins/swiper-bundle.min.js"></script>
   <script src="assets/js/plugins/countdownTimer.min.js"></script>
@@ -168,6 +169,7 @@ if(strlen($_SESSION['id'])==0)
   <script src="assets/js/plugins/slick.min.js"></script>
   <script src="assets/js/plugins/infiniteslidev2.js"></script>
   <script src="assets/js/plugins/fb-chat.js"></script>
+
   <!-- Main Js -->
   <script src="assets/js/vendor/index.js"></script>
   <script src="assets/js/demo.js"></script>

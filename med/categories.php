@@ -82,7 +82,6 @@ if(isset($_GET['cid']) && $_GET['action']=="wishlist" ){
     }
 }
 ?>
-
 <!-- Header start  -->
 <?php @include("includes/second_header.php");?>
 <!-- Header End  -->

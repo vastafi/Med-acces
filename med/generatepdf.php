@@ -2,8 +2,7 @@
 session_start();
 error_reporting(0);
 include('includes/dbconnection.php');
-function check_login()
-{
+function check_login(){
 	if(strlen($_SESSION['odmsaid'])==0)
 	{   
 		$host = $_SERVER['HTTP_HOST'];
@@ -17,10 +16,8 @@ ob_start();
 require('fpdf/fpdf.php');
 
 class myPDF extends FPDF{
-	
-     // Page footer
-	function Footer()
-	{
+	     // Page footer
+	function Footer(){
     // Position at 1.5 cm from bottom
 		$this->SetY(-15);
     // Arial italic 8
@@ -40,10 +37,8 @@ $sql="SELECT * from  tblcompany ";
 $query = $dbh -> prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
-if($query->rowCount() > 0)
-{
-	foreach($results as $row)
-	{  
+if($query->rowCount() > 0) {
+	foreach($results as $row) {
 		$date = date('d-m-y');
 		$user2=($_GET['userid']);
         //set font to arial, bold, 14pt
@@ -72,7 +67,6 @@ if($query->rowCount() > 0)
 		$pdf->Cell (25 ,5,'Customer ID ',0,0);
 		$pdf->Cell (34 ,5,''.$_SESSION['id'].'',0,1);//end of line
 	}
-
 }
 
 //make a dummy empty cell as a vertical spacer
@@ -81,10 +75,8 @@ $sql2="SELECT * from  users where id='".$_SESSION['id']."' ";
 $query2 = $dbh -> prepare($sql2);
 $query2->execute();
 $results2=$query2->fetchAll(PDO::FETCH_OBJ);
-if($query2->rowCount() > 0)
-{
-	foreach($results2 as $row2)
-	{  
+if($query2->rowCount() > 0) {
+	foreach($results2 as $row2)	{
 		//Billing address
 		$pdf->Cell (100  ,5,'Billing to',0,1);//end of line
 		//add dummy cell at begining of each line for indetation
@@ -117,11 +109,10 @@ $pdf->Cell (40 ,8,'Amount',1,1);//end of line
 $pdf->SetFont('Arial','',12); 
 //SQL to get 10 records
 $invoice=($_GET['search']);
-if(isset($invoice)&& !empty($invoice)){
+if(isset($invoice)&& !empty($invoice)) {
 	$query="SELECT tblproducts.productName,tblproducts.productPrice,orders.quantity  from orders join tblproducts on tblproducts.id=orders.productId where orders.invoiceNumber='$invoice'";
 	$cnt=1;
-	foreach ($dbh->query($query) as $row) 
-	{   
+	foreach ($dbh->query($query) as $row) {
 		$prod=substr($row['productName'],0,37);
 		$pdf->Cell(10 ,8,$cnt,1,0);
 		$pdf->Cell (80 ,8,$prod,1,0);
@@ -131,9 +122,9 @@ if(isset($invoice)&& !empty($invoice)){
 		$subtotal=($row['quantity']*$row['productPrice']);
 		$grandtotal+=$subtotal; 
 		$cnt++;
-
 	}
 }
+
 $pdf->Cell(110 ,8,'',0,0);
 $pdf->Cell (39 ,8,'Subtotal',0,0);
 $pdf->Cell (40 ,8,(number_format($grandtotal,0)),1,1,'R');//end of line
@@ -141,7 +132,6 @@ $pdf->Cell (40 ,8,(number_format($grandtotal,0)),1,1,'R');//end of line
 $pdf->Cell(110 ,8,'',0,0);
 $pdf->Cell (39 ,8,'Tax(10%)',0,0);
 $pdf->Cell (40 ,8,(number_format((0.1*$grandtotal),0)),1,1,'R');//end of line
-
 
 $pdf->Cell(110 ,8,'',0,0);
 $pdf->Cell (39 ,8,'Total Due',0,0);

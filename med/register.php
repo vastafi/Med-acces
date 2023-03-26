@@ -113,15 +113,15 @@ if( $_POST['token'] != 'FsWga4&@f6aw' ){
             <div class="ec-register-form">
               <form action="" method="post">
                 <span class="ec-register-wrap ec-register-half">
-                  <label>Full Names*</label>
+                  <label>Full Names</label>
                   <input type="text" name="firstname" placeholder="Enter your full names" required />
                 </span>
                 <span class="ec-register-wrap ec-register-half">
-                  <label>Email*</label>
+                  <label>Email</label>
                   <input type="email" name="email" placeholder="Enter your email add..." required />
                 </span>
                 <span class="ec-register-wrap ec-register-half">
-                  <label>Phone Number*</label>
+                  <label>Phone Number</label>
                   <input type="text" name="phonenumber" placeholder="Enter your phone number"
                   required />
                 </span>
@@ -164,20 +164,13 @@ if( $_POST['token'] != 'FsWga4&@f6aw' ){
                   </span>
                 </span>
 
-                </span>
                 <input type="hidden"  name="token" value="FsWga4&@f6aw" />
-                <!-- <span class="ec-register-wrap ec-recaptcha">
-                  <span class="g-recaptcha" data-sitekey="6LfUeskeAAAAAHJxKRWYZSh7n-cxRsDmZ8eJUKfH"
-                  data-callback="verifyRecaptchaCallback"
-                  data-expired-callback="expiredRecaptchaCallback"></span>
-                  <input class="form-control d-none" data-recaptcha="true" required
-                  data-error="Please complete the Captcha">
-                  <span class="help-block with-errors"></span>
-                </span> -->
                 <span class="ec-register-wrap ec-register-btn">
-                  <button class="btn btn-primary" name="save" type="submit">Register</button>
+                <button class="btn btn-primary" name="save" type="submit">Register</button>
                 </span>
               </form>
+                <br>
+                You don't have an account, go to <a href="login.php">Login</a>
             </div>
           </div>
         </div>

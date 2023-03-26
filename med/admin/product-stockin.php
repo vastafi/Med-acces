@@ -59,25 +59,25 @@ if(isset($_POST['stockin']))
 
 				<div class="col-lg-6">
 					<div class="form-group">
-						<label for="brandName">Product Name</label>
+						<label for="productName">Product Name</label>
 						<input type="text" class="form-control" name="product" value="<?php  echo $row2->productName;?>" id="productName" readonly>
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="form-group">
-						<label for="brandName">Quantity</label>
+						<label for="quantity">Quantity</label>
 						<input type="text" class="form-control"  name="quantity" id="quantity" >
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="form-group">
-						<label for="brandName">Product Price</label>
+						<label for="price">Product Price</label>
 						<input type="text" class="form-control" value="<?php  echo $row2->productPrice;?>" name="price" id="price" >
 					</div>
 				</div>
 				<div class="col-lg-6">
 					<div class="form-group">
-						<label for="brandName">Date</label>
+						<label for="date">Date</label>
 						<input type="date" class="form-control" name="date" id="date" required>
 					</div>
 				</div>

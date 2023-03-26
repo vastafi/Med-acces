@@ -6,11 +6,7 @@
     <!-- search form -->
     <div class="search-form d-lg-inline-block">
       <div class="input-group">
-        <input type="text" name="query" id="search-input" class="form-control"
-        placeholder="search.." autofocus autocomplete="off" />
-        <button type="button" name="search" id="search-btn" class="btn btn-flat">
-          <i class="mdi mdi-magnify"></i>
-        </button>
+
       </div>
       <div id="search-results-container">
         <ul id="search-results"></ul>
@@ -109,7 +105,7 @@
               <li class="nav-item mx-3 my-0 py-0">
                 <a href="#" class="nav-link pb-3" id="profile2-tab" data-bs-toggle="tab"
                 data-bs-target="#profile2" role="tab" aria-controls="profile2"
-                aria-selected="false">Msgs (5)</a>
+                aria-selected="false">Msg (5)</a>
               </li>
 
               <li class="nav-item mx-3 my-0 py-0">
@@ -206,7 +202,7 @@
           </a>
         </li>
 
-        <li> 
+        <li>
           <a href="javscript:void(0)" class="media media-message media-notification">
 
             <div class="d-flex rounded-circle align-items-center justify-content-center mr-3 media-icon iconbox-45 bg-warning text-white">
@@ -534,8 +530,8 @@
         <a class="text-center" href="#"> View All </a>
       </li>
     </ul>
-    <li class="right-sidebar-in right-sidebar-2-menu">
-      <i class="mdi mdi-settings-outline mdi-spin"></i>
-    </li>
+          <li class="right-sidebar-in right-sidebar-2-menu">
+              <i class="mdi mdi-settings-outline mdi-spin"></i>
+          </li>
   </nav>
 </header>
