@@ -76,6 +76,7 @@ if(strlen($_SESSION['odmsaid'])==0)
                         </div>
                     </div>
                 </div>
+                <br>
 
                 <div class="row">
                     <div class="col-12">
@@ -107,9 +108,9 @@ if(strlen($_SESSION['odmsaid'])==0)
                                             <td style="color: red;"><?php //echo $total; ?>MDL</td>
                                         </tr>
                                     </table>
-                                    <div class="col-md-12 text-center">
-                                        <button class="btn btn-primary" onclick="#">Print</button>
-                                    </div>
+                                    <button class="btn btn-sm btn-primary">
+                                        <i class="mdi mdi-printer"></i> Print
+                                    </button>
                                 </div>
                             </div>
                         </div>

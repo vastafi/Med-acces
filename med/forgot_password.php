@@ -33,7 +33,7 @@ if(isset($_POST['change']))
           $mail->Port       = 465; // TCP port to connect to
 
           //Recipients
-          $mail->setFrom('astafi.valentina@isa.utm.md', 'Tina');
+          $mail->setFrom('astafivalentina2@gmail.com', 'Tina');
           
           $mail->addAddress($email, $name);     // Add a recipient
 
@@ -49,7 +49,7 @@ if(isset($_POST['change']))
           Dear &nbsp;  <?php echo ucfirst( $name ); ?>, <br />
           <div style='padding-top:6px;'>You requested to change your password.</div>
           <div style='padding-top:8px;'>To do so please click on the link below:</div>
-          <div style='padding-top:10px;'><a href='http://localhost/Electronicshop/email_verification.php?code=<?php echo $activationCode ?>'>Click here to change your password</a></div>
+          <div style='padding-top:10px;'><a href='http://localhost/med/email_verification.php?code=<?php echo $activationcode ?>'>Click here to change your password</a></div>
           <div style='padding-top:3px;'>If you didn't request a password change just ignore this email.</div>
           <p style='padding-top:3px;'>Best Regards,</p>
           <p style='padding-top:2px;'>Med Acces Team.</p>

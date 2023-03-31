@@ -35,9 +35,9 @@ try {
     $mail->Port       = 465; // TCP port to connect to
 
     //Recipients
-    $mail->setFrom($from, 'Code4berry website');
+    $mail->setFrom($from, 'V.A. website');
     
-    $mail->addAddress('code4berryteam@gmail.com', 'Code4berry Admin');     // Add a recipient
+    $mail->addAddress('astafivalentina2@gmail.com', 'Tina');     // Add a recipient
 
     // Attachement 
     // $mail->addAttachment('upload/file.pdf');

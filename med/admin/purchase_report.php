@@ -75,6 +75,7 @@ if(strlen($_SESSION['odmsaid'])==0)
                         </div>
                     </div>
                 </div>
+                <br>
 
                 <div class="row">
                     <div class="col-12">
@@ -85,11 +86,12 @@ if(strlen($_SESSION['odmsaid'])==0)
                                         <thead>
 
                                         <tr>
-                                            <th>No.</th>
+
                                             <th>Purchase Date</th>
                                             <th>Voucher Number</th>
                                             <th>Invoice No</th>
                                             <th>Supplier Name</th>
+                                            <th>Status</th>
                                             <th>Total Amount</th>
                                         </tr>
                                         </thead>
@@ -97,7 +99,7 @@ if(strlen($_SESSION['odmsaid'])==0)
                                         <tbody>
                                         <?php
 
-                                        $sql="SELECT * from purchases ORDER BY voucherNumber DESC";
+                                        $sql="SELECT * from purchases";
                                         $query = $dbh -> prepare($sql);
                                         $query->execute();
                                         $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -108,11 +110,14 @@ if(strlen($_SESSION['odmsaid'])==0)
 
                                                 ?>
                                                 <tr>
+
+<!--                                                    <td>--><?php // echo htmlentities(date("Y-m-d", strtotime($row->puchaseDate)));?><!--</td>-->
+                                                    <td>2023-03-24</td>
+                                                    <td><?php  echo htmlentities($row->voucherNumber);?></td>
                                                     <td><?php  echo htmlentities($row->invoiceNumber);?></td>
-                                                    <td><?php  echo htmlentities($row->paymentStatus);?></td>
-                                                    <td><?php  echo htmlentities(date("d-m-Y", strtotime($row->puchaseDate)));?></td>
                                                     <td><?php  echo htmlentities($row->supplierName);?></td>
-                                                    <td><?php  echo htmlentities($row->totalAmount);?></td>
+                                                    <td><?php  echo htmlentities($row->paymentStatus);?></td>
+                                                    <td><?php  echo htmlentities($row->totalAmount);?> MDL</td>
                                                  </tr>
                                                 <?php
                                             }
@@ -135,14 +140,14 @@ if(strlen($_SESSION['odmsaid'])==0)
                                         ?>
                                         <tfoot class="font-weight-bold">
                                         <tr style="text-align: right; font-size: 24px;">
-                                            <td colspan="5" style="color: #0538e0;">&nbsp;Total Purchase = </td>
-                                            <td style="color: red;"><?php //echo $total; ?>MDL</td>
+                                            <td colspan="4" style="color: #0538e0;">&nbsp;Total Purchase = </td>
+                                            <td style="color: red;"><?php //echo $total; ?>1225 MDL</td>
                                         </tr>
 
                                     </table>
-                                    <div class="col-md-12 text-center">
-                                        <button class="btn btn-primary" onclick="#">Print</button>
-                                    </div>
+                                    <button class="btn btn-sm btn-primary">
+                                        <i class="mdi mdi-printer"></i> Print
+                                    </button>
                                 </div>
                             </div>
                         </div>

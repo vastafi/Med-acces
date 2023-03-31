@@ -468,6 +468,35 @@ CREATE TABLE `purchases` (
 `paymentStatus` varchar(20) COLLATE utf16_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_bin;
 
+INSERT INTO purchases (supplierName, invoiceNumber, voucherNumber, purchaseDate, totalAmount, paymentStatus) VALUES
+('The Medical Company', 1234, 5678, '2023-03-01', 100.00, 'Paid'),
+('Medical Supplies Plus', 5678, 9101, '2023-03-15', 500.00, 'Unpaid'),
+('Healthcare Suppliers', 9101, 1121, '2023-03-22', 75.00, 'Paid'),
+('Medical World Supplies', 1121, 3141, '2023-04-07', 200.00, 'Unpaid'),
+('Ace Medical Supplies', 3141, 5161, '2023-03-10', 350.00, 'Paid');
+
+
+
+-- Table structure for table `seller`
+CREATE TABLE `seller` (
+`id` int(11) NOT NULL,
+`name` varchar(255) DEFAULT NULL,
+`email` varchar(255) DEFAULT NULL,
+`contactNo` bigint(11) DEFAULT NULL,
+`password` varchar(255) DEFAULT NULL,
+`activationCode` varchar(255) NOT NULL DEFAULT 'g2o9@h3$n%&h09',
+`regDate` timestamp NOT NULL DEFAULT current_timestamp(),
+`updationDate` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- Dumping data for table `sellers`
+INSERT INTO `seller` (`id`, `name`, `email`, `contactNo`, `password`,  `activationCode`, `regDate`, `updationDate`) VALUES
+(50, ' Nicole Petrov', 'nicole@gmail.com', 770546590, '81dc9bdb52d04dc20036dbd8313ed055', NULL,  '2023-02-18 09:00:57', NULL),
+(31, 'Sara Ambros', 'sara@gmail.com', 770546590, '827ccb0eea8a706c4c34a16891f84e7b',  NULL, '2023-02-03 09:40:34', NULL),
+(52, 'Alexandra Dobrescu', 'alexandradobrescu@example.com', 7370000000, '81dc9bdb52d04dc20036dbd8313ed055', NULL, '2023-02-10', NULL);
+
+
+
 ALTER TABLE `purchases`
     ADD PRIMARY KEY (`voucherNumber`);
 
@@ -527,6 +556,10 @@ ALTER TABLE `tblsubscribe`
 -- Indexes for table `users`
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
+
+-- Indexes for table `seller`
+ALTER TABLE `seller`
+    ADD PRIMARY KEY (`id`);
 
 -- Indexes for table `userlog`
  ALTER TABLE `userlog`
@@ -594,6 +627,10 @@ ALTER TABLE `tblsubscribe`
 -- AUTO_INCREMENT for table `users`
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+
+-- AUTO_INCREMENT for table `seller`
+ALTER TABLE `seller`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 -- AUTO_INCREMENT for table `wishlist`
 ALTER TABLE `wishlist`

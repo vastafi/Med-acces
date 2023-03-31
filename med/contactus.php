@@ -291,14 +291,6 @@ include('includes/dbconnection.php');
   <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/plugins/jquery.sticky-sidebar.js"></script>
 
-  <!-- Google translate Js -->
-  <script src="assets/js/vendor/google-translate.js"></script>
-  <script>
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-    }
-  </script>
-
   <!-- Main Js -->
   <script src="assets2/js/vendor/index.js"></script>
   <script src="assets2/js/main.js"></script>

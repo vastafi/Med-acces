@@ -18,43 +18,13 @@
         <div class="col header-top-right d-none d-lg-block">
           <div class="header-top-right-inner d-flex justify-content-end">
 
-            <!-- Currency Start -->
-            <div class="header-top-lan-curr header-top-curr dropdown">
-              <button class="dropdown-toggle" data-bs-toggle="dropdown">MDL <i
-                class="ecicon eci-angle-down" aria-hidden="true"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li class="active"><a class="dropdown-item" href="#">MDL</a></li>
-                <li><a class="dropdown-item" href="#">EUR €</a></li>
-                  <li><a class="dropdown-item" href="#">USD $</a></li>
-              </ul>
-            </div>
-            <!-- Currency End -->
-
             <!-- Language Start -->
             <div class="header-top-lan-curr header-top-lan dropdown">
-              <button class="dropdown-toggle" data-bs-toggle="dropdown">ENG<i
-                class="ecicon eci-angle-down" aria-hidden="true"></i>
-              </button>
-              <ul class="dropdown-menu">
-                <li class="active"><a class="dropdown-item" href="#">English</a>
-                </li>
-                <li><a class="dropdown-item" href="#">French</a>
-                  <li><a class="dropdown-item" href="#">Romanian</a>
-                </li>
-              </ul>
+                <img src="assets/images/icons/translate.svg" alt="translate" style="height: 20px; width: auto; margin-top: 16px; margin-right: 10px;">
+                <div id="google_translate_element"></div>
             </div>
             <!-- Language End -->
 
-            <!-- Social Start -->
-            <div class="header-top-social">
-              <ul class="mb-0">
-                  <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100088809137038"><i class="ecicon eci-facebook"></i></a> </li>
-                  <li class="list-inline-item"><a href="https://www.instagram.com/valentinaastafi/"><i class="ecicon eci-instagram"></i></a> </li>
-                  <li class="list-inline-item"><a href="https://www.linkedin.com/in/valentina-astafi-a65a041a4/"><i class="ecicon eci-linkedin"></i></a> </li>
-              </ul>
-            </div>
-            <!-- Social End -->
           </div>
         </div>
         <!-- Header Top Language Currency -->
@@ -63,6 +33,7 @@
         <div class="col header-top-res d-lg-none">
           <div class="ec-header-bottons">
             <!-- Header User Start -->
+
             <div class="ec-header-user dropdown">
               <button class="dropdown-toggle" data-bs-toggle="dropdown"><img
                 src="assets/images/icons/user.svg" class="svg_img header_svg"
@@ -610,29 +581,10 @@
 
           <!-- Language Start -->
           <div class="header-top-lan dropdown">
-            <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Language <i
-              class="ecicon eci-caret-down" aria-hidden="true"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li class="active"><a class="dropdown-item" href="#">English</a></li>
-              <li><a class="dropdown-item" href="#">French</a></li>
-            </ul>
+              <img src="assets/images/icons/translate.svg" alt="translate" style="height: 20px; width: auto; margin-top: 16px; margin-right: 10px;">
+              <div id="google_translate_element"></div>
           </div>
           <!-- Language End -->
-
-          <!-- Currency Start -->
-          <div class="header-top-curr dropdown">
-            <button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Currency <i
-              class="ecicon eci-caret-down" aria-hidden="true"></i>
-            </button>
-            <ul class="dropdown-menu">
-              <li class="active"><a class="dropdown-item" href="#">MDL</a></li>
-              <li><a class="dropdown-item" href="#">EUR €</a></li>
-                <li><a class="dropdown-item" href="#">USD $</a></li>
-            </ul>
-          </div>
-          <!-- Currency End -->
-
         </div>
 
         <!-- Social Start -->

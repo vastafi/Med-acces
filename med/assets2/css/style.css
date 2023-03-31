@@ -16274,7 +16274,6 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   z-index: 9999;
   text-align: center;
   border-radius: 30px;
-  background-image: url("../images/email-template/newsletter-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -16613,18 +16612,6 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background-repeat: no-repeat;
   border: 1px solid #eeeeee;
   border-radius: 30px;
-}
-.bg-panel .bg .back-bg-4 {
-  background-image: url("../images/bg/display-bg-0.png");
-}
-.bg-panel .bg .back-bg-1 {
-  background-image: url("../images/bg/display-bg-1.png");
-}
-.bg-panel .bg .back-bg-2 {
-  background-image: url("../images/bg/display-bg-2.png");
-}
-.bg-panel .bg .back-bg-3 {
-  background-image: url("../images/bg/display-bg-3.png");
 }
 
 /*----  Language switcher  ----*/
@@ -19489,7 +19476,7 @@ a.wishlist .svg_img.pro_svg {
   margin: auto;
   opacity: 0;
   display: none;
-  background: url(../images/common/pro-loader.gif) no-repeat scroll 50% 50%;
+  background: url(../images/common/loader.gif) no-repeat scroll 50% 50%;
   background-color: rgba(255, 255, 255, 0.9);
   background-size: 75px;
 }
@@ -20851,7 +20838,6 @@ select::-ms-expand {
   width: 100%;
   height: 250px;
   display: block;
-  background-image: url(../images/banner/5.png);
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
@@ -29377,7 +29363,6 @@ select:-webkit-autofill:focus {
           justify-content: center;
   z-index: 2;
   text-align: center;
-  background: url(../images/offer-image/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -29679,7 +29664,6 @@ input[type=email]:focus::-webkit-input-placeholder {
 
 /** Comingsoon 2 page **/
 .ec-coming-soon-02 {
-  background: url("../../assets/images/common/1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -29985,25 +29969,6 @@ input[type=email]:focus::-webkit-input-placeholder {
   background: #3474d4;
   color: #ffffff;
 }
-.ec-card-grid-space .ec-card:hover:before, .ec-card-grid-space .ec-card:hover:after {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-.ec-card-grid-space .media-1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/blog-image/11.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/blog-image/11.jpg);
-  background-position: center;
-}
-.ec-card-grid-space .media-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/blog-image/12.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/blog-image/12.jpg);
-  background-position: center;
-}
-.ec-card-grid-space .media-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../images/blog-image/13.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/blog-image/13.jpg);
-  background-position: center;
-}
 
 /*------  Full Blog  ------*/
 .ec-full-blog {
@@ -30073,21 +30038,7 @@ input[type=email]:focus::-webkit-input-placeholder {
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
-.ec-full-blog .ec-card-bg .bg-img-1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/14.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/14.jpg);
-  background-position: center;
-}
-.ec-full-blog .ec-card-bg .bg-img-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/15.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/15.jpg);
-  background-position: center;
-}
-.ec-full-blog .ec-card-bg .bg-img-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/16.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/16.jpg);
-  background-position: center;
-}
+
 .ec-full-blog .ec-card-head {
   height: 260px;
   display: -webkit-box;
@@ -30376,7 +30327,6 @@ input[type=email]:focus::-webkit-input-placeholder {
 }
 .ec-blog-card .ec-utility-info .ec-utility-list li .licon:before {
   content: "";
-  background: url(../images/icons/licons.svg) -2px -6px no-repeat;
   background-size: 250px;
   width: 26px;
   height: 20px;
@@ -30437,24 +30387,6 @@ input[type=email]:focus::-webkit-input-placeholder {
   100% {
     width: 80%;
   }
-}
-
-.ec-blog-card.media-1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/11.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/11.jpg);
-  background-position: center;
-}
-
-.ec-blog-card.media-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/12.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/12.jpg);
-  background-position: center;
-}
-
-.ec-blog-card.media-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/13.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/13.jpg);
-  background-position: center;
 }
 
 @media (max-width: 750px) {
@@ -30593,21 +30525,6 @@ input[type=email]:focus::-webkit-input-placeholder {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.ec-box-card .ec-wrapper.wrp-img-1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/11.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/11.jpg);
-  background-position: center;
-}
-.ec-box-card .ec-wrapper.wrp-img-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/12.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/12.jpg);
-  background-position: center;
-}
-.ec-box-card .ec-wrapper.wrp-img-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/blog-image/13.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/blog-image/13.jpg);
-  background-position: center;
-}
 
 /*------ Up Card ------*/
 .ec-up-card {
@@ -30713,21 +30630,6 @@ input[type=email]:focus::-webkit-input-placeholder {
   -webkit-transform: translate(5px, -50%);
           transform: translate(5px, -50%);
   opacity: 1;
-}
-.ec-up-card .ec-wrapper.wrp-img-1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/blog-image/14.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/blog-image/14.jpg);
-  background-position: center;
-}
-.ec-up-card .ec-wrapper.wrp-img-2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/blog-image/15.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/blog-image/15.jpg);
-  background-position: center;
-}
-.ec-up-card .ec-wrapper.wrp-img-3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url(../images/blog-image/16.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/blog-image/16.jpg);
-  background-position: center;
 }
 
 /*-------------------------------------------------
@@ -30885,7 +30787,6 @@ input[type=email]:focus::-webkit-input-placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-image: url(../images/banner/7.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31014,7 +30915,6 @@ input[type=email]:focus::-webkit-input-placeholder {
   height: 150px;
   margin-bottom: 65px;
   position: relative;
-  background-image: url("../images/banner/7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: overlay;
@@ -31227,7 +31127,6 @@ input[type=email]:focus::-webkit-input-placeholder {
 .ec-vendor-dashboard .ec-vendor-sidebar .ec-sidebar-block .ec-vendor-block .ec-vendor-block-bg, .ec-vendor-uploads .ec-vendor-sidebar .ec-sidebar-block .ec-vendor-block .ec-vendor-block-bg {
   width: 100%;
   height: 200px;
-  background-image: url(../images/banner/7.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31757,7 +31656,6 @@ input[type=email]:focus::-webkit-input-placeholder {
 .ec-vendor-profile-card .ec-vendor-block-profile .ec-vendor-block-img .ec-vendor-block-bg {
   width: 100%;
   height: 200px;
-  background-image: url(../images/banner/7.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31817,7 +31715,6 @@ input[type=email]:focus::-webkit-input-placeholder {
 .ec-vendor-setting-card .ec-vendor-block-bg {
   width: 100%;
   height: 200px;
-  background-image: url(../images/banner/7.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -32061,7 +31958,6 @@ input[type=email]:focus::-webkit-input-placeholder {
 .ec-user-account .ec-vendor-block-bg {
   width: 100%;
   height: 200px;
-  background-image: url(../images/banner/8.jpg) !important;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -32181,7 +32077,6 @@ input[type=email]:focus::-webkit-input-placeholder {
   position: relative;
   margin: auto;
   overflow: hidden;
-  background-image: url("../images/offer-image/1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -103,7 +103,7 @@ if(isset($_GET['del'])){
                                         <tbody>
 
                                         <?php
-                                        $sql="select distinct id,nameSupplier,email,contactNumber, address  from suppliers ORDER BY id DESC";
+                                        $sql="select distinct id, nameSupplier,email,contactNumber, address  from suppliers ORDER BY id DESC";
                                         $query = $dbh -> prepare($sql);
                                         $query->execute();
                                         $results=$query->fetchAll(PDO::FETCH_OBJ);

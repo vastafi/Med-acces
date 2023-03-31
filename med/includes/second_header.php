@@ -1,53 +1,38 @@
 <header class="ec-header">
-	<!--Ec Header Top Start -->
-	<div class="header-top">
-		<div class="container">
-			<div class="row align-items-center">
-				<!-- Header Top social Start -->
-				<div class="col text-left header-top-left d-none d-lg-block">
-					<div class="header-top-social">
-						<span class="social-text text-upper">Follow us on:</span>
 
-                            <ul class="mb-0">
-                                <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100088809137038"><i class="ecicon eci-facebook"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.instagram.com/valentinaastafi/"><i class="ecicon eci-instagram"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/valentina-astafi-a65a041a4/"><i class="ecicon eci-linkedin"></i></a></li>
-                            </ul>
-					</div>
-				</div>
-				<!-- Header Top social End -->
+    <!--Ec Header Top Start -->
+    <div class="header-top">
+        <div class="container">
+            <div class="row align-items-center">
 
-				<!-- Header Top Language Currency -->
-				<div class="col header-top-right d-none d-lg-block">
-					<div class="header-top-lan-curr d-flex justify-content-end">
-						<!-- Currency Start -->
-						<div class="header-top-curr dropdown">
-							<button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Currency <i
-								class="ecicon eci-caret-down" aria-hidden="true"></i>
-							</button>
-							<ul class="dropdown-menu">
-								<li class="active"><a class="dropdown-item" href="#">MDL</a></li>
-								<li><a class="dropdown-item" href="#">EUR €</a></li>
-                                <li><a class="dropdown-item" href="#">USD $</a></li>
-							</ul>
-						</div>
-						<!-- Currency End -->
-						<!-- Language Start -->
-						<div class="header-top-lan dropdown">
-							<button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Language <i
-								class="ecicon eci-caret-down" aria-hidden="true"></i>
-							</button>
-							<ul class="dropdown-menu">
-								<li class="active"><a class="dropdown-item" href="#">English</a></li>
-								<li><a class="dropdown-item" href="#">Italiano</a></li>
-							</ul>
-						</div>
-						<!-- Language End -->
-					</div>
-				</div>
-				<!-- Header Top Language Currency -->
+                <!-- Header Top phone Start -->
+                <div class="col header-top-left">
+                    <div class="header-top-social">
+                        <span class="social-text text-upper">Follow us on:</span>
 
-				<!-- Header Top responsive Action -->
+                        <ul class="mb-0">
+                            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100088809137038"><i class="ecicon eci-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.instagram.com/valentinaastafi/"><i class="ecicon eci-instagram"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/valentina-astafi-a65a041a4/"><i class="ecicon eci-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Header Top phone End -->
+
+                <!-- Header Top Language Currency -->
+                <div class="col header-top-right d-none d-lg-block">
+                    <div class="header-top-right-inner d-flex justify-content-end">
+                        <!-- Language Start -->
+                        <div class="header-top-lan-curr header-top-lan dropdown">
+                            <img src="assets/images/icons/translate.svg" alt="translate" style="height: 20px; width: auto; margin-top: 16px; margin-right: 10px;">
+                            <div id="google_translate_element"></div>
+                        </div>
+                        <!-- Language End -->
+                    </div>
+                </div>
+                <!-- Header Top Language Currency -->
+
+                 <!-- Header Top responsive Action -->
 				<div class="col d-lg-none ">
 					<div class="ec-header-bottons">
 						<!-- Header User Start -->
@@ -67,7 +52,7 @@
 									<li><a class="dropdown-item" href="logout.php">Logout</a></li>
 									<?php
 
-								} ?> 
+								} ?>
 							</ul>
 						</div>
 						<!-- Header User End -->
@@ -498,26 +483,11 @@
 				<div class="header-top-lan-curr">
 					<!-- Language Start -->
 					<div class="header-top-lan dropdown">
-						<button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Language <i
-							class="ecicon eci-caret-down" aria-hidden="true"></i>
-						</button>
-						<ul class="dropdown-menu">
-							<li class="active"><a class="dropdown-item" href="#">English</a></li>
-							<li><a class="dropdown-item" href="#">French</a></li>
-						</ul>
-					</div>
+                            <img src="assets/images/icons/translate.svg" alt="translate" style="height: 20px; width: auto; margin-top: 16px; margin-right: 10px;">
+                            <div id="google_translate_element"></div>
+                    </div>
 					<!-- Language End -->
-					<!-- Currency Start -->
-					<div class="header-top-curr dropdown">
-						<button class="dropdown-toggle text-upper" data-bs-toggle="dropdown">Currency <i
-							class="ecicon eci-caret-down" aria-hidden="true"></i>
-						</button>
-						<ul class="dropdown-menu">
-							<li class="active"><a class="dropdown-item" href="#">USD $</a></li>
-							<li><a class="dropdown-item" href="#">EUR €</a></li>
-						</ul>
-					</div>
-					<!-- Currency End -->
+
 				</div>
 				<!-- Social Start -->
 				<div class="header-res-social">

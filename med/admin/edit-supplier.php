@@ -21,7 +21,7 @@ if(strlen($_SESSION['odmsaid'])==0)
     {
         foreach($results2 as $row2)
         {
-            $_SESSION['editpid']=$row2->id;
+            $_SESSION['editsid']=$row2->id;
             ?>
             <div class="row mb-2">
 

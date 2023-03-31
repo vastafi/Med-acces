@@ -44,6 +44,11 @@
                                 </a>
                             </li>
                             <li class="">
+                                <a class="sidenav-item-link" href="seller-list.php">
+                                    <span class="nav-text">Seller List</span>
+                                </a>
+                            </li>
+                            <li class="">
                                 <a class="sidenav-item-link" href="user-profile.php">
                                     <span class="nav-text">Users Profile</span>
                                 </a>
@@ -52,10 +57,11 @@
                     </div>
 
                 </li>
+
                 <!-- manufacturer start -->
                 <li class="has-sub">
                     <a class="sidenav-item-link" href="javascript:void(0)">
-                        <i class=" mdi mdi-group"></i>
+                        <i class="mdi mdi-group"></i>
                         <span class="nav-text">Supplier</span> <b class="caret"></b>
                     </a>
                     <div class="collapse">
@@ -178,14 +184,14 @@
                     </a>
                     <div class="collapse">
                         <ul class="sub-menu" id="orders" data-parent="#sidebar-menu">
+                           <li class="">
+                                <a class="sidenav-item-link" href="purchase_report.php">
+                                    <span class="nav-text">Purchase report</span>
+                                </a>
+                           </li>
                             <li class="">
                                 <a class="sidenav-item-link" href="sales_report.php">
                                     <span class="nav-text">Sales report</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a class="sidenav-item-link" href="purchase_report.php">
-                                    <span class="nav-text">Purchase report</span>
                                 </a>
                             </li>
                         </ul>

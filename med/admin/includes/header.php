@@ -3,21 +3,18 @@
   <nav class="navbar navbar-static-top navbar-expand-lg">
     <!-- Sidebar toggle button -->
     <button id="sidebar-toggler" class="sidebar-toggle"></button>
-    <!-- search form -->
-    <div class="search-form d-lg-inline-block">
-      <div class="input-group">
 
-      </div>
-      <div id="search-results-container">
-        <ul id="search-results"></ul>
-      </div>
-    </div>
+      <img src="assets/img/icons/translate.svg" alt="user" style="height: 30px; width: auto; margin-top: 16px; margin-right: 10px;">
+      <div id="google_translate_element"></div>
+
+    <!-- search form -->
+    <div class="search-form d-lg-inline-block"> </div>
 
     <!-- navbar right -->
     <div class="navbar-right">
       <ul class="nav navbar-nav">
         <!-- User Account -->
-        
+
         <li class="dropdown user-menu">
           <?php
           $aid=$_SESSION['odmsaid'];

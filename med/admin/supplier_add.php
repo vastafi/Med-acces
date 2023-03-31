@@ -156,7 +156,7 @@ if(strlen($_SESSION['odmsaid'])==0)
             $email=$_POST['email'];
             $contactNumber=$_POST['contactNumber'];
             $address=$_POST['address'];
-            $sql="insert into suppliers(nameSupplier,email,contactNumber, address) values(:nameSupplier,:email,:contactNumber,:address)";
+            $sql="insert into suppliers(nameSupplier,email,contactNumber,address) values(:nameSupplier,:email,:contactNumber,:address)";
             $query=$dbh->prepare($sql);
             $query->bindParam(':nameSupplier',$nameSupplier,PDO::PARAM_STR);
             $query->bindParam(':email',$email,PDO::PARAM_STR);

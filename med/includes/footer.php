@@ -18,7 +18,20 @@
   border-radius: 3px;
   padding: 18px 0px;
 }
+.goog-logo-link {
+      display:none !important;
+}
 
+.goog-te-gadget{
+      color: transparent;
+}
+.goog-te-gadget .goog-te-combo {
+      margin: 0px 0;
+      padding: 8px;
+}
+  #google_translate_element{
+      padding-top: 14px;
+  }
 </style>
 <footer class="ec-footer">
   <div class="footer-container bg-light">
@@ -145,5 +158,12 @@
   </div>
 </footer>
 <!-- SweetAlert2 -->
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+</script>
 
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="assets/js/form-validate.js"></script>
+
