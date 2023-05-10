@@ -90,16 +90,6 @@ CREATE TABLE `subcategory` (
 
 -- Dumping data for table `subcategory`
 INSERT INTO `subcategory` (`id`, `categoryId`, `subcategory`, `description`, `tags`, `creationDate`, `updationDate`) VALUES
--- (2, 4, 'Led Television', NULL, NULL, '2017-01-26 16:24:52', '26-01-2017 11:03:40 PM'),
--- (3, 4, 'Television', NULL, NULL, '2017-01-26 16:29:09', ''),
--- (4, 4, 'Mobiles', NULL, NULL, '2017-01-30 16:55:48', ''),
--- (5, 4, 'Mobile Accessories', NULL, NULL, '2017-02-04 04:12:40', ''),
--- (6, 4, 'Laptops', NULL, NULL, '2017-02-04 04:13:00', ''),
--- (7, 4, 'Computers', NULL, NULL, '2017-02-04 04:13:27', ''),
--- (8, 3, 'Comics', NULL, NULL, '2017-02-04 04:13:54', ''),
--- (9, 5, 'Beds', NULL, NULL, '2017-02-04 04:36:45', ''),
--- (10, 5, 'Sofas', NULL, NULL, '2017-02-04 04:37:02', ''),
--- (11, 5, 'Dining Tables', NULL, NULL, '2017-02-04 04:37:51', ''),
 (12, 59, 'Antihypertensives', NULL, NULL, '2017-03-10 20:12:59', ''),
 (14, 71, 'Emollients and protectors', NULL, NULL, '2022-08-28 20:27:28', NULL),
 (15, 60, 'Foot Care', NULL, NULL, '2022-09-08 10:01:47', NULL),
@@ -345,12 +335,12 @@ INSERT INTO `tblproducts` (`id`, `categoryName`, `subcategory`, `brandName` , `p
 (57,14,51, 3, 'Interferon Alpha', 'Injection', '2 million IU', '1 vial', '3', 'L03AB02', 'R09876', '2021-01-01', '2025-01-01 00:00:00','', 10, 'active', 'ABC Pharma', 'DEF Pharma', '', '', '', '', 150.00, 150.00, 0, 'This is a product description', 'This is a product details', 'active', '2020-11-12 00:00:00', NULL),
 
 CREATE TABLE `invoices` (
-                            `invoiceId` int(11) NOT NULL,
-                            `netTotal` double NOT NULL DEFAULT 0,
-                            `invoiceDate` date NOT NULL DEFAULT current_timestamp(),
-                            `userId` int(11) NOT NULL,
-                            `totalAmount` double NOT NULL,
-                            `totalDiscount` double NOT NULL
+`invoiceId` int(11) NOT NULL,
+`netTotal` double NOT NULL DEFAULT 0,
+`invoiceDate` date NOT NULL DEFAULT current_timestamp(),
+`userId` int(11) NOT NULL,
+`totalAmount` double NOT NULL,
+`totalDiscount` double NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf16 COLLATE=utf16_bin;
 
 --
