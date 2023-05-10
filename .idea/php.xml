@@ -25,6 +25,15 @@
       <path value="$PROJECT_DIR$/med/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/med/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/med/vendor/grpc/grpc" />
+      <path value="$PROJECT_DIR$/med/vendor/rize/uri-template" />
+      <path value="$PROJECT_DIR$/med/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/med/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/med/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/med/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/med/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/med/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/med/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/med/vendor/ralouphie/getallheaders" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.0">
